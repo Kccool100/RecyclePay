@@ -1,0 +1,145 @@
+
+.headContainer{
+    width: 100%;
+    height: 150px;
+    display: flex;
+    position: fixed;
+    justify-content: space-between;
+    padding: 20px;
+    padding-inline: 100px;
+    top: 0;
+    left: 0;
+    align-items: center;
+    background-color: #ffff;
+    z-index: 99;
+}
+
+
+.logoContainer{
+  display: flex;
+  width: 340px;
+  height: 86px;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+  cursor: pointer;
+}
+
+.logoContainer img{
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+   
+}
+.NavLink{
+    width: 60%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  
+    
+}
+.link{
+  color:#2A2A2A;
+  transition: all 350ms;
+  display: flex;
+  padding: 10px;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  font-weight: 500;
+  font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 20px;
+  gap: 10px;
+}
+.link:hover{
+  color: white;
+  background-color: #ff9700;
+  border-radius: 5px;
+  transform: scale(1.0);
+}
+.headContainer button{
+  display: flex;
+  width: 200px;
+  height: 60px;
+  padding: 10px;
+  justify-content: center;
+  font-weight: 500;
+  font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 20px;
+  color: #FF7043;
+  align-items: center;
+  gap: 10px;
+  background-color: #ffff;
+  border-radius: 10px;
+  transition: all 350ms;
+  border: 1px solid var(--Hover-effect, #FF7043);
+  cursor: pointer;
+}
+
+.headContainer button:hover{
+    background-color: #FF7043;
+    color: white;
+    transform: scale(1.0);
+}
+.hamburger{
+    display: none;
+  }
+  .rightNav{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  
+
+
+
+  @media screen and (width <= 850px) {
+    .rightNav {
+      display: none;
+      position: absolute;
+      right: 0;
+      width: 50%;
+    }
+    .NavLink{
+      display: flex;
+        flex-direction: column;
+        height: 600px;
+        align-items: flex-start;
+    }
+    
+    .link{
+      display: flex;
+      flex-direction: column;
+      justify-content:center ;
+      gap: 1rem;
+      align-items: flex-start;
+  
+    }
+    .rightNav.open{
+      display: flex;
+      flex-direction: column;
+      width: 200px;
+      justify-content: center;
+      box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+      align-items: flex-start;
+      height: 350px;
+      transition: all 350ms;
+      transform: scale(1.0);
+     
+      margin-top: 415px;
+      min-width: 40%;
+      background-color: #ffff;
+      padding:  1rem;
+    }
+    .hamburger{
+      display: block;
+      color: black;
+      font-size: 25px;
+    }
+  
+}

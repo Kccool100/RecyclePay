@@ -1,0 +1,163 @@
+.FooterContainer{
+    width: 100%;
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    color: #fff;
+    justify-content: center;
+    background-color: #FF7043;
+}
+.footerBox{
+    width: 100%;
+    height: 700px;
+    display: flex;
+    justify-content: center;
+}
+
+
+
+.list{
+    width: 85%;
+    height: 90%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+.list ul{
+    display: flex;
+height: 90%;
+width: 30%;
+flex-direction: column;
+align-items: center;
+gap: 1rem;
+margin-top: 50px;
+align-self: flex-start;
+}
+.list > ul > p{
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 19.2px; /* 64% */
+    letter-spacing: -0.3px;
+    text-transform: capitalize;
+    color: #FFF;
+    text-align: left;
+}
+.list > ul > span{
+    font-size: 24px;
+    font-style: normal;
+    text-align: left;
+    font-weight: 600;
+    text-decoration: none;
+    line-height: 31px; /* 129.167% */
+    letter-spacing: -0.3px;
+    text-transform: capitalize;
+    color: #FFFFFF;
+    
+}
+.list > ul > li{
+    font-size: 22px;
+    font-style: normal;
+    text-align: left;
+    font-weight: 600;
+    text-decoration: none;
+    line-height: 31px; /* 129.167% */
+    letter-spacing: -0.3px;
+    text-transform: capitalize;
+    color: #FFFFFF;
+    
+}
+
+
+.logoimg{
+    width: 250px;
+    height: 150px;
+}
+.logoimg > img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.socials{
+    height: 90px;
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.socials img{
+    height: 60%;
+    width: 30%;
+    object-fit: contain;
+}
+
+.emailCon{
+    height: 150px;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-direction: column;
+    align-items:flex-start;
+}
+label{
+    color: #FFF;
+font-family:lora;
+font-size: 20px;
+font-style: normal;
+text-align: left;
+font-weight: 400;
+line-height: normal;
+}
+.emailCon input{
+    display: flex;
+padding: 10px;
+font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+align-items: center;
+border-radius: 5px;
+background-color: #FF7043;
+border: 1px solid #FFF;
+outline: none;
+gap: 10px;
+align-self: stretch;
+}
+
+.emailCon button{
+    display: flex;
+width: 100%;
+color: #FFF;
+font-family: lora;
+font-size: 18px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+padding: 10px;
+border: none;
+justify-content: center;
+background: #000;
+align-items: center;
+gap: 10px;
+}
+@media screen and (width <= 850px) {
+.FooterContainer{
+    height: auto;
+    width: 100%;
+    padding-top: 50px;
+}
+.footerBox{
+    width: 100%;
+    height: auto;
+}
+.list{
+    width: 90%;
+    height: auto;
+    flex-direction: column;
+}
+.list ul{
+    width: 100%;
+}
+}

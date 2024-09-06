@@ -21,7 +21,7 @@
 
 .slideHead{
   width: 75%;
-  height: 150px;
+  height: 70px;
   display: flex;
   align-items: center;
   justify-content:center;
@@ -35,4 +35,21 @@
   text-align: center;
   letter-spacing: -0.3px;
   text-transform: capitalize;
+}
+
+@media screen and (width <= 850px) {
+  .CarouselContainer{
+    width: 100%;
+    height: auto;
+    margin-top: 100px;
+
+  }
+  .slideHead h3{
+    font-size: 25px;
+  }
+  .Slides {
+    width: 90%;
+    height: 400px;
+  }
+
 }

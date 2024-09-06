@@ -22,3 +22,13 @@
     width: 90%;
     object-fit: contain;
 }
+
+@media screen and (width <= 850px) {
+    .MapContainer{
+        height: auto;
+        width: 100%;
+    }
+    .MapContainer-holder{
+        width: 100%;
+    }
+}

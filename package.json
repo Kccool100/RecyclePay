@@ -12,6 +12,7 @@
   "dependencies": {
     "@hookform/resolvers": "^3.9.0",
     "@reduxjs/toolkit": "^2.2.7",
+    "animate.css": "^4.1.1",
     "bootstrap": "^5.3.3",
     "framer-motion": "^11.5.2",
     "hamburger-react": "^2.5.1",

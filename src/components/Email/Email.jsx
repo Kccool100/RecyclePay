@@ -5,16 +5,16 @@ import obj from "../../assets/obj.png"
 const Email = () => {
   return (
     <div className='EmailContainer'>
-      <div className="EmailCon-holder">
         <div className="con-holder">
         <div className="con1">
-            <p>Email:</p>
+            <p>Our Email</p>
             <span>Designerkoke6@Gmail.Com</span>
             <span>Kccool2018@Gmail.com</span>
             <span>Folakeatolagbe96@Gmail.com</span>
             <span>Adenekanifeoluwa016@Gmail.com</span>
         </div>
         <div className="con2">
+          <p>Our Social</p>
            <span>X @recyclepay </span>
            <span>Facebook @recyclepay</span>
            <span>Whatsapp @+23470235927</span>
@@ -31,7 +31,6 @@ const Email = () => {
         </div>
        
        
-      </div>
     </div>
   )
 }

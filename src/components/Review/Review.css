@@ -50,6 +50,7 @@ height: 138px;
 width: 911px;
 padding: 10px;
 align-items: flex-start;
+outline-color: #FF7043;
 gap: 10px;
 align-self: center;
 border: none;
@@ -75,4 +76,36 @@ gap: 10px;
 flex-shrink: 0;
 background: var(--Hover-effect, #FF7043);
 color: #ffff;
+transition: all 350ms;
+}
+.ReviewCon-box button:hover{
+    background-color: #ffff;
+    color: #FF7043;
+    border: 1px solid #FF7043;
+    transform: scale(1.0);
+}
+
+@media screen and (width <= 850px) {
+    .ReviewContainer{
+        height: auto;
+        width: 100%;
+    }
+    .ReviewCon-box{
+        width: 85%;
+        gap: 1rem;
+        height: 450px;
+    }
+    .message{
+        width: 95%;
+        font-size: 18px;
+    }
+    .ReviewCon-box input{
+        width: 95%;
+
+    }
+    .ReviewCon-box button{
+        width: 95%;
+    }
+
+
 }

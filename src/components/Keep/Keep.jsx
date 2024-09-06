@@ -8,7 +8,7 @@ const Keep = () => {
     <div className='KeepContainer'>
         <h3>Keep your environment safe as you make money</h3>
         <div className="KeepContainer-holder">
-           <div className="picture">
+           <div className="picture2">
             <img src={Frame3} alt="Frame3" />
 
            </div>

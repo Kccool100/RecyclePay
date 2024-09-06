@@ -3,6 +3,13 @@
     height: 80vh;
     display: flex;
     justify-content: center;
+    margin-top: 120px;
     align-items: center;
 
 }
+@media screen and (width <= 850px) {
+    .ContactHeroContainer{
+      height: auto;
+      padding-top: 50px;
+    }
+  }

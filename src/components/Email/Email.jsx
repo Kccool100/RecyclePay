@@ -8,10 +8,7 @@ const Email = () => {
         <div className="con-holder">
         <div className="con1">
             <p>Our Email</p>
-            <span>Designerkoke6@Gmail.Com</span>
-            <span>Kccool2018@Gmail.com</span>
-            <span>Folakeatolagbe96@Gmail.com</span>
-            <span>Adenekanifeoluwa016@Gmail.com</span>
+            <span>Recyclepay7@gmail.com</span>
         </div>
         <div className="con2">
           <p>Our Social</p>

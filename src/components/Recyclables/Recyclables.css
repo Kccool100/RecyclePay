@@ -5,7 +5,7 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    padding-top: 50px;
+    margin-top: 50px;
 }
 .RecyclablesContainer-holder{
     width: 100%;
@@ -31,6 +31,7 @@
     text-align: center;
     font-size: 35px;
     line-height: 24px;
+    height: 70px;
     color: #2A2A2A;
     display: inline-block;
     margin: 0 0.5rem;
@@ -52,7 +53,7 @@ letter-spacing: 0.27px;
     justify-content: space-around;
     align-items: center;
     width: 90%;
-    height: 90%;
+    height: 95%;
     flex-direction: column;
 }
 .imgContainer{
@@ -60,11 +61,11 @@ letter-spacing: 0.27px;
     justify-content: space-between;
     align-items: center;
     width: 93%;
-    height: 50%;
+    height: 48%;
 }
 .box{
     display: flex;
-    width: 450px;
+    width: 410px;
     flex-direction: column;
     align-items: center;
     display: flex;
@@ -73,7 +74,7 @@ letter-spacing: 0.27px;
     transition: all 350ms;
 }
 .box:hover{
-    width: 460px;
+    width: 420px;
     transform: scale(1.0);
 }
 .box img{

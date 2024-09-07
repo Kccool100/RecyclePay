@@ -1,12 +1,11 @@
+
 import "./Header.css"
 import Hamburger from "hamburger-react";
 import { useState} from "react"
-// import UserDrop from "../UserDrop/UserDrop";
 import { NavLink, Link } from 'react-router-dom';
 import Logo from "../../assets/recycleLogo.png"
 const Header = () => {
   const [hamburgerIsOpen, setHamburgerIsOpen] = useState(false);
-  // const [userDrop, setUserDrop] = useState(false)
 
   return (
       <div className="headContainer">
@@ -24,7 +23,7 @@ const Header = () => {
               Home
             </NavLink>
 
-            <NavLink to='/about' className='link' style={{textDecoration:"none"}}>
+            <NavLink to='/About' className='link' style={{textDecoration:"none"}}>
               About Us
             </NavLink>
 

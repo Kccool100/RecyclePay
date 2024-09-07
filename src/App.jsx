@@ -1,3 +1,4 @@
+
 import "./App.css"
 import Header from "./components/Header/Header"
 import AboutUs from "./pages/AboutUs/AboutUs"
@@ -15,7 +16,7 @@ function App() {
        <Header />
        <Routes>
           <Route path='/Home' element = {<Home/>}/>
-          <Route path='/About' element = {<AboutUs/>}/>
+          <Route path='About' element = {<AboutUs/>}/>
           <Route path='/Contact' element = {<ContactUs/>}/>
           <Route path='/Login' element = {<Login/>}/>
           <Route path='/SignUp' element = {<SignUp/>}/>

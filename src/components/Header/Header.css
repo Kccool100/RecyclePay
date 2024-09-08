@@ -133,13 +133,17 @@
      
       margin-top: 415px;
       min-width: 40%;
-      background-color: #ffff;
+      background-color: #F5F5F5;
       padding:  1rem;
     }
     .hamburger{
       display: block;
       color: black;
       font-size: 25px;
+    }
+    .headContainer button{
+      background-color: #F5F5F5;
+
     }
   
 }

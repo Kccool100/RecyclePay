@@ -31,7 +31,7 @@ const Header = () => {
               Contact Us
             </NavLink>
             </div>
-            <Link to="SignUp" className='LogLink' style={{textDecoration:"none"}}>
+            <Link to="/SignUp" className='LogLink' style={{textDecoration:"none"}}>
                <button >Waste Pickup</button>
             </Link>
              

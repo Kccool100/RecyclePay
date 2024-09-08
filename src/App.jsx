@@ -8,6 +8,7 @@ import { HashRouter, Routes, Route } from 'react-router-dom'
 import Login from "./pages/Login/Login";
 import SignUp from "./pages/SignUp/SignUp";
 import ContactUs from "./pages/ContactUs/ContactUs";
+import ForgetPassword from "./pages/ForgetPassword/ForgetPassword";
 
 function App() {
 
@@ -16,10 +17,11 @@ function App() {
        <Header />
        <Routes>
           <Route path='/Home' element = {<Home/>}/>
-          <Route path='About' element = {<AboutUs/>}/>
+          <Route path='/About' element = {<AboutUs/>}/>
           <Route path='/Contact' element = {<ContactUs/>}/>
           <Route path='/Login' element = {<Login/>}/>
           <Route path='/SignUp' element = {<SignUp/>}/>
+          <Route path='/ForgetPassword' element = {<ForgetPassword/>}/>
        </Routes>
     </HashRouter>
  

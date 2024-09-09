@@ -68,13 +68,54 @@
         color: black;
         margin-bottom: 100px;
     }
+
+    @media (max-width:768px) {
+        h1{
+            font-size: 22px;
+        }
+        h2{
+            font-size: 18px;
+            text-align: center;
+
+        }
+    }
+    @media (max-width:425px) {
+        h1{
+            font-size: 22px;
+        }
+        h2{
+            font-size: 18px;
+            text-align: center;
+
+        }
+    }
+    @media (max-width:375px) {
+        h1{
+            font-size: 22px;
+        }
+        h2{
+            font-size: 18px;
+            text-align: center;
+
+        }
+    }
+    @media (max-width:320px) {
+        h1{
+            font-size: 22px;
+        }
+        h2{
+            font-size: 18px;
+            text-align: center;
+        }
+    }
 }
 
 
 .svg{
     display: flex;
-width: 260px;
-padding: 48px 50px 52px 50px;
+width: 200px;
+height: 200px;
+/* padding: 48px 50px 52px 50px; */
 margin-top: 100px;
 justify-content: center;
 align-items: center;
@@ -83,4 +124,32 @@ animation:fadeInLeft;
 margin: 0 0.5rem;
 animation-duration: 800ms;
 background: #3CCC30;
+
+
+@media (max-width:768px) {
+    svg{
+        height: 100px;
+        width: 100px;
+       }
 }
+@media (max-width:425px) {
+    svg{
+        height: 100px;
+        width: 100px;
+       }
+}
+@media (max-width:375px) {
+    svg{
+        height: 100px;
+        width: 100px;
+        padding: 0;
+       }
+}
+@media (max-width:320px) {
+   svg{
+    height: 100px;
+    width: 100px;
+   }
+}
+}
+

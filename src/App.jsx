@@ -10,10 +10,12 @@ import SignUp from "./pages/SignUp/SignUp";
 import Detailsconfirm from "./components/Details/Detailsconfirm"
 import ContactUs from "./pages/ContactUs/ContactUs";
 import ForgetPassword from "./pages/ForgetPassword/ForgetPassword";
-import Pick from "./pages/Pick/Pick";
+import Pick from "./pages/Pick/Pickup";
 import SignupConfirmation from "./components/SignUpConfirmation/SignupConfirmation";
-import Resetpassword from "./components/ResetPassword/Resetpassword";
+import Rpassword from "./components/Rpassword/Rpassword";
 import Pickupconfirmed from "./components/PickupConfirmation/Pickupconfirmed";
+import ResetPassword from "./components/ResetNewPassword/ResetPassword";
+import Pickup from "./pages/Pick/Pickup";
 
 function App() {
 
@@ -27,12 +29,13 @@ function App() {
           <Route path='/Login' element = {<Login/>}/>
           <Route path='/SignUp' element = {<SignUp/>}/>
           <Route path='/forgetpassword' element = {<ForgetPassword/>}/>
-          <Route path='/Pick' element = {<Pick/>}/>
+          <Route path='/Pick' element = {<Pickup/>}/>
           <Route path='/SignupConfirmation' element = {<SignupConfirmation/>}/>
-          <Route path='/Resetpassword' element = {<Resetpassword/>}/>
+          <Route path='/Rpassword' element = {<Rpassword/>}/>
           <Route path='/Detailsconfirm' element = {<Detailsconfirm/>}/>
           <Route path='/Pickupconfirmed' element = {<Pickupconfirmed/>}/>
-       </Routes>
+          <Route path='/ResetPassword' element = {<ResetPassword/>}/>
+          </Routes>
     </HashRouter>
  
   )

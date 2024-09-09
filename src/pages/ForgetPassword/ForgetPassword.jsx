@@ -14,7 +14,7 @@ const ForgetPassword = () => {
                 <input type="email" placeholder='Enter Email' />
             </div>
             
-            <Link to="/Resetpassword" style={{textDecoration:"none"}}>
+            <Link to="/ResetPassword" style={{textDecoration:"none"}}>
                <button>Continue</button>
             </Link>
             

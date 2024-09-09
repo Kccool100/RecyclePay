@@ -1,31 +1,39 @@
+import Form from 'react-bootstrap/Form';
 import "./Login.css"
-import { Link } from "react-router-dom";
+import { useNavigate } from 'react-router-dom';
+
+
 function Login() {
+   const navigate = useNavigate()
+
   return (
-    <div className='LoginCon'>
-        <div className="LoginForm">
-            <h3>Sign In with RecyclePay</h3>
-            <div className="Logininput">
-                <label>Email</label>
-                <input type="email" />
-            </div>
-            <div className="Logininput">
-                <label>Password</label>
-                <input type="password" />
-            </div>
-            <Link to="/Pick" style={{textDecoration:"none"}}>
-               <button>Sign In</button>
-            </Link>
-            <div className="log">
-              <Link to="/ForgetPassword" style={{textDecoration:"none"}}>
-                 <p>Forget Password?</p>
-              </Link>
-            </div>
-        </div>
-   
-    </div>
-   
-  );
+    <div className='loginbox'>
+      <div className='loginblur'>
+           <div className='login'>
+           <div className='loginhead'>
+              <div className='logintext'> 
+                <h3> Sign In With RecyclePay</h3>
+              </div>
+                  </div>
+                  <div className='logininput'>
+                    <div className='inputholder'>
+                      <div className='inputtext'> <p> Email</p></div>
+                      <input type="text" />
+                    </div>
+                    <div className='inputholder'>
+                      <div className='inputtext'> <p> Password</p></div>
+                      <input type="text" />
+                    </div>
+                  </div>
+                  <div className='buttlogin'>
+                  <button onClick={()=> navigate("/Pick")}> Sign In</button>
+                  <p onClick={()=> navigate("/forgetpassword")}> Forget Password?</p>
+                  </div>
+
+           </div>
+      </div>
+       </div>
+  )
 }
 
 export default Login;

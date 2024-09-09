@@ -1,6 +1,6 @@
-.LoginCon{
+.loginbox{
     height: 100vh;
-    width: 100%;
+    width: 100vw;
     display: flex;
     flex-direction: column;
     justify-content:center ;
@@ -10,134 +10,227 @@
     background-repeat: no-repeat;
     opacity: 0.5s;
     background-size: cover;
-    
 }
-.LoginForm{
-    background: #E0DEDE;
-    width: 60%;
-    height: 60%;
+
+.loginblur{
+    height: 100%;
+    width:100%;
+    background-color: rgba(0, 0, 0, 0.123);
     display: flex;
-    border-radius: 15px;
-    margin-top: 100px;
+    align-items: center;
+    justify-content: center;
+    color: #2A2A2A;
+}
+
+.login{
+    height: 489px;
+
+    width: 690px;
+    /* background-color:#E0DEDE; */
+    background: #E0DEDE;
+    border-radius: 20px;
+    @media (max-width:320px) {
+        width: 83%;
+    }
+
+    @media (max-width:375px) {
+        width: 80%;
+    }
+    @media (max-width:425px) {
+        width: 80%;
+    }
+
+
+}
+
+.loginhead{
+    margin-top: 30px;
+    height: 20%;
+    width:100%;
+    /* background-color: yellow; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+
+    h5{
+        color: #3333335E;
+    }
+    h3{
+        color: var(--Black-text, #2A2A2A);
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-size: 40px;
+        font-style: normal;
+        font-weight: 700;
+        margin-bottom: 50px;
+        line-height: 19.2px; /* 48% */
+        letter-spacing: -0.3px;
+        text-transform: capitalize;
+        }
+
+    @media (max-width:768px) {
+        h3{
+            font-weight: 700;
+            font-size: 20px;
+        }
+    }
+
+    /* @media (max-width:320px) {
+        h3{
+            font-weight: bold;
+            font-size: 32px;
+        }
+    } */
+     @media (max-width:375px) {
+        h3{
+            font-weight: 400;
+            font-size: 100px;
+        }
+    }
+    @media (max-width:425px) {
+        h3{
+            font-weight: 600;
+            font-size: 19px;
+        }
+    }
+
+}
+
+.logininput{
+    height: 33%;
+    width: 100%;
+    /* background-color: rgb(246, 187, 187); */
+    display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    gap: 1.5rem;
-}
-.LoginForm h3{
-color: var(--Black-text, #2A2A2A);
-font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-font-size: 40px;
-font-style: normal;
-font-weight: 700;
-margin-bottom: 50px;
-line-height: 19.2px; /* 48% */
-letter-spacing: -0.3px;
-text-transform: capitalize;
-}
-.Logininput{
-    display: flex;
-width: 800px;
-height: 50px;
-justify-content: space-between;
-align-items: center;
-gap: 58px;
 
 }
-.Logininput label{
-    color: var(--Black-text, #2A2A2A);
 
-/* Subheading 2 */
-font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-font-size: 20px;
-font-style: normal;
-font-weight: 700;
-line-height: 31px; /* 129.167% */
-letter-spacing: -0.3px;
-text-transform: capitalize;
-}
-.Logininput input{
+.inputholder{
+    height: 40%;
+    width: 80% ;
+    /* background-color: rgb(75, 121, 6); */
     display: flex;
-width: 600px;
-font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-font-size: 20px;
-font-style: normal;
-font-weight: 600;
-outline-color: #FF7043;
-padding: 10px;
-height: 100%;
-flex-direction: column;
-align-items: flex-start;
-gap: 10px;
-flex-shrink: 0;
-background: #E0DEDE;
-border-radius: 5px;
-border: 1px solid #A4A4A4;
-}
-
-.LoginForm button{
-    display: flex;
-width: 200px;
-height: 60px;
-padding: 10px;
-justify-content: center;
-align-items: center;
-color: #FF7043;
-gap: 10px;
-font-size: 20px;
-font-style: normal;
-font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-font-weight: 700;
-line-height: 19.2px; /* 96% */
-letter-spacing: -0.3px;
-text-transform: capitalize;
-flex-shrink: 0;
-background: #E0DEDE;
-border-radius: 10px;
-transition: all 350ms;
-border: 1px solid #FF7043;
-}
-.LoginForm button:hover{
-    background: #FF7043;
-    color: #fff;
-    border: none;
-    transform: scale(1.0);
-}
-.log{
-    width: 350px;
-    height: 40px;
-    display: flex;
-    padding-top: 20px;
-    justify-content: center;
     align-items: center;
-    gap: 1rem;
-}
-.log p{
-    color: rgba(42, 42, 42, 0.50);
-font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-font-size: 18px;
-font-style: normal;
-font-weight: 600;
-line-height: normal;
+    justify-content: space-around; 
+
+    p{
+        font-size: 15px;
+        font-weight: bold;
+        margin-top: 10px;
+    }
+
+    .inputtext{
+        height: 100%;
+        width: 10%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        @media (max-width:768px) {
+            p{
+                font-size: 12px;
+                
+            }
+        }
+
+        @media (max-width:425px) {
+            p{
+                font-size: 10px;
+                
+            }
+        }
+        @media (max-width:375px) {
+            p{
+                font-size: 10px;
+                
+            }
+        }
+        @media (max-width:320px) {
+            p{
+                font-size: 10px;
+             
+            }
+        }
+    }
+
+    input{
+        width: 80%;
+        height: 60%;
+        background-color: transparent;
+        border: 2px solid rgba(128, 128, 128, 0.297);
+        border-radius: 6px;
+        text-indent: 20px;
+    }
 }
 
-@media screen and (width <= 850px) {
-    .LoginForm{
-        width: 90%;
-    }
-    .LoginForm h3{
-        font-size: 30px;
-    }
-    .Logininput{
-        width: 90%;
-    }
-    .Logininput input{
-        width: 73%;
-    }
-    .Logininput label{
-        width: 27%;
-    }
-   
+.buttlogin{
+    height: 35%;
+    width:100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    /* background-color: rebeccapurple; */
 
 
+    button{
+        height: 30%;
+        width: 20%;
+        background-color: transparent;
+        border-radius: 10px;
+        border: 1px solid #FF7043;
+        color: #FF7043;
+        font-size: 20px;
+        font-weight: bold;
+        font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+
+        p{
+            color:#2A2A2A82;
+            font-size: 17px;
+            margin-top: 24px;
+            font-weight: 600;
+        }
+
+        p:hover{
+            color: black;
+            cursor: pointer;
+            text-decoration: underline;
+        }
+
+        @media (max-width:768px) {
+            button{
+                height: 25%;width: 30%;
+            }
+        }
+        @media (max-width:425px) {
+            button{
+                height: 30%;
+                width: 50%;
+                font-size: 12px;
+            }
+        }
+        @media (max-width:375px) {
+            button{
+                height: 25%;width: 30%;
+                font-size: 12px;
+            }
+        }
+        @media (max-width:320px) {
+            button{
+                height: 30%;width: 40%;
+                font-size: 12px;
+            }
+        }
+     
+
+    
 }
+
+button:hover{
+    background-color: #FF7043;
+    color: white;
+    transition: ease-in-out;
+} 

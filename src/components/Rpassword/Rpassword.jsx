@@ -1,8 +1,8 @@
 import React from 'react'
-import './Resetpassword.css'
+import './Rpassword.css'
 import { useNavigate } from 'react-router-dom'
 import group from '../../assets/Group.png'
-const Resetpassword = () => {
+const Rpassword = () => {
     const navigate = useNavigate()
   return (
     <div className='reset-container'>
@@ -29,4 +29,4 @@ const Resetpassword = () => {
   )
 }
 
-export default Resetpassword
+export default Rpassword

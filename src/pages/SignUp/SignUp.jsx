@@ -34,7 +34,7 @@ function SignUp() {
                 <p>I accept Terms and Conditions</p>
             </div>
             <button>Sign Up</button>
-            <div className="log">
+            <div className="logg">
                 <p>if you already have an account </p>
                 <Link to='/Login'><p>Sign in</p></Link>
             </div>

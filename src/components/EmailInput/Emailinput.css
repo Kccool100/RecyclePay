@@ -1,0 +1,108 @@
+.email-container{
+    height: 100vh;
+    width: 100%;
+    background-color: white;
+}
+
+.email-box{
+    height: 100%;
+    width:100%;
+    background-color: rgba(0, 0, 0, 0.123);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.emailmain{
+    height: 80%;
+    width: 50%;
+    /* background-color: yellow; */
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+
+
+    
+    input{
+        width: 80%;
+        height: 10%;
+        background-color: transparent;
+        border: 2px solid rgba(128, 128, 128, 0.297);
+        border-radius: 6px;
+        text-indent: 20px;
+        font-size: 20px;
+        font-weight: bold;
+        color: black;
+    }
+
+    button{
+        height: 10%;
+        width: 30%;
+        background-color: transparent;
+        border-radius: 10px;
+        border: 1px solid #FF7043;
+        color: #FF7043;
+        font-size: 20px;
+        font-weight: bold;
+        font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+        @media (max-width:425px) {
+            button{
+                height: 10%;
+                width: 50%;
+                font-size: 12px;
+            }
+        }
+        @media (max-width:375px) {
+            button{
+                height: 10%;width: 50%;
+                font-size: 12px;
+            }
+        }
+        @media (max-width:320px) {
+            button{
+                height: 10%;width: 60%;
+                font-size: 12px;
+            }
+
+            input{
+                height: 10%;
+                width: 90%;
+                font-size: 20px;
+                font-weight: 300px;
+            }
+        }
+
+          
+    @media (max-width:320px) {
+        width: 83%;
+    }
+
+    @media (max-width:375px) {
+        width: 80%;
+    }
+    @media (max-width:425px) {
+        width: 80%;
+    }
+}
+
+button:hover{
+    background-color: #FF7043;
+    color: white;
+    transition: ease-in-out;
+} 
+
+.imagebox{
+    height: 50%;
+    width: 60%;
+    background-color: rgb(224,222,222);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+    img{
+        height: 80%;
+    }
+}

@@ -55,7 +55,7 @@ line-height: 10px;
 @media screen and (width <= 850px) {
     .TeamImgContainer{
         width: 100%;
-        margin-top: 250px;
+        padding-top: 300px;
         height: auto;
     }
     .ImgContainer{

@@ -1,6 +1,6 @@
 .RecyclablesContainer {
     width: 100%;
-    height: 130vh;
+    height: 135vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -14,7 +14,6 @@
     justify-content: center;
     flex-direction: column;
     gap: 3rem;
-
     align-items: center;
 }
 .subhead{
@@ -52,8 +51,9 @@ letter-spacing: 0.27px;
     display: flex;
     justify-content: space-around;
     align-items: center;
+    gap: 1rem;
     width: 90%;
-    height: 95%;
+    height: 97%;
     flex-direction: column;
 }
 .imgContainer{
@@ -61,11 +61,12 @@ letter-spacing: 0.27px;
     justify-content: space-between;
     align-items: center;
     width: 93%;
-    height: 48%;
+    margin-bottom: 20px;
+    height: 50%;
 }
 .box{
     display: flex;
-    width: 410px;
+    width: 470px;
     flex-direction: column;
     align-items: center;
     display: flex;
@@ -74,7 +75,7 @@ letter-spacing: 0.27px;
     transition: all 350ms;
 }
 .box:hover{
-    width: 420px;
+    width: 480px;
     transform: scale(1.0);
 }
 .box img{

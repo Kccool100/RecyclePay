@@ -5,17 +5,19 @@ function Login() {
     <div className='LoginCon'>
         <div className="LoginForm">
             <h3>Sign In with RecyclePay</h3>
-            <div className="input">
+            <div className="Logininput">
                 <label>Email</label>
                 <input type="email" />
             </div>
-            <div className="input">
+            <div className="Logininput">
                 <label>Password</label>
                 <input type="password" />
             </div>
-            <button>Sign In</button>
+            <Link to="/Pick" style={{textDecoration:"none"}}>
+               <button>Sign In</button>
+            </Link>
             <div className="log">
-              <Link to="/ForgetPassword">
+              <Link to="/ForgetPassword" style={{textDecoration:"none"}}>
                  <p>Forget Password?</p>
               </Link>
             </div>

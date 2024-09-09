@@ -1,10 +1,11 @@
 import React from 'react'
 import FP from "../../assets/forget.png"
 import "./ForgetPassword.css"
+import { Link } from 'react-router-dom'
 const ForgetPassword = () => {
   return (
-    <div className='LoginContainer'>
-        <div className="LoginForm">
+    <div className='ForgetContainer'>
+        <div className="ForgetForm">
             <h2>Oops Forget password?</h2>
             <div className="illus">
                <img src={FP} alt="FP" />
@@ -13,7 +14,9 @@ const ForgetPassword = () => {
                 <input type="email" placeholder='Enter Email' />
             </div>
             
-            <button>Continue</button>
+            <Link to="/Resetpassword" style={{textDecoration:"none"}}>
+               <button>Continue</button>
+            </Link>
             
         </div>
 

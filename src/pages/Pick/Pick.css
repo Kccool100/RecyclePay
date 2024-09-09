@@ -1,30 +1,25 @@
-.LoginCon{
+
+.PickContainer{
     height: 100vh;
     width: 100%;
     display: flex;
-    flex-direction: column;
-    justify-content:center ;
+    justify-content: center;
     align-items: center;
-    background: url("../../assets/bgg.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    opacity: 0.5s;
-    background-size: cover;
-    
+    background-color: #a8a8a8;
 }
-.LoginForm{
+.PickForm{
     background: #E0DEDE;
     width: 60%;
-    height: 60%;
+    height: 80%;
     display: flex;
     border-radius: 15px;
     margin-top: 100px;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    gap: 1.5rem;
+    gap: 2rem;
 }
-.LoginForm h3{
+.PickForm h3{
 color: var(--Black-text, #2A2A2A);
 font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 font-size: 40px;
@@ -35,7 +30,7 @@ line-height: 19.2px; /* 48% */
 letter-spacing: -0.3px;
 text-transform: capitalize;
 }
-.Logininput{
+.Pickinput{
     display: flex;
 width: 800px;
 height: 50px;
@@ -44,7 +39,7 @@ align-items: center;
 gap: 58px;
 
 }
-.Logininput label{
+.Pickinput label{
     color: var(--Black-text, #2A2A2A);
 
 /* Subheading 2 */
@@ -56,7 +51,25 @@ line-height: 31px; /* 129.167% */
 letter-spacing: -0.3px;
 text-transform: capitalize;
 }
-.Logininput input{
+.Pickinput input{
+    display: flex;
+width: 600px;
+font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+font-size: 20px;
+font-style: normal;
+font-weight: 600;
+outline-color: #FF7043;
+padding: 10px;
+height: 100%;
+flex-direction: column;
+align-items: flex-start;
+gap: 10px;
+flex-shrink: 0;
+background: #E0DEDE;
+border-radius: 5px;
+border: 1px solid #A4A4A4;
+}
+.Pickinput select{
     display: flex;
 width: 600px;
 font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
@@ -75,7 +88,7 @@ border-radius: 5px;
 border: 1px solid #A4A4A4;
 }
 
-.LoginForm button{
+.PickForm button{
     display: flex;
 width: 200px;
 height: 60px;
@@ -97,47 +110,32 @@ border-radius: 10px;
 transition: all 350ms;
 border: 1px solid #FF7043;
 }
-.LoginForm button:hover{
+.PickForm button:hover{
     background: #FF7043;
     color: #fff;
     border: none;
     transform: scale(1.0);
 }
-.log{
-    width: 350px;
-    height: 40px;
-    display: flex;
-    padding-top: 20px;
-    justify-content: center;
-    align-items: center;
-    gap: 1rem;
-}
-.log p{
-    color: rgba(42, 42, 42, 0.50);
-font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-font-size: 18px;
-font-style: normal;
-font-weight: 600;
-line-height: normal;
-}
 
 @media screen and (width <= 850px) {
-    .LoginForm{
-        width: 90%;
+    .PickForm{
+        width: 80%;
     }
-    .LoginForm h3{
+    .PickForm h3{
         font-size: 30px;
     }
-    .Logininput{
+    .Pickinput{
         width: 90%;
     }
-    .Logininput input{
+    .Pickinput input{
         width: 73%;
     }
-    .Logininput label{
+    .Pickinput label{
         width: 27%;
     }
-   
+    .Pickinput select{
+        width: 73%;
 
+    }
 
 }

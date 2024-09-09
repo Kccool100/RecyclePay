@@ -15,14 +15,14 @@
 .SignUpForm{
     background: #E0DEDE;
     width: 60%;
-    height: 75%;
+    height: 90%;
     display: flex;
     border-radius: 15px;
     justify-content: center;
     align-items: center;
-    margin-top: 150px;
+    /* margin-top: 150px; */
     flex-direction: column;
-    gap: 1rem;
+    gap: 1.5rem;
 }
 .SignUpForm h3{
 color: var(--Black-text, #2A2A2A);
@@ -35,7 +35,7 @@ line-height: 19.2px; /* 48% */
 letter-spacing: -0.3px;
 text-transform: capitalize;
 }
-.input{
+.SignUpinput{
     display: flex;
 width: 800px;
 height: 50px;
@@ -44,7 +44,7 @@ align-items: center;
 gap: 58px;
 
 }
-.input label{
+.SignUpinput label{
     color: var(--Black-text, #2A2A2A);
 
 /* Subheading 2 */
@@ -56,7 +56,7 @@ line-height: 31px; /* 129.167% */
 letter-spacing: -0.3px;
 text-transform: capitalize;
 }
-.input input{
+.SignUpinput input{
     display: flex;
 width: 600px;
 font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
@@ -74,7 +74,7 @@ background: #E0DEDE;
 border-radius: 5px;
 border: 1px solid #A4A4A4;
 }
-.input select{
+.SignUpinput select{
     display: flex;
 width: 600px;
 font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
@@ -92,10 +92,7 @@ background: #E0DEDE;
 border-radius: 5px;
 border: 1px solid #A4A4A4;
 }
-.input option{
-    width: 40%;
 
-}
 .SignUpForm button{
     display: flex;
 width: 200px;
@@ -209,13 +206,13 @@ line-height: normal;
     .SignUpForm h3{
         font-size: 30px;
     }
-    .input{
+    .SignUpinput{
         width: 90%;
     }
-    .input input{
+    .SignUpinput input{
         width: 73%;
     }
-    .input label{
+    .SignUpinput label{
         width: 27%;
     }
     .radio{

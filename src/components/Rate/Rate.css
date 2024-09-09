@@ -7,12 +7,12 @@
     align-items: center;
 }
 .subHead{
-    width: 50%;
+    width: 45%;
     height: 150px;
     display: flex;
     justify-content:space-between;
     align-items: center;
-    margin-right: 550px;
+    margin-right: 650px;
 }
 .goldimg{
     width: 246px;
@@ -59,6 +59,14 @@
     line-height: 145.1%;
     letter-spacing: 0.3px;
 }
+.kgg{
+    color: var(--Black-text, #2A2A2A);
+font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+font-size: 24px;
+font-style: normal;
+font-weight: 700;
+line-height: 145.1%; 
+}
 @media screen and (width <= 850px) {
     .RateContainer{
         width: 100%;
@@ -68,7 +76,7 @@
         width: 50%;
         flex-direction: column;
         margin-bottom: 100px;
-        margin-left: 550px;
+        margin-left: 650px;
     }
     .rateText p{
         font-size: 19px;

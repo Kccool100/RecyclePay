@@ -156,32 +156,33 @@ button:hover{
         border-radius: 6px;
         text-indent: 20px;
     }
-}
-
-label{
-    width: 70%;
-    height: 80%;
-    font-weight: bold;
-    color:mrgba(128, 128, 128, 0.297) ;
-    font-size: 18px;
-    background-color: transparent;
-    border: 2px solid rgba(128, 128, 128, 0.297);
-    border-radius: 6px;
-    text-indent: 20px;
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-
-
-    select{
-        height: 100%;
-        outline: none;
-        width: 100%;
+    label{
+        width: 70%;
+        height: 80%;
+        font-weight: bold;
+        color:rgba(128, 128, 128, 0.297) ;
+        font-size: 18px;
         background-color: transparent;
-        border: none;
-        cursor: pointer;
+        border: 2px solid rgba(128, 128, 128, 0.297);
+        border-radius: 6px;
+        text-indent: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+    
+    
+        select{
+            height: 100%;
+            outline: none;
+            width: 100%;
+            background-color: transparent;
+            border: none;
+            cursor: pointer;
+        }
     }
 }
+
+
 
 .pickuptext{
     height: 100%;

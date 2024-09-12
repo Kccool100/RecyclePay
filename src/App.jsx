@@ -1,6 +1,5 @@
 
 import "./App.css"
-import Header from "./components/Header/Header"
 import AboutUs from "./pages/AboutUs/AboutUs"
 import Home from "./pages/Home/Home"
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -10,7 +9,6 @@ import SignUp from "./pages/SignUp/SignUp";
 import Detailsconfirm from "./components/Details/Detailsconfirm"
 import ContactUs from "./pages/ContactUs/ContactUs";
 import ForgetPassword from "./pages/ForgetPassword/ForgetPassword";
-import Pick from "./pages/Pick/Pickup";
 import SignupConfirmation from "./components/SignUpConfirmation/SignupConfirmation";
 import Rpassword from "./components/Rpassword/Rpassword";
 import Pickupconfirmed from "./components/PickupConfirmation/Pickupconfirmed";

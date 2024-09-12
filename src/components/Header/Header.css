@@ -188,7 +188,7 @@
     transition: all 350ms;
     transform: scale(1.0);
     margin-top: 450px;
-    min-width: 35%;
+    min-width: 40%;
     background-color: #F5F5F5;
     padding:  1rem;
   }
@@ -247,7 +247,7 @@
     transition: all 350ms;
     transform: scale(1.0);
     margin-top: 330px;
-    min-width: 50%;
+    min-width: 45%;
     background-color: #F5F5F5;
     /* padding:  1rem; */
   }
@@ -258,11 +258,12 @@
   }
   .headContainer button{
     background-color: #F5F5F5;
-    height: 50px;
-    width: 150px;
+    height: 45px;
+    width: 140px;
+    font-size: 17px;
   }
 }
-@media (max-width:375px) {
+@media (max-width:376px) {
   .logoContainer{
     width: 150px;
   }
@@ -273,17 +274,23 @@
   .rightNav.open{
     display: flex;
     flex-direction: column;
-    width: 90px;
+    /* width: 100px; */
     justify-content: center;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
     align-items: flex-start;
     height: 200px;
     transition: all 350ms;
     transform: scale(1.0);
-    margin-top: 330px;
-    min-width: 40%;
+    margin-top: 300px;
+    min-width: 50%;
     background-color: #F5F5F5;
     /* padding:  1rem; */
+  }
+  .headContainer button{
+    background-color: #F5F5F5;
+    height: 45px;
+    width: 130px;
+    font-size: 15px;
   }
 }
 @media (max-width:320px) {
@@ -294,5 +301,26 @@
     height: 100px;
     
   }
+  .headContainer button{
+    background-color: #F5F5F5;
+    height: 45px;
+    width: 130px;
+    font-size: 15px;
+  }
+  .rightNav.open{
+    min-width: 55%;
+  }
+  .link{
+    font-size: 12px;
+  }
+  .headContainer button{
+    font-size: 13px;
+    height: 40px;
+    width: 120px;
+    
+  }
+
+
+
 
 }

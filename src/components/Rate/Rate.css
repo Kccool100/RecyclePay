@@ -21,6 +21,11 @@
     justify-content:center;
     align-items: center;
 }
+.goldimg img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
 .rateHead{
      height: 100px;
      width: 200px;
@@ -67,7 +72,8 @@ font-style: normal;
 font-weight: 700;
 line-height: 145.1%; 
 }
-@media screen and (width <= 850px) {
+@media (max-width:1024px) {
+
     .RateContainer{
         width: 100%;
         height: auto;
@@ -84,17 +90,64 @@ line-height: 145.1%;
 
 }
 @media (max-width:768px) {
-    
+    .RateContainer{
+        width: 100%;
+        height: auto;
+    }
+    .subHead{
+        width: 50%;
+        flex-direction: column;
+        margin-bottom: 100px;
+        margin-left: 650px;
+    }
+    .rateText p{
+        font-size: 18px;
+    }
+    .kgg{
+        font-size: 20px;
+    }
 }
 
 
 @media (max-width:426px) {
-
+    .RateContainer{
+        width: 100%;
+        height: auto;
+    }
+    .subHead{
+        width: 50%;
+        flex-direction: column;
+        margin-bottom: 100px;
+        margin-left: 650px;
+    }
+    .rateHead h3{
+        font-size: 25px;
+        line-height: 80px;
+    }
+    .goldimg img{
+        width: 90%;
+        margin-top: 50px;
+    }
+    .rateText p{
+        font-size: 14px;
+    }
+    .kgg{
+        font-size: 15px;
+    }
 }
-@media (max-width:375px) {
-
+@media (max-width:376px) {
+    .rateHead h3{
+        font-size: 20px;
+        line-height: 80px;
+    }
+    .kgg{
+        font-size: 13px;
+    }
+    .rateText p{
+        font-size: 13px;
+    }
 }
 @media (max-width:320px) {
 
-
+   
 }

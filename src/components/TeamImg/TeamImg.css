@@ -1,6 +1,6 @@
 .TeamImgContainer{
     width: 100%;
-    height: 50vh;
+    height: 60vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -52,39 +52,91 @@ line-height: 10px;
 }
  
 
-@media screen and (width <= 850px) {
+@media (max-width:1024px) {
+
     .TeamImgContainer{
         width: 100%;
-        padding-top: 300px;
+        padding-top: 150px;
         height: auto;
     }
     .ImgContainer{
-        width: 90%;
-        flex-direction: column;
+        width: 82%;
+        
         height: auto;
         gap: 1.5rem;
     }
     .ImgCon{
         width: 50%;
         gap: 20px;
-
-
+    }
+    .names p{
+        font-size: 15px;
+        font-weight: 700;
+        line-height: 10px;
     }
   
     
 }
 @media (max-width:768px) {
-    
+    .ImgContainer{
+        width: 82%;
+        flex-direction: column;
+        height: auto;
+        gap: 1.5rem;
+        margin-top: 50px;
+    }
+    .ImgCon{
+        width: 50%;
+        gap: 20px;
+    }
+    .names p{
+        font-size: 15px;
+        font-weight: 700;
+        line-height: 10px;
+    }
+  
 }
 
 
 @media (max-width:426px) {
-
+    .ImgContainer{
+        width: 82%;
+        flex-direction: column;
+        height: auto;
+        gap: 1.5rem;
+        margin-top: 80px;
+    }
+    .ImgCon{
+        width: 50%;
+        gap: 20px;
+    }
+    .names p{
+        font-size: 15px;
+        font-weight: 700;
+        line-height: 5px;
+    }
+    
 }
-@media (max-width:375px) {
+@media (max-width:376px) {
+    .ImgContainer{
+      margin-top: 100px;
+    }
+    .names p{
+        font-size: 15px;
+        font-weight: 700;
+        line-height: 5px;
+    }
+    
 
 }
 @media (max-width:320px) {
 
-
+    .ImgContainer {
+        margin-top: 150px;
+    }
+    .names p{
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 5px;
+    }
 }

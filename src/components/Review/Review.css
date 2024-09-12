@@ -88,10 +88,11 @@ transition: all 350ms;
     transform: scale(1.0);
 }
 
-@media screen and (width <= 850px) {
+@media (max-width:1024px) {
     .ReviewContainer{
         height: auto;
         width: 100%;
+        margin-top: 70px;
     }
     .ReviewCon-box{
         width: 85%;
@@ -113,14 +114,38 @@ transition: all 350ms;
 
 }
 @media (max-width:768px) {
+.ReviewCon-box button{
+    height: 75px;
+}
     
 }
 
 
 @media (max-width:426px) {
-
+    .ReviewCon-box button{
+        height: 55px;
+        font-size: 17px;
+    }
 }
-@media (max-width:375px) {
+@media (max-width:376px) {
+.ReviewCon-box{
+    gap: 2rem;
+}
+
+    .ReviewCon-box button{
+        height: 50px;
+        font-size: 15px;
+    }
+.ReviewCon-box h3{
+    font-size: 20px;
+}
+.message{
+    font-size: 16px;
+}
+.ReviewCon-box input{
+    height: 100px;
+}
+
 
 }
 @media (max-width:320px) {

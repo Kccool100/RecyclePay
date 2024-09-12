@@ -1,10 +1,10 @@
 .MapContainer{
-    height: 80%;
+    height: 70%;
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-top: 70px;
+    padding-top: 50px;
 
 }
 .MapContainer-holder{
@@ -19,31 +19,60 @@
 .MapContainer-holder img{
     border-radius: 15px;
     height: 80%;
-    width: 90%;
+    width: 100%;
     object-fit: contain;
 }
 
-@media screen and (width <= 850px) {
+@media (max-width:1024px) {
+    .MapContainer{
+        height: auto;
+        width: 100%;
+        padding-top: 50px;
+    }
+    .MapContainer-holder{
+        width: 90%;
+    }
+}
+@media (max-width:768px) {
+    .MapContainer{
+        height: auto;
+        width: 100%;
+        padding-top: 20px;
+    }
+    .MapContainer-holder{
+        width: 90%;
+    }
+}
+
+
+@media (max-width:426px) {
+    .MapContainer{
+        height: auto;
+        width: 100%;
+        padding-top: 10px;
+        
+    }
+    .MapContainer-holder{
+        width: 90%;
+    }
+}
+@media (max-width:375px) {
+    .MapContainer{
+        height: auto;
+        width: 100%;
+
+    }
+    .MapContainer-holder{
+        width: 90%;
+    }
+}
+@media (max-width:320px) {
     .MapContainer{
         height: auto;
         width: 100%;
     }
     .MapContainer-holder{
-        width: 100%;
+        width: 90%;
     }
-}
-@media (max-width:768px) {
-    
-}
-
-
-@media (max-width:426px) {
-
-}
-@media (max-width:375px) {
-
-}
-@media (max-width:320px) {
-
 
 }

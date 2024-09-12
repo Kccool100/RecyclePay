@@ -51,22 +51,11 @@ letter-spacing: -0.3px;
 text-decoration-line: underline;
 text-transform: capitalize;
 }
-.con1 li{
-    color: var(--Black-text, #2A2A2A);
-font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-font-size: 24px;
-font-style: normal;
-font-weight: 600;
-line-height: 31px;
-text-align: center;
-letter-spacing: -0.3px;
-text-decoration-line: underline;
-text-transform: capitalize;
-}
+
 .con2{
     display: flex;
 width: 300px;
-padding: 22px 0px 24px 0px;
+/* padding: 22px 0px 24px 0px; */
 flex-direction: column;
 align-items: center;
 gap: -15px;
@@ -81,6 +70,7 @@ box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 text-align: center;
 font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 font-size: 27px;
+margin-top: 18px;
 font-style: normal;
 font-weight: 700;
 line-height: 31px; /* 129.167% */
@@ -149,44 +139,203 @@ text-transform: capitalize;
 }
 
 
-@media screen and (width <= 850px) {
+@media (max-width:1024px) {
+
     .EmailContainer{
         width: 100%;
         height: auto;
         flex-direction: column;
     }
     .con-holder{
-        width: 85%;
+        width: 90%;
         height: auto;
         justify-content: center;
         gap: 2rem;
         align-items: center;
-        flex-direction: column;
     }
     .con1{
-        width: 90%;
-        margin-left: 35px;
+        height: 190px;
     }
+    .con1 p{
+        font-size: 23px;
+    }
+    .con1 span{
+        font-size: 20px;
+    }
+
     .con2{
-        width: 70%;
-        margin-top: 50px;
+        height: 150px;
+        margin-top: 30px;
+    }
+    .con2 p{
+        font-size: 22px;
+    }
+    .con2 span{
+        font-size: 15px;
+        line-height: 18px;
+        
     }
     .con3{
-        width: 90%;
-        margin-left: 35px;
+        height: 190px;
     }
+    .con3 p{
+        font-size: 23px;
+    }
+    .con3 span{
+        font-size: 18px;
+        line-height: 20px;
+    }
+    .con3 li{
+        font-size: 17px;
+        line-height: 20px;
+
+    }
+
 
 }
 @media (max-width:768px) {
-    
+    .EmailContainer{
+        width: 100%;
+        height: auto;
+        flex-direction: column;
+    }
+    .con-holder{
+        width: 90%;
+        height: auto;
+        justify-content: center;
+        gap: 1rem;
+        flex-direction: column;
+        align-items: center;
+    }
+    .con1{
+        width: 80%;
+        margin-left: 80px;
+
+    }
+    .con2{
+
+    }
+    .con3{
+        width: 80%;
+        margin-left: 80px;
+
+    }
 }
 
 
 @media (max-width:426px) {
+    .EmailContainer{
+        width: 100%;
+        height: auto;
+        flex-direction: column;
+    }
+    .con-holder{
+        width: 90%;
+        height: auto;
+        justify-content: center;
+        gap: 1rem;
+        flex-direction: column;
+        align-items: center;
+    }
+    .con1{
+        width: 80%;
+        margin-left: 50px;
+        height: 170px;
 
+    }
+    .con1 p{
+        font-size: 23px;
+    }
+    .con1 span{
+        font-size: 20px;
+    }
+    .con2{
+        width: 50%;
+        height: 140px;
+
+    }
+    .con2 p{
+        font-size: 22px;
+    }
+    .con2 span{
+        font-size: 13px;
+        line-height: 15px;
+        
+    }
+    .con3{
+        width: 80%;
+        margin-left: 50px;
+        height: 170px;
+    }
+    .con3 p{
+        font-size: 23px;
+    }
+    .con3 span{
+        font-size: 15px;
+        line-height: 20px;
+    }
+    .con3 li{
+        font-size: 15px;
+        line-height: 20px;
+
+    }
 }
-@media (max-width:375px) {
+@media (max-width:376px) {
+    .EmailContainer{
+        width: 100%;
+        height: auto;
+        flex-direction: column;
+    }
+    .con-holder{
+        width: 90%;
+        height: auto;
+        justify-content: center;
+        gap: 1rem;
+        flex-direction: column;
+        align-items: center;
+    }
+    .con1{
+        width: 90%;
+        margin-left: 20px;
+        height: 170px;
 
+    }
+    .con1 p{
+        font-size: 23px;
+    }
+    .con1 span{
+        font-size: 20px;
+    }
+    .con2{
+        width: 65%;
+        height: 140px;
+
+    }
+    .con2 p{
+        font-size: 22px;
+    }
+    .con2 span{
+        font-size: 13px;
+        line-height: 15px;
+        
+    }
+    .con3{
+        width: 90%;
+        margin-left: 20px;
+        height: 170px;
+    }
+    .con3 p{
+        font-size: 23px;
+    }
+    .con3 span{
+        font-size: 15px;
+        line-height: 20px;
+    }
+    .con3 li{
+        font-size: 15px;
+        line-height: 20px;
+
+    }
 }
 @media (max-width:320px) {
 

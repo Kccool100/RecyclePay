@@ -7,10 +7,10 @@
     align-items: center;
 
 }
-@media screen and (width <= 850px) {
+@media (max-width:1024px) {
     .ContactHeroContainer{
       height: auto;
-      padding-top: 50px;
+      margin-top: 150px;
     }
   }
   @media (max-width:768px) {
@@ -19,6 +19,10 @@
   
   
   @media (max-width:426px) {
+    .ContactHeroContainer{
+      height: auto;
+      margin-top: 110px;
+    }
   
   }
   @media (max-width:375px) {

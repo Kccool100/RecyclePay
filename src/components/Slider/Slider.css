@@ -30,7 +30,7 @@
 }
 
 
-@media screen and (width <= 850px) {
+@media (max-width: 1024px) {
   .CarouselContainer{
     width: 100%;
     height: auto;
@@ -38,24 +38,40 @@
 
   }
   .slideHead h3{
-    font-size: 25px;
+    font-size: 30px;
   }
   
 
 }
 
 @media (max-width:768px) {
-    
+  .slideHead h3{
+    font-size: 28px;
+    line-height: 24px;
+  }
 }
 
 
 @media (max-width:426px) {
-
+  .slideHead h3{
+    font-size: 22px;
+    line-height: 24px;
+  }
 }
-@media (max-width:375px) {
-
+@media (max-width:376px) {
+  .slideHead h3{
+    font-size: 20px;
+    line-height: 24px;
+  }
 }
 @media (max-width:320px) {
-
-
+  .CarouselContainer{
+    min-height: 30vh;
+  }
+ 
+  
+  .slideHead h3{
+    font-size: 19px;
+    line-height: 24px;
+  }
 }

@@ -18,7 +18,8 @@
     text-transform: capitalize;
 }
 
-@media screen and (width <= 850px) {
+@media (max-width:1024px) {
+
     .StoryContainer{
         width: 100%;
         height: auto;
@@ -38,10 +39,14 @@
 
 
 @media (max-width:426px) {
-
+    .StoryContainer h3{
+        font-size: 25px;
+    }
 }
-@media (max-width:375px) {
-
+@media (max-width:376px) {
+    .StoryContainer h3{
+        font-size: 20px;
+    }
 }
 @media (max-width:320px) {
 

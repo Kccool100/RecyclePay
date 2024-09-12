@@ -74,13 +74,14 @@
     object-fit: cover;
 }
 
-@media screen and (width <= 850px) {
+@media (max-width:1024px) {
+
 .MakeContainer{
     width: 100%;
     height: auto;
 }
 .MakeContainer h3{
-    font-size: 25px;
+    font-size: 35px;
 }
 
 .MakeContainer-holder{
@@ -98,15 +99,94 @@
 
 }
 .txts p{
-    width: 90%;
-    font-size: 20px;
+    width: 82%;
+    font-size: 23px;
 
 }
 .picture1{
-    width: 90%;
+    width: 82%;
+    height: 60%;
 
 }
 .picture1 img{
     width: 100%;
 }
+}
+@media (max-width:768px) {
+    .MakeContainer h3{
+        font-size: 27px;
+      }
+      .txts{
+        height: 50%;
+      }
+      .txts p{
+        font-size: 19px;
+      }
+      .picture1{
+        width: 82%;
+        height: 55%;
+    
+    }
+      .picture1 img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+
+
+@media (max-width:426px) {
+    .MakeContainer h3{
+        font-size: 22px;
+      }
+      .txts p{
+        font-size: 14px;
+      }
+      .picture1{
+        width: 82%;
+        height: 50%;
+    
+    }
+      .picture1 img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+@media (max-width:376px) {
+    .MakeContainer h3{
+        font-size: 20px;
+      }
+      .txts p{
+        font-size: 14px;
+      }
+      .picture1{
+        width: 82%;
+        height: 40%;
+    
+    }
+      .picture1 img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+@media (max-width:320px) {
+  .MakeContainer h3{
+    font-size: 20px;
+  }
+  .txts p{
+    font-size: 13px;
+  }
+  .picture1{
+    width: 82%;
+    height: 40%;
+
+}
+.picture1 img{
+    width: 100%;
+}
+ 
+ 
+
 }

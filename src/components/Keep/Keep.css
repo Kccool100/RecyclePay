@@ -72,21 +72,22 @@
     width: 100%;
     object-fit: cover;
 }
-@media screen and (width <= 850px) {
+@media (max-width:1024px) {
+
     .KeepContainer{
         width: 100%;
         height: auto;
-        margin-top: 100px;
     }
     .KeepContainer h3{
-        font-size: 25px;
+        font-size: 35px;
     }
-
+    
     .KeepContainer-holder{
         flex-direction: column;
         height: auto;
         align-items: center;
         justify-content: center;
+        gap: 1rem;
         width: 100%;
     }
     .texts{
@@ -96,14 +97,101 @@
     
     }
     .texts p{
-        width: 90%;
-        font-size: 20px;
+        width: 82%;
+        font-size: 23px;
+    
     }
     .picture2{
-        width: 90%;
+        width: 82%;
+        height: 60%;
     
     }
     .picture2 img{
         width: 100%;
     }
-}
+    }
+    @media (max-width:768px) {
+        .KeepContainer h3{
+            font-size: 27px;
+          }
+          .texts{
+            height: 50%;
+          }
+          .texts p{
+            font-size: 19px;
+          }
+          .picture2{
+            width: 82%;
+            height: 55%;
+        
+        }
+          .picture2 img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+    
+    
+    @media (max-width:426px) {
+        .KeepContainer h3{
+            font-size: 20px;
+            width: 82%;
+            line-height: 25px;
+          }
+          .texts{
+            height: 60%;
+          }
+          .texts p{
+            font-size: 14px;
+          }
+          .picture2{
+            width: 82%;
+            height: 50%;
+        
+        }
+          .picture2 img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+    @media (max-width:376px) {
+        .KeepContainer h3{
+            font-size: 20px;
+          }
+       
+          .texts p{
+            font-size: 14px;
+          }
+          .picture2{
+            width: 82%;
+            height: 40%;
+        
+        }
+          .picture2 img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+    @media (max-width:320px) {
+      .KeepContainer h3{
+        font-size: 20px;
+      }
+      
+      .texts p{
+        font-size: 13px;
+      }
+      .picture2{
+        width: 82%;
+        height: 40%;
+    
+    }
+    .picture2 img{
+        width: 100%;
+    }
+     
+     
+    
+    }

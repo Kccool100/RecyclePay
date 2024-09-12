@@ -11,9 +11,7 @@ function Login() {
       <div className='loginblur'>
            <div className='login'>
            <div className='loginhead'>
-              <div className='logintext'> 
                 <h3> Sign In With RecyclePay</h3>
-              </div>
                   </div>
                   <div className='logininput'>
                     <div className='inputholder'>

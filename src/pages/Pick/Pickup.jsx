@@ -55,7 +55,7 @@ const Pickup = () => {
             </div>
           </div>
         
-          <button onClick={()=> navigate("/Pickupconfirmed")}> Next </button>
+          <button onClick={()=> navigate("/Detailsconfirm")}> Next </button>
         </div>
            </div>
       

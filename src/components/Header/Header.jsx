@@ -19,7 +19,7 @@ const Header = () => {
       <div className={`rightNav ${hamburgerIsOpen ? 'open' : ''}`} >
 
         <div className='NavLink' >
-            <NavLink to='/Home' className='link' style={{textDecoration:"none", }}  >
+            <NavLink to='/' className='link' style={{textDecoration:"none", }}  >
               Home
             </NavLink>
 

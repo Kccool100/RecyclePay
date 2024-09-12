@@ -63,22 +63,24 @@
     width: 100%;
     object-fit: cover;
 }
-@media screen and (width <= 850px) {
+@media (max-width:1024px) {
+
     .WhatContainer{
         width: 100%;
         height: auto;
-        margin-top: 100px;
     }
     .WhatContainer h3{
-        font-size: 25px;
+        font-size: 35px;
+        margin-left: 50px;
 
     }
-
+    
     .WhatContainer-holder{
         flex-direction: column;
         height: auto;
         align-items: center;
         justify-content: center;
+        gap: 1rem;
         width: 100%;
     }
     .texts{
@@ -88,15 +90,106 @@
     
     }
     .texts p{
-        width: 85%;
-        font-size: 20px;
+        width: 82%;
+        font-size: 23px;
     
     }
     .picture4{
-        width: 90%;
+        width: 82%;
+        height: 60%;
     
     }
     .picture4 img{
         width: 100%;
     }
+    }
+    @media (max-width:768px) {
+        .WhatContainer h3{
+            font-size: 27px;
+            margin-left: 80px;
+
+          }
+          .texts{
+            height: 50%;
+          }
+          .texts p{
+            font-size: 19px;
+          }
+          .picture4{
+            width: 82%;
+            height: 55%;
+        
+        }
+          .picture4 img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+    
+    
+    @media (max-width:426px) {
+        .WhatContainer h3{
+            font-size: 20px;
+            width: 82%;
+            margin-left: 150px;
+
+          }
+          .texts{
+            height: 60%;
+          }
+          .texts p{
+            font-size: 14px;
+          }
+          .picture4{
+            width: 82%;
+            height: 50%;
+        
+        }
+          .picture4 img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+    @media (max-width:376px) {
+        .WhatContainer h3{
+            font-size: 20px;
+            margin-left: 150px;
+
+          }
+       
+          .texts p{
+            font-size: 14px;
+          }
+          .picture4{
+            width: 82%;
+            height: 40%;
+        
+        }
+          .picture4 img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+    @media (max-width:320px) {
+      .WhatContainer h3{
+        font-size: 20px;
+      }
+      
+      .texts p{
+        font-size: 13px;
+      }
+      .picture4{
+        width: 82%;
+        height: 40%;
+    
+    }
+    .picture4 img{
+        width: 100%;
+    }
+     
+     
+    
     }

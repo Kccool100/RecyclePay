@@ -21,9 +21,32 @@
     object-fit: cover;
 
   }
-  @media screen and (width <= 850px) {
+  @media (max-width:1024px) {
+
     .heroContainer{
       height: auto;
       padding-top: 50px;
     }
+  }
+
+  @media (max-width:768px) {
+    
+  }
+  
+  
+  @media (max-width:426px) {
+    .heroContainer{
+      height: 100%;
+    }
+.carousel{
+  object-fit: cover;
+}
+
+  }
+  @media (max-width:375px) {
+  
+  }
+  @media (max-width:320px) {
+ 
+  
   }

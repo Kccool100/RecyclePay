@@ -39,7 +39,9 @@ const Footer = () => {
                         <div className="emailCon">
                             <label>Send us a mail </label>
                             <input type="email" placeholder="Email Address" />
-                            <button>Send</button>
+                            <div className="emailbutn">
+                            Send
+                            </div>
 
                         </div>
 

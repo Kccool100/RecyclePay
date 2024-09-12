@@ -16,12 +16,12 @@ import Rpassword from "./components/Rpassword/Rpassword";
 import Pickupconfirmed from "./components/PickupConfirmation/Pickupconfirmed";
 import ResetPassword from "./components/ResetNewPassword/ResetPassword";
 import Pickup from "./pages/Pick/Pickup";
+import Terms from "./components/Terms/Terms";
 
 function App() {
 
   return (
     <HashRouter>
-       {/* <Header /> */}
        <Routes>
        <Route path='/' element = {<Home/>}/>
           <Route path='/About' element = {<AboutUs/>}/>
@@ -35,6 +35,9 @@ function App() {
           <Route path='/Detailsconfirm' element = {<Detailsconfirm/>}/>
           <Route path='/Pickupconfirmed' element = {<Pickupconfirmed/>}/>
           <Route path='/ResetPassword' element = {<ResetPassword/>}/>
+          <Route path='/Terms' element = {<Terms/>}/>
+
+
           </Routes>
     </HashRouter>
  

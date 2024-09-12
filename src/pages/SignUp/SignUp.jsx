@@ -31,12 +31,17 @@ function SignUp() {
               <input type="radio"  />
               <span class="radio-indicator"></span>
             </label>
-                <p>I accept Terms and Conditions</p>
+            <Link to="/Terms" style={{textDecoration:"none"}}>
+              <p>I accept Terms and Conditions</p>
+            </Link>
             </div>
-            <button>Sign Up</button>
+            <Link to='/Login'  style={{textDecoration:"none"}}>
+               <button>Sign Up</button>
+            </Link>
+
             <div className="logg">
                 <p>if you already have an account </p>
-                <Link to='/Login'><p>Sign in</p></Link>
+                <Link to='/Login'  style={{textDecoration:"none"}}><p>Sign in</p></Link>
             </div>
         </div>
 

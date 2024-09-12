@@ -1,12 +1,10 @@
-
 .headContainer{
     width: 100%;
     height: 150px;
     display: flex;
     position: fixed;
-    justify-content: space-between;
-    padding: 20px;
-    padding-inline: 100px;
+    justify-content: space-around;
+    /* padding: 30px; */
     top: 0;
     left: 0;
     align-items: center;
@@ -18,7 +16,7 @@
 .logoContainer{
   display: flex;
   width: 340px;
-  height: 86px;
+  height: 90px;
   justify-content: center;
   align-items: center;
   flex-shrink: 0;
@@ -62,7 +60,7 @@
 .headContainer button{
   display: flex;
   width: 200px;
-  height: 60px;
+  height: 70px;
   padding: 10px;
   justify-content: center;
   font-weight: 500;
@@ -87,7 +85,7 @@
     display: none;
   }
   .rightNav{
-    width: 50%;
+    width: 40%;
     height: 100%;
     display: flex;
     justify-content: space-between;
@@ -98,7 +96,10 @@
 
 
 
-  @media screen and (width <= 850px) {
+@media (max-width:1024px) {
+    .logoContainer{
+      width: 300px;
+    }
     .rightNav {
       display: none;
       position: absolute;
@@ -117,6 +118,7 @@
       flex-direction: column;
       justify-content:center ;
       gap: 1rem;
+      font-size: 18px;
       align-items: flex-start;
   
     }
@@ -127,12 +129,12 @@
       justify-content: center;
       box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
       align-items: flex-start;
-      height: 350px;
+      height: 280px;
       transition: all 350ms;
       transform: scale(1.0);
      
-      margin-top: 490px;
-      min-width: 40%;
+      margin-top: 430px;
+      min-width: 30%;
       background-color: #F5F5F5;
       padding:  1rem;
     }
@@ -143,7 +145,154 @@
     }
     .headContainer button{
       background-color: #F5F5F5;
+      height: 50px;
+      width: 150px;
 
     }
   
+}
+
+@media (max-width:768px) {
+  .logoContainer{
+    width: 250px;
+  }
+  .rightNav {
+    display: none;
+    position: absolute;
+    right: 0;
+    width: 50%;
+  }
+  .NavLink{
+    display: flex;
+      flex-direction: column;
+      height: 600px;
+      align-items: flex-start;
+  }
+  
+  .link{
+    display: flex;
+    flex-direction: column;
+    justify-content:center ;
+    gap: 1rem;
+    align-items: flex-start;
+
+  }
+  .rightNav.open{
+    display: flex;
+    flex-direction: column;
+    width: 150px;
+    justify-content: center;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    align-items: flex-start;
+    height: 300px;
+    transition: all 350ms;
+    transform: scale(1.0);
+    margin-top: 450px;
+    min-width: 35%;
+    background-color: #F5F5F5;
+    padding:  1rem;
+  }
+  .hamburger{
+    display: block;
+    color: black;
+    font-size: 20px;
+  }
+  .headContainer button{
+    background-color: #F5F5F5;
+
+  }
+}
+
+
+@media (max-width:426px) {
+  .logoContainer{
+    width: 180px;
+  }
+  .headContainer{
+    height: 100px;
+    
+  }
+ 
+  .rightNav {
+    display: none;
+    position: absolute;
+    right: 0;
+    width: 50%;
+  }
+  .NavLink{
+    display: flex;
+      flex-direction: column;
+      height: 600px;
+      align-items: flex-start;
+  }
+  
+  .link{
+    display: flex;
+    flex-direction: column;
+    justify-content:center ;
+    gap: 1rem;
+    font-size: 14px;
+
+    align-items: flex-start;
+
+  }
+  .rightNav.open{
+    display: flex;
+    flex-direction: column;
+    width: 100px;
+    justify-content: center;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    align-items: flex-start;
+    height: 230px;
+    transition: all 350ms;
+    transform: scale(1.0);
+    margin-top: 330px;
+    min-width: 50%;
+    background-color: #F5F5F5;
+    /* padding:  1rem; */
+  }
+  .hamburger{
+    display: block;
+    color: black;
+    font-size: 15px;
+  }
+  .headContainer button{
+    background-color: #F5F5F5;
+    height: 50px;
+    width: 150px;
+  }
+}
+@media (max-width:375px) {
+  .logoContainer{
+    width: 150px;
+  }
+  .headContainer{
+    height: 100px;
+    
+  }
+  .rightNav.open{
+    display: flex;
+    flex-direction: column;
+    width: 90px;
+    justify-content: center;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    align-items: flex-start;
+    height: 200px;
+    transition: all 350ms;
+    transform: scale(1.0);
+    margin-top: 330px;
+    min-width: 40%;
+    background-color: #F5F5F5;
+    /* padding:  1rem; */
+  }
+}
+@media (max-width:320px) {
+  .logoContainer{
+    width: 140px;
+  }
+  .headContainer{
+    height: 100px;
+    
+  }
+
 }

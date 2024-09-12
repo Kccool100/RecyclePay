@@ -72,22 +72,24 @@
     width: 100%;
     object-fit: cover;
 }
-@media screen and (width <= 850px) {
+@media (max-width:1024px) {
+
     .BestContainer{
         width: 100%;
         height: auto;
-        margin-top: 100px;
     }
     .BestContainer h3{
-        font-size: 25px;
+        font-size: 35px;
+        margin-left: 50px;
 
     }
-
+    
     .BestContainer-holder{
         flex-direction: column;
         height: auto;
         align-items: center;
         justify-content: center;
+        gap: 1rem;
         width: 100%;
     }
     .text{
@@ -97,12 +99,100 @@
     
     }
     .text p{
-        width: 90%;
-        font-size: 20px;
+        width: 82%;
+        font-size: 23px;
     
     }
     .picture5{
-        width: 90%;
+        width: 82%;
+        height: 60%;
+    
+    }
+    .picture5 img{
+        width: 100%;
+    }
+    }
+    @media (max-width:768px) {
+        .BestContainer h3{
+            font-size: 27px;
+            margin-left: 80px;
+
+          }
+          .text{
+            height: 50%;
+          }
+          .text p{
+            font-size: 19px;
+          }
+          .picture5{
+            width: 82%;
+            height: 55%;
+        
+        }
+          .picture5 img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+    
+    
+    @media (max-width:426px) {
+        .BestContainer h3{
+            font-size: 20px;
+            width: 82%;
+            margin-left: 150px;
+
+          }
+          .text{
+            height: 60%;
+          }
+          .text p{
+            font-size: 14px;
+          }
+          .picture5{
+            width: 82%;
+            height: 50%;
+        
+        }
+          .picture5 img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+    @media (max-width:376px) {
+        .BestContainer h3{
+            font-size: 20px;
+            margin-left: 10px;
+
+          }
+       
+          .text p{
+            font-size: 14px;
+          }
+          .picture5{
+            width: 82%;
+            height: 40%;
+        
+        }
+          .picture5 img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+    @media (max-width:320px) {
+      .BestContainer h3{
+        font-size: 20px;
+      }
+      
+      .text p{
+        font-size: 13px;
+      }
+      .picture5{
+        width: 82%;
+        height: 40%;
     
     }
     .picture5 img{

@@ -23,9 +23,9 @@
 }
 
 .login{
-    height: 489px;
+    height: 70%;
 
-    width: 690px;
+    width: 50%;
     /* background-color:#E0DEDE; */
     background: #E0DEDE;
     border-radius: 20px;
@@ -49,7 +49,7 @@
     width:100%;
     /* background-color: yellow; */
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     flex-direction: column;
 
@@ -62,7 +62,6 @@
         font-size: 40px;
         font-style: normal;
         font-weight: 700;
-        margin-bottom: 50px;
         line-height: 19.2px; /* 48% */
         letter-spacing: -0.3px;
         text-transform: capitalize;

@@ -15,6 +15,14 @@ import Pickupconfirmed from "./components/PickupConfirmation/Pickupconfirmed";
 import ResetPassword from "./components/ResetNewPassword/ResetPassword";
 import Pickup from "./pages/Pick/Pickup";
 import Terms from "./components/Terms/Terms";
+import Admindashboard from "./pages/Admindashboard/Admindashboard";
+import Adminmain from "./components/Adminmain/Adminmain";
+import Adminsidebar from "./components/Adminsidebar/Adminsidebar";
+import Userdashboard from "./pages/Userdashboard/Userdashboard";
+import Usermain from "./components/Usermain/Usermain";
+import Usersidebar from "./components/Usersidebar/Usersidebar";
+
+
 
 function App() {
 
@@ -34,6 +42,12 @@ function App() {
           <Route path='/Pickupconfirmed' element = {<Pickupconfirmed/>}/>
           <Route path='/ResetPassword' element = {<ResetPassword/>}/>
           <Route path='/Terms' element = {<Terms/>}/>
+          <Route path='/Admindashboard' element = {<Admindashboard/>}/>
+          <Route path='/Adminmain' element = {<Adminmain/>}/>
+          <Route path='/Adminsidebar' element = {<Adminsidebar/>}/>
+          <Route path='/Userdashboard' element = {<Userdashboard/>}/>
+          <Route path='/Usermain' element = {<Usermain/>}/>
+            <Route path='/Usersidebar' element = {<Usersidebar/>}/>
 
 
           </Routes>

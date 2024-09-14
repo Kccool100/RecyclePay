@@ -35,7 +35,7 @@ const Pickup = () => {
             </div>
             <div className='inpick'> 
                 <div className='pickuptext'>
-                    <h3> P.Number</h3>
+                    <h3> Phone Number</h3>
                 </div>
                 <input type="text" name="" id="" />
             </div>

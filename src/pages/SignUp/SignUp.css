@@ -231,7 +231,9 @@ line-height: normal;
     
     .SignUpForm{
         width: 90%;
-    }
+
+
+     }
     .SignUpForm h3{
         font-size: 17px;
         margin-top: 20px;
@@ -275,7 +277,7 @@ line-height: normal;
 }
 
 }
-@media (max-width:425px) {
+@media (max-width:426px) {
     .SignUpForm{
         width: 90%;
     }

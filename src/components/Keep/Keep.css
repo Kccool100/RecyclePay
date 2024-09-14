@@ -36,6 +36,7 @@
     height: 70%;
     display: flex;
     animation:fadeInRight;
+    
     margin: 0 0.5rem;
     animation-duration: 1.5s;
     justify-content:center;
@@ -80,6 +81,7 @@
     }
     .KeepContainer h3{
         font-size: 35px;
+        line-height: 30px;
     }
     
     .KeepContainer-holder{
@@ -92,6 +94,7 @@
     }
     .texts{
         width: 100%;
+        margin-top: 20px;
         justify-content: center;
         align-items: center;
     
@@ -103,6 +106,7 @@
     }
     .picture2{
         width: 82%;
+        order: 1;
         height: 60%;
     
     }

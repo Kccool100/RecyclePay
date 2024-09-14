@@ -81,7 +81,6 @@ line-height: 145.1%;
     .subHead{
         width: 50%;
         flex-direction: column;
-        margin-bottom: 100px;
         margin-left: 650px;
     }
     .rateText p{

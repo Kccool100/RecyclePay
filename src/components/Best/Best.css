@@ -80,7 +80,7 @@
     }
     .BestContainer h3{
         font-size: 35px;
-        margin-left: 50px;
+        margin-right: 100px;
 
     }
     
@@ -96,6 +96,7 @@
         width: 100%;
         justify-content: center;
         align-items: center;
+
     
     }
     .text p{
@@ -106,6 +107,7 @@
     .picture5{
         width: 82%;
         height: 60%;
+        order: 1;
     
     }
     .picture5 img{
@@ -119,13 +121,14 @@
 
           }
           .text{
-            height: 50%;
+        height: 50%;
           }
           .text p{
             font-size: 19px;
           }
           .picture5{
-            width: 82%;
+        order: 1;
+        width: 82%;
             height: 55%;
         
         }
@@ -145,13 +148,14 @@
 
           }
           .text{
-            height: 60%;
+        height: 60%;
           }
           .text p{
             font-size: 14px;
           }
           .picture5{
-            width: 82%;
+        order: 1;
+        width: 82%;
             height: 50%;
         
         }

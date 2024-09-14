@@ -14,7 +14,7 @@ function SignUp() {
                 <input type="email" />
             </div>
             <div className="SignUpinput">
-                <label>P.Number</label>
+                <label>Phone Number</label>
                 <input type="number" />
             </div>
             <div className="SignUpinput">

@@ -105,6 +105,7 @@
 }
 .picture1{
     width: 82%;
+    order: 1;
     height: 60%;
 
 }

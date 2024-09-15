@@ -14,7 +14,7 @@ const Pickupconfirmed = () => {
           <div className='confirmedbox'>
             <div className='confirmedheader'>
               <div className="iconn">
-                <FaAngleLeft onClick={()=> navigate("/Userdashboard")} />
+                <FaAngleLeft onClick={()=> navigate("/")} />
               </div>
                <div className="logoImg">
                <img src={logo} alt=""  />

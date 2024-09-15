@@ -1,9 +1,9 @@
 .OurContainer{
     width: 100%;
-    height: 90vh;
+    height: 75vh;
     display: flex;
     justify-content: center;
-    padding-top: 100px;
+    padding-top: 50px;
     flex-direction: column;
     align-items: center;
 }
@@ -24,7 +24,7 @@
     animation-duration: 2s;
 }
 .OurContainer-holder{
-    height: 90%;
+    height: 95%;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -36,7 +36,7 @@
 
 .text{
     width: 40%;
-    height: 85%;
+    height: 70%;
     display: flex;
     justify-content:center;
     align-items: flex-start;
@@ -67,13 +67,13 @@ line-height: 145.1%;
 }
 .picture3{
     width: 650px;
-    height: 500px;
+    height: 90%;
     flex-shrink: 0;
     animation:fadeInRight;
     margin: 0 0.5rem;
     animation-duration: 1s;
     border-radius: 10px;
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0.20) 0%, rgba(0, 0, 0, 0.20) 100%), url(<path-to-image>) lightgray 50% / cover no-repeat;
+    background: liner-gradient(0deg, rgba(0, 0, 0, 0.20) 0%, rgba(0, 0, 0, 0.20) 100%), url(<path-to-image>) lightgray 50% / cover no-repeat;
 }
 .picture3 img{
     height: 100%;

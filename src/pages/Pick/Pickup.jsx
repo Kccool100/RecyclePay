@@ -1,58 +1,65 @@
 import React from 'react'
 import './Pickup.css'
-import { useNavigate } from 'react-router-dom'
+import { Link } from "react-router-dom";
 
 const Pickup = () => {
 
-    const navigate = useNavigate()
   return (
-    <div className='pick-container'>
-        <div className='pick-box'>  
-        <div className='detailsbox'>
-            <div className='pickhead'> 
-                <div className='arrow'></div>
-            <h1> Pick Up Details</h1>
-            </div>
-          <div className='pickupinput'>
+           <div className="pick-container">
+            <div className="pickblur">
+            <form  className="SigUpForm">
+      <h2>Pick Up Details</h2>
+   
+      <label>
+        <input 
+          placeholder='Name'
+          type="text" 
+          required
+        />
+      </label>
+      <label>
+        <input 
+          placeholder='Email'
+          type='email'
+          required 
+        />
+        </label>
+        <label>
+        <input 
+          placeholder='Address'
+          type='text'
+          required 
+        />
+        </label>
+        <label>
+        <input 
+          placeholder='Phone Number'
+          type='number'
+          required 
+        />
+        </label>
+        <label>
+        <select placeholder='Waste Kg'>
+          <option value=""> 10Kg </option>
+          <option value=""> 20Kg </option>
+          <option value=""> 30Kg </option>
+          <option value=""> 40Kg </option>
+          <option value=""> 50Kg </option>
+          <option value=""> 60Kg </option>
+          <option value=""> 70Kg </option>
 
-            <div className='inpick'> 
-                <input type="text" placeholder='Name' name="" id="" />
+        </select> 
+        </label>
+   
+      <Link to='/Detailsconfirm'  style={{textDecoration:"none"}}>
+        <button type="submit">Next</button>
+      </Link>
+     
+    </form>
             </div>
-            <div className='inpick'> 
-                
-                <input type="text" placeholder='Address' name="" id="" />
-            </div>
-            <div className='inpick'> 
-               
-                <input type="text" placeholder=' Email' name="" id="" />
-            </div>
-            <div className='inpick'> 
-               
-                <input type="text" placeholder='Phone Number' name="" id="" />
-            </div>
-            <div className='inpick'> 
-               <label htmlFor="">
-               <select name="" id="" placeholder="Waste Kg">
-                    
-                    <option value=""> 10Kg </option>
-                    <option value=""> 20Kg </option>
-                    <option value=""> 30Kg </option>
-                    <option value=""> Other </option>
-                </select>
-               </label>
-            </div>
-          </div>
-        
-          <button onClick={()=> navigate("/Detailsconfirm")}> Next </button>
-        </div>
-           </div>
-      
+   
+  </div>
+);
+};
 
-
-
-
-    </div>
-  )
-}
-
-export default Pickup
+export default Pickup;

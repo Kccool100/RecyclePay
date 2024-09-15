@@ -1,9 +1,9 @@
 .BestContainer{
     width: 100%;
-    height: 100vh;
+    height: 80vh;
     display: flex;
     justify-content: center;
-    padding-top: 100px;
+    padding-top: 50px;
     flex-direction: column;
     align-items: center;
 }
@@ -25,7 +25,7 @@
     animation-duration: 2s;
 }
 .BestContainer-holder{
-    height: 90%;
+    height: 95%;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -58,7 +58,7 @@
 }
 .picture5{
     width: 650px;
-    height: 500px;
+    height: 90%;
     flex-shrink: 0;
     animation:fadeInRight;
     margin: 0 0.5rem;

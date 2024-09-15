@@ -1,6 +1,6 @@
 .FooterContainer{
     width: 100%;
-    height: 50vh;
+    height: 55vh;
     display: flex;
     flex-direction: column;
     align-items: center; 
@@ -10,30 +10,33 @@
 }
 .footerBox{
     width: 100%;
-    height: 700px;
+    height: 100%;
     display: flex;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
 }
 
 
 
 .list{
-    width: 85%;
-    height: 90%;
+    width: 100%;
+    height: 85%;
+    gap: 2rem;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
     
 }
 .list ul{
     display: flex;
-height: 90%;
-width: 30%;
-flex-direction: column;
-align-items: center;
-gap: 1rem;
-margin-top: 50px;
-align-self: flex-start;
+    height: 90%;
+    width: 25%;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    margin-top: 50px;
+     justify-content:flex-start;
 }
 .list > ul > p{
     font-size: 30px;
@@ -46,7 +49,7 @@ align-self: flex-start;
     text-align: left;
 }
 .list > ul > span{
-    font-size: 24px;
+    font-size: 20px;
     font-style: normal;
     text-align: left;
     font-weight: 600;
@@ -57,23 +60,15 @@ align-self: flex-start;
     color: #FFFFFF;
     
 }
-.list > ul > li{
-    font-size: 22px;
-    font-style: normal;
-    text-align: left;
-    font-weight: 600;
-    text-decoration: none;
-    line-height: 31px; /* 129.167% */
-    letter-spacing: -0.3px;
-    text-transform: capitalize;
-    color: #FFFFFF;
-    
-}
+
 
 
 .logoimg{
     width: 250px;
-    height: 150px;
+    height: 100px;
+    display: flex;
+    justify-content:center ;
+    align-items: center;
 }
 .logoimg > img{
     width: 100%;
@@ -81,19 +76,17 @@ align-self: flex-start;
     object-fit: contain;
 }
 
-.socials{
+.social{
     height: 90px;
-    width: 70%;
+    width: 100%;
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: center;
+    font-size: 40px;
+    gap: 1rem;
 
 }
-.socials img{
-    height: 60%;
-    width: 30%;
-    object-fit: contain;
-}
+
 
 .emailCon{
     height: 150px;
@@ -127,9 +120,10 @@ align-self: stretch;
 }
 
 .emailbutn{
-height: 50px;
+height: 40px;
 width: 100%;
 display: flex;
+border-radius: 5px;
 justify-content: center;
 gap: 10px;
 align-items: center;
@@ -144,6 +138,50 @@ border: none;
 background: #000;
 gap: 10px;
 }
+
+
+
+
+.list2{
+    height: 15%;
+    width: 100%;
+    display: flex;
+    border-top: 1px solid #ffff;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .foottext{
+    width: 30%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .foottext span{
+    font-size: 18px;
+    font-weight: 500;
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    line-height: 24px;
+    color:#ffff ;
+  }
+  .socials{
+    width: 16%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .icn{
+    height: 80px;
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    font-size: 35px;
+    color: #ffff;
+    align-items: center;
+  }
+ 
+  
 @media (max-width:1024px) {
 
 .FooterContainer{
@@ -154,11 +192,17 @@ gap: 10px;
 .footerBox{
     width: 100%;
     height: auto;
+    flex-direction: column;
 }
 .list{
     width: 90%;
     height: auto;
-    /* flex-direction: column; */
+    gap: 0;
+    flex-direction: column;
+}
+.list2{
+    width: 100%;
+    height: auto;
 }
 .list ul p{
     font-size: 25px;
@@ -167,16 +211,18 @@ gap: 10px;
 .list ul span{
     font-size: 20px;
 }
-.list ul li{
-    font-size: 15px;
+.list ul {
+    width: 80%;
 
+
+}
+.foottext span{
+    font-size: 15px;
 }
 .emailCon{
     width: 100%;
 }
-.socials img{
-   width: 25%;
-}
+
 .logoimg{
     width: 220px;
 }
@@ -199,12 +245,18 @@ gap: 10px;
         font-size: 13px;
     
     }
+    .foottext span{
+        font-size: 13px;
+    }
     .emailCon{
         width: 100%;
     }
-    
-    .socials img{
-       width: 25%;
+    .list2{
+        width: 100%;
+        height: auto;
+    }
+    .icn{
+        font-size: 17px;
     }
     .logoimg{
         width:190px;
@@ -238,19 +290,23 @@ gap: 10px;
     .list ul span{
         font-size: 18px;
     }
-    .list ul li{
-        font-size: 13px;
-    
+  
+    .list2{
+        width: 100%;
+        height: auto;
     }
     .emailCon{
         width: 100%;
     }
     
-    .socials img{
+    .social img{
        width: 25%;
     }
     .logoimg{
         width:190px;
+    }
+    .foottext span{
+        font-size: 13px;
     }
 }
 @media (max-width:375px) {
@@ -283,11 +339,15 @@ gap: 10px;
         font-size: 13px;
     
     }
+    .list2{
+        width: 100%;
+        height: auto;
+    }
     .emailCon{
         width: 100%;
     }
     
-    .socials img{
+    .social img{
        width: 25%;
     }
     .logoimg{
@@ -295,6 +355,54 @@ gap: 10px;
     }
 }
 @media (max-width:320px) {
+    .FooterContainer{
+        height: auto;
+        width: 100%;
+        padding-top: 50px;
+    }
+    .footerBox{
+        width: 100%;
+        height: auto;
+    }
+    .list{
+        width: 100%;
+        height: auto;
+        flex-direction: column;
+    }
+    .list ul{
+        width: 82%;
 
+    }
+    .list ul p{
+        font-size: 23px;
+    
+    }
+    .list ul span{
+        font-size: 18px;
+    }
+    .list ul li{
+        font-size: 13px;
+    
+    }
+    .list2{
+        width: 100%;
+        height: auto;
+    }
+    .foottext span{
+        font-size: 12px;
+    }
+    .emailCon{
+        width: 100%;
+    }
+    
+    .social img{
+       width: 25%;
+    }
+    .logoimg{
+        width:190px;
+    }
+    .foottext span{
+        font-size: 11px;
+    }
 
-}
+} 

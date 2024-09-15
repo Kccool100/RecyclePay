@@ -1,432 +1,160 @@
-.SignUpCon{
-    height: 100vh;
-    width: 100%;
+
+/* src/SignUpForm.css */
+.SignUpCon {
     display: flex;
-    flex-direction: column;
-    justify-content:center ;
+    justify-content: center;
     align-items: center;
+    height: 100vh;
     background: url("../../assets/bgg.jpg");
     background-position: center;
     background-repeat: no-repeat;
     opacity: 0.5s;
     background-size: cover;
-    
-}
-.SignUpForm{
-    background: #E0DEDE;
-    width: 50%;
-    height: 90%;
-    display: flex;
-    border-radius: 15px;
-    justify-content: center;
-    align-items: center;
-    /* margin-top: 150px; */
-    flex-direction: column;
-    gap: 1rem;
-}
-.SignUpForm h3{
-color: var(--Black-text, #2A2A2A);
-font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-font-size: 40px;
-font-style: normal;
-font-weight: 700;
-margin-bottom: 50px;
-line-height: 19.2px; /* 48% */
-letter-spacing: -0.3px;
-text-transform: capitalize;
-}
-.SignUpinput{
-    display: flex;
-width: 800px;
-height: 50px;
-justify-content: space-around;
-align-items: center;
-text-align: center;
-/* gap: 20px; */
-
-}
-
-.SignUpinput input{
-    display: flex;
-width: 100%;
-font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-font-size: 20px;
-font-style: normal;
-font-weight: 600;
-outline-color: #FF7043;
-padding: 10px;
-height: 100%;
-flex-direction: column;
-align-items: flex-start;
-gap: 10px;
-flex-shrink: 0;
-background: #E0DEDE;
-border-radius: 5px;
-border: 1px solid #A4A4A4;
-}
-.SignUpinput select{
-    display: flex;
-width: 600px;
-font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-font-size: 20px;
-font-style: normal;
-font-weight: 600;
-outline-color: #FF7043;
-padding: 10px;
-height: 100%;
-flex-direction: column;
-align-items: flex-start;
-gap: 10px;
-flex-shrink: 0;
-background: #E0DEDE;
-border-radius: 5px;
-border: 1px solid #A4A4A4;
-}
-
-.SignUpForm button{
-    display: flex;
-width: 200px;
-height: 60px;
-padding: 10px;
-justify-content: center;
-align-items: center;
-color: #FF7043;
-gap: 10px;
-font-size: 20px;
-font-style: normal;
-font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-font-weight: 700;
-line-height: 19.2px; /* 96% */
-letter-spacing: -0.3px;
-text-transform: capitalize;
-flex-shrink: 0;
-background: #E0DEDE;
-border-radius: 10px;
-transition: all 350ms;
-border: 1px solid #FF7043;
-}
-.SignUpForm button:hover{
-    background: #FF7043;
-    color: #fff;
-    border: none;
-    transform: scale(1.0);
-}
-.radio{
-    width: 350px;
-    height: 40px;
-    display: flex;
-    margin-right: 450px;
-    padding-top: 20px;
-    justify-content: center;
-    align-items: center;
-    gap: 1rem;
-}
-.custom-radio input[type="radio"] {
-    display: none;
   }
   
-  /* Style the custom radio button */
-  .custom-radio {
-    display: flex;
-    align-items: center;
-    cursor: pointer;
-    margin-bottom: 10px;
-    position: relative;
-    padding-left: 30px; /* Adjust for spacing */
-  }
-  
-  .custom-radio .radio-indicator {
-    position: absolute;
-    left: 0;
-    top: 50%;
-    width: 20px;
-    border: 2px solid #FF7043; /* Optional border */
-    height: 20px;
-    background: #E0DEDE;
-
-    border-radius: 10%;
-    transform: translateY(-50%);
-    transition: background-color 0.3s, border 0.3s;
-  }
-  .custom-radio input[type="radio"]:checked + .radio-indicator {
-    background-color:#FF7043 ; /* Change to your desired color */
-  }
-  
-  /* Optional: add a dot inside the indicator */
-  .custom-radio input[type="radio"]:checked + .radio-indicator::before {
-    content: '';
-    display: block;
-    width: 12px;
-    height: 12px;
+  .SigUpForm {
     background-color: white;
-    border-radius: 50%;
-    margin: 2px;
-  }
-.radio p{
-color: rgba(42, 42, 42, 0.50);
-font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-font-size: 18px;
-font-style: normal;
-font-weight: 600;
-line-height: normal;
-}
-
-.logg{
-    width: 450px;
-    height: 40px;
-    display: flex;
-    padding-top: 10px;
+    padding: 30px;
     justify-content: center;
     align-items: center;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 700px;
+    width: 100%;
+  }
+  
+  .SigUpForm h2 {
+    margin-bottom: 20px;
+    font-size: 1.8rem;
+    color: #FF7043;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-align: center;
+  }
+  
+  .SigUpForm label {
+    display: block;
+    margin-bottom: 30px;
+    border-bottom: 1px solid gray;
+  }
+  
+  .SigUpForm input {
+    width: 100%;
+    font-size: 20px;
+    font-weight: 600;
+    padding: 10px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    border:none;
+    border-radius: 4px;
+    outline-color: #FF7043;
+    font-size: 1rem;
+  }
+  
+  .SigUpForm button {
+    width: 100%;
+    padding: 20px;
+    background: #FF7043;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    transition: all 350ms;
+    font-size: 1rem;
+    cursor: pointer;
+  }
+  
+  .SigUpForm button:hover {
+    background-color: #ffff;
+    color: #FF7043;
+    border: 1px solid #FF7043;
+    transform: scale(1.0);
+  }
+  .radio{
+    width: 100%;
+    padding: 10px;
+    display: flex;
     gap: 1rem;
-}
-.logg p{
-    color: rgba(42, 42, 42, 0.50);
-font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-font-size: 18px;
-font-style: normal;
-font-weight: 600;
-line-height: normal;
-}
-@media (max-width:1024px) {
-    .SignUpForm{
-        width: 60%;
-        height: 65%;
-    }
-    .SignUpForm h3{
-        font-size: 30px;
-        margin-top: 20px;
-    }
-    .SignUpinput{
-        width: 85%;
-        height: 25px;
-    }
-    .SignUpinput input{
-        width: 70%;
-    }
-    .SignUpinput label{
-        width: 25%;
-        font-size: 15px;
-    }
-    .radio{
-        margin-left: 500px;
-    }
-    .radio p{
-        font-size: 15px;
-    }
-    .custom-radio .radio-indicator {
-    
+  }
+  .radio input{
     height: 15px;
     width: 15px;
   }
-  .logg{
-    width: 90%;
-    height: 30px;
-    gap: 10px;
-    padding: 0px;
-  }
-  .logg p{
-    font-size: 13px;
-  }
+  .radio p{
+    font-size: 1rem;
+    color: #1d1d1d;
 
-.SignUpForm button{
-    width: 140px;
-    height: 35px;
-    font-size: 15px;
-}
-}
-
-@media (max-width:768px) {
-    .SignUpForm{
-        width: 60%;
-        height: 50%;
-    }
-    .SignUpForm h3{
-        font-size: 25px;
-        /* margin-top: 20px; */
-    }
-    .SignUpinput{
-        width: 85%;
-        height: 25px;
-    }
-    .SignUpinput input{
-        width: 70%;
-    }
-    .SignUpinput label{
-        width: 25%;
-        font-size: 12px;
-        font-weight: 650;
-    }
-    .radio{
-        margin-right: 650px;
-    }
-    .radio p{
-        font-size: 12px;
-    }
-    .custom-radio .radio-indicator {
-    
-    height: 15px;
-    width: 15px;
   }
   .logg{
-    width: 90%;
-    height: 30px;
-    gap: 10px;
-    padding: 0px;
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    gap: 1rem;
   }
   .logg p{
-    font-size: 13px;
-  }
+    color: #1d1d1d;
 
-.SignUpForm button{
-    width: 120px;
-    height: 35px;
-    font-size: 15px;
-}
-}
-@media (max-width:425px) {
-    .SignUpForm{
-        width: 60%;
-        height: 70%;
-    }
-    .SignUpForm h3{
-        font-size: 20px;
-        /* margin-top: 20px; */
-    }
-    .SignUpinput{
-        width: 85%;
-        height: 25px;
-    }
-    .SignUpinput input{
-        width: 70%;
-    }
-    .SignUpinput label{
-        width: 25%;
-        font-size: 11px;
-        font-weight: 650;
-    }
-    .radio{
-        margin-right: 650px;
-    }
-    .radio p{
-        font-size: 11px;
-    }
-    .custom-radio .radio-indicator {
-    
-    height: 15px;
-    width: 15px;
   }
-  .logg{
-    width: 90%;
-    height: 30px;
-    gap: 10px;
-    padding: 0px;
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .SigUpForm {
+      padding: 20px;
+    }
+  
+    .SigUpForm h2 {
+      font-size: 1.6rem;
+    }
+  
+    .SigUpForm input {
+      font-size: 0.9rem;
+      padding: 8px;
+    }
+  
+    .SigUpForm button {
+      font-size: 0.9rem;
+      padding: 8px;
+    }
   }
-  .logg p{
-    font-size: 13px;
+  
+  @media (max-width: 480px) {
+    .SigUpForm h2 {
+      font-size: 1.4rem;
+    }
+  
+    .SigUpForm input {
+      font-size: 0.8rem;
+      padding: 6px;
+    }
+  
+    .SigUpForm button {
+      font-size: 0.8rem;
+      padding: 6px;
+    }
   }
+  
 
-.SignUpForm button{
-    width: 120px;
-    height: 35px;
-    font-size: 13px;
-}
-}
 
-@media (max-width:375px) {
-    .SignUpForm{
-        width: 60%;
-        height: 70%;
-    }
-    .SignUpForm h3{
-        font-size: 19px;
-        /* margin-top: 20px; */
-    }
-    .SignUpinput{
-        width: 85%;
-        height: 25px;
-    }
-    .SignUpinput input{
-        width: 70%;
-    }
-    .SignUpinput label{
-        width: 25%;
-        font-size: 11px;
-        font-weight: 650;
-    }
-    .radio{
-        margin-right: 650px;
-    }
-    .radio p{
-        font-size: 11px;
-    }
-    .custom-radio .radio-indicator {
-    
-    height: 15px;
-    width: 15px;
-  }
-  .logg{
-    width: 90%;
-    height: 30px;
-    gap: 10px;
-    padding: 0px;
-  }
-  .logg p{
-    font-size: 13px;
-  }
 
-.SignUpForm button{
-    width: 110px;
-    height: 35px;
-    font-size: 13px;
-}
-}
 
-@media (max-width:320px) {
-    .SignUpForm{
-        width: 60%;
-        height: 70%;
-    }
-    .SignUpForm h3{
-        font-size: 20px;
-        /* margin-top: 20px; */
-    }
-    .SignUpinput{
-        width: 85%;
-        height: 25px;
-    }
-    .SignUpinput input{
-        width: 70%;
-    }
-    .SignUpinput label{
-        width: 25%;
-        font-size: 11px;
-        font-weight: 650;
-    }
-    .radio{
-        margin-right: 650px;
-    }
-    .radio p{
-        font-size: 11px;
-    }
-    .custom-radio .radio-indicator {
-    
-    height: 15px;
-    width: 15px;
-  }
-  .logg{
-    width: 90%;
-    height: 30px;
-    gap: 10px;
-    padding: 0px;
-  }
-  .logg p{
-    font-size: 13px;
-  }
 
-.SignUpForm button{
-    width: 120px;
-    height: 35px;
-    font-size: 13px;
-}
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

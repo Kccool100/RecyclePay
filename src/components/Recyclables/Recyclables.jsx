@@ -9,7 +9,6 @@ import Plastic from "../../assets/Plastic.png"
 import { useContext} from "react"
 import { Theme } from '../Theme/Theme';
 import { ThemeContext } from "../../context/ThemeProvider" 
-import ThemeSwitch from "../ThemeSwitch/ThemeSwitch"
 
 
 const getStyles = (mode) =>({
@@ -29,7 +28,7 @@ const Recyclables = () => {
   const {mode} = useContext(ThemeContext);
   const styles = getStyles(mode);
   return (
-    <div className="RecyclablesContainer" style={styles.background}>
+    <div className="RecyclablesContainer" >
       <div className="RecyclablesContainer-holder" style={styles.background}>
         <div className="subhead">
         <h2 style={styles.text}>Recyclables</h2>

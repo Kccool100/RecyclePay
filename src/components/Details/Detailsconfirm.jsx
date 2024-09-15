@@ -17,11 +17,11 @@ const Detailsconfirm = () => {
                 <div className='inp'> 
                   <div className='ptext'>
                     <h3> Name : </h3>
-                 </div>
-              <div className='infotext'>
-                <h3> Adenekan Ifeoluwa</h3>
-              </div>
-            </div>
+                  </div>
+                  <div className='infotext'>
+                    <h3> Adenekan Ifeoluwa</h3>
+                  </div>
+                </div>
             <div className='inp'> 
                 <div className='ptext'>
                     <h3> Address : </h3>

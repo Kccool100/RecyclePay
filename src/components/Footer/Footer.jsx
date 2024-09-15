@@ -1,9 +1,9 @@
 
 import "./Footer.css"
 import logo from "../../assets/recyclelogo2.png"
-import facebook from "../../assets/facebook.png"
-import twitter from "../../assets/twitter.png"
-import instagram from "../../assets/instagram.png"
+import { FaFacebook } from "react-icons/fa";
+import { FaInstagram } from "react-icons/fa";
+import { FaTwitter } from "react-icons/fa";
 const Footer = () => {
     return (
 
@@ -23,18 +23,20 @@ const Footer = () => {
                         <p>About Us</p>
                         <span>Our Story</span>
                         <span>Our Team</span>
-                        <div className="socials">
-                            <img src={facebook} alt="facebook" />
-                            <img src={twitter} alt="twitter" />
-                            <img src={instagram} alt="instagram" />
-                       </div>
+                        <span>Our Rate</span>
+                        <div className="social">
+                           <FaFacebook  />
+                           <FaTwitter  />
+                           <FaInstagram  />
+                        </div>
                       
                     </ul>
                
                     <ul>
                         <p>Contact Us</p>
                         <span>Phone:</span>
-                        <li> 07025235927,  08132601195</li>
+                        <span> 07025235927,  08132601195</span>
+                        <span>Recyclepay7@gmail.com</span>
 
                         <div className="emailCon">
                             <label>Send us a mail </label>
@@ -47,6 +49,22 @@ const Footer = () => {
 
                     </ul>
                 </div>
+                <div className="list2">
+          <div className="foottext">
+            <span>   © 2024 RecyclePay. All rights reserved. </span>
+          </div>
+          <div className="socials">
+            <div className="icn">
+               <FaFacebook  />
+            </div>
+            <div className="icn">
+             <FaTwitter  />
+            </div>
+            <div className="icn">
+              <FaInstagram  />
+            </div>
+          </div>
+        </div>
                 
             </div>
            

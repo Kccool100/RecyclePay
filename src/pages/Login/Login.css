@@ -1,104 +1,74 @@
-.loginbox{
+.loginCon{
     height: 100vh;
     width: 100vw;
     display: flex;
     flex-direction: column;
     justify-content:center ;
     align-items: center;
-    background: url("../../assets/bgg.jpg");
+    background: url("../../assets/Frame2.png");
     background-position: center;
     background-repeat: no-repeat;
     opacity: 0.5s;
     background-size: cover;
 }
 
-.loginblur{
-    height: 100%;
-    width:100%;
-    background-color: rgba(0, 0, 0, 0.123);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: #2A2A2A;
-}
 
-.login{
+.loginForm{
     height: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 
     width: 50%;
-    /* background-color:#E0DEDE; */
-    background: #E0DEDE;
+    background: #ffff;
     border-radius: 20px;
 
 }
+   .loginForm h3{
+    color: #FF7043;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    margin-bottom: 50px;
+    line-height: 19.2px; /* 48% */
+    letter-spacing: -0.3px;
+    text-transform: capitalize;
 
-.loginhead{
-    margin-top: 30px;
-    height: 20%;
-    width:100%;
-    /* background-color: yellow; */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+   }
 
-    h5{
-        color: #3333335E;
-    }
-    h3{
-        color: var(--Black-text, #2A2A2A);
-        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-        font-size: 40px;
-        font-style: normal;
-        font-weight: 700;
-        line-height: 19.2px; /* 48% */
-        letter-spacing: -0.3px;
-        text-transform: capitalize;
-        }
-
-    }
-.logininput{
-    height: 33%;
-    width: 100%;
-    /* background-color: rgb(246, 187, 187); */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-
-}
-
-.inputholder{
-    height: 40%;
-    width: 80% ;
-    /* background-color: rgb(75, 121, 6); */
-    display: flex;
-    align-items: center;
-    justify-content: space-around; 
-
-    p{
-        font-size: 15px;
-        font-weight: bold;
-        margin-top: 10px;
-    }
-
-    .inputtext{
-        height: 100%;
-        width: 10%;
+    .loginInput{
         display: flex;
-        justify-content: center;
-        align-items: center;
+    width: 80%;
+    height: 50px;
+    justify-content: space-around;
+    align-items: center;
+    border-bottom: 1px solid #A4A4A4;
+    text-align: center;
+    /* gap: 20px; */
+    
     }
-
-    input{
-        width: 1090%;
-        height: 60%;
-        background-color: transparent;
-        border: 2px solid rgba(128, 128, 128, 0.297);
-        border-radius: 6px;
-        text-indent: 20px;
+    
+    .loginInput input{
+        display: flex;
+    width: 100%;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 550;
+    outline-color: #FF7043;
+    padding: 10px;
+    height: 100%;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    color: black;
+    flex-shrink: 0;
+    background: #ffff;
+    border-radius: 5px;
+    border:none;
     }
-}
 
 .buttlogin{
     height: 35%;
@@ -110,16 +80,11 @@
     /* background-color: rebeccapurple; */
 
 
-    button{
-        height: 30%;
-        width: 20%;
-        background-color: transparent;
-        border-radius: 10px;
+    
+        button:hover{
         border: 1px solid #FF7043;
         color: #FF7043;
-        font-size: 20px;
-        font-weight: bold;
-        font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
         }
 
         p{
@@ -135,39 +100,40 @@
             text-decoration: underline;
         }
 
-        @media (max-width:768px) {
-            button{
-                height: 20%;width: 30%;
-            }
-        }
-        @media (max-width:426px) {
-            button{
-                height: 16%;
-                width: 50%;
-                font-size: 12px;
-            }
-        }
-        @media (max-width:375px) {
-            button{
-                height: 25%;width: 30%;
-                font-size: 12px;
-            }
-        }
-        @media (max-width:320px) {
-            button{
-                height: 30%;width: 40%;
-                font-size: 12px;
-            }
-        }
+       
      
 
     
 }
+.buttlogin p{
+    color:#2A2A2A82;
+    font-size: 17px;
+    margin-top: 24px;
+    font-weight: 600;
+}
 
-button:hover{
+.buttlogin:hover{
+    color: black;
+    cursor: pointer;
+    text-decoration: underline;
+}
+.buttlogin button{
+    height: 30%;
+    width: 20%;
     background-color: #FF7043;
-    color: white;
-    transition: ease-in-out;
+    border-radius: 10px;
+    transition: 350ms;
+    color: #Ffff;
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+
+.buttlogin button:hover{
+    background-color: #fff;
+    color:#FF7043;
+    transform: scale(1.0);
 } 
 
 @media (max-width:1024px) {
@@ -175,26 +141,14 @@ button:hover{
         width: 60%;
         height: 65%;
     }
-    .loginhead h3{
+    .loginForm h3{
         font-size: 30px;
         margin-top: 20px;
     }
-    .logininput{
-        border: 1px solid black;
-        height: 40%;
-    }
-    .inputholder{
-        width: 85%;
-        height: 25px;
-    }
-    .inputholder input{
-        width: 70%;
-        height: 40px;
-    }
-    .inputtext{
-        width: 25%;
-        font-size: 15px;
-    }
+  
+  
+
+
     
  
 .buttlogin button{
@@ -253,26 +207,22 @@ button:hover{
 }
 }
 @media (max-width:425px) {
-    .SignUpForm{
+    .loginForm{
         width: 60%;
         height: 70%;
     }
-    .SignUpForm h3{
+    .loginForm h3{
         font-size: 20px;
         /* margin-top: 20px; */
     }
-    .SignUpinput{
+    .loginInput{
         width: 85%;
         height: 25px;
     }
-    .SignUpinput input{
+    .loginInput input{
         width: 70%;
     }
-    .SignUpinput label{
-        width: 25%;
-        font-size: 11px;
-        font-weight: 650;
-    }
+
     .radio{
         margin-right: 650px;
     }
@@ -294,107 +244,10 @@ button:hover{
     font-size: 13px;
   }
 
-.SignUpForm button{
+.buttlogin button{
     width: 120px;
     height: 35px;
     font-size: 13px;
 }
 }
 
-@media (max-width:375px) {
-    .SignUpForm{
-        width: 60%;
-        height: 70%;
-    }
-    .SignUpForm h3{
-        font-size: 19px;
-        /* margin-top: 20px; */
-    }
-    .SignUpinput{
-        width: 85%;
-        height: 25px;
-    }
-    .SignUpinput input{
-        width: 70%;
-    }
-    .SignUpinput label{
-        width: 25%;
-        font-size: 11px;
-        font-weight: 650;
-    }
-    .radio{
-        margin-right: 650px;
-    }
-    .radio p{
-        font-size: 11px;
-    }
-    .custom-radio .radio-indicator {
-    
-    height: 15px;
-    width: 15px;
-  }
-  .logg{
-    width: 90%;
-    height: 30px;
-    gap: 10px;
-    padding: 0px;
-  }
-  .logg p{
-    font-size: 13px;
-  }
-
-.SignUpForm button{
-    width: 110px;
-    height: 35px;
-    font-size: 13px;
-}
-}
-
-@media (max-width:320px) {
-    .SignUpForm{
-        width: 60%;
-        height: 70%;
-    }
-    .SignUpForm h3{
-        font-size: 20px;
-        /* margin-top: 20px; */
-    }
-    .SignUpinput{
-        width: 85%;
-        height: 25px;
-    }
-    .SignUpinput input{
-        width: 70%;
-    }
-    .SignUpinput label{
-        width: 25%;
-        font-size: 11px;
-        font-weight: 650;
-    }
-    .radio{
-        margin-right: 650px;
-    }
-    .radio p{
-        font-size: 11px;
-    }
-    .custom-radio .radio-indicator {
-    
-    height: 15px;
-    width: 15px;
-  }
-  .logg{
-    width: 90%;
-    height: 30px;
-    gap: 10px;
-    padding: 0px;
-  }
-  .logg p{
-    font-size: 13px;
-  }
-
-.SignUpForm button{
-    width: 120px;
-    height: 35px;
-    font-size: 13px;
-}
-}

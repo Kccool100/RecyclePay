@@ -10,12 +10,32 @@ import s6 from '../../assets/s6.png'
 import s7 from '../../assets/s7.png'
 import s8 from '../../assets/s8.png'
 import s9 from '../../assets/s9.png'
-function Slider() {
+import { useContext} from "react"
+import { Theme } from '../Theme/Theme';
+import { ThemeContext } from "../../context/ThemeProvider" 
+
+
+const getStyles = (mode) =>({
+  background: {
+      backgroundColor: Theme[mode].backgroundColor,
+     
+  },
+  text:{
+      color:Theme[mode].color
+  },
+  theme: {
+      color:Theme[mode].highlight
+
+  }
+});
+const Slider = () => {
+  const {mode} = useContext(ThemeContext);
+  const styles = getStyles(mode);
 
   return (
-    <div className='CarouselContainer'>
+    <div className='CarouselContainer' style={styles.background}>
       <div className="slideHead">
-        <h3>How to Recycle with RecyclePay</h3>
+        <h3 style={styles.text}>How to Recycle with RecyclePay</h3>
       </div>
       <Carousel fade>
       <Carousel.Item>

@@ -16,35 +16,23 @@ const Pickup = () => {
           <div className='pickupinput'>
 
             <div className='inpick'> 
-                <div className='pickuptext'>
-                    <h3> Name</h3>
-                </div>
-                <input type="text" name="" id="" />
+                <input type="text" placeholder='Name' name="" id="" />
             </div>
             <div className='inpick'> 
-                <div className='pickuptext'>
-                    <h3> Address</h3>
-                </div>
-                <input type="text" name="" id="" />
+                
+                <input type="text" placeholder='Address' name="" id="" />
             </div>
             <div className='inpick'> 
-                <div className='pickuptext'>
-                    <h3> Email</h3>
-                </div>
-                <input type="text" name="" id="" />
+               
+                <input type="text" placeholder=' Email' name="" id="" />
             </div>
             <div className='inpick'> 
-                <div className='pickuptext'>
-                    <h3> Phone Number</h3>
-                </div>
-                <input type="text" name="" id="" />
+               
+                <input type="text" placeholder='Phone Number' name="" id="" />
             </div>
             <div className='inpick'> 
-                <div className='pickuptext'>
-                    <h3> Waste Kg</h3>
-                </div>
                <label htmlFor="">
-               <select name="" id="">
+               <select name="" id="" placeholder="Waste Kg">
                     
                     <option value=""> 10Kg </option>
                     <option value=""> 20Kg </option>

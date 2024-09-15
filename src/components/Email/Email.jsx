@@ -2,10 +2,30 @@ import React from 'react'
 import "./Email.css"
 import hand from "../../assets/hand.png"
 import obj from "../../assets/obj.png"
+import { useContext} from "react"
+import { Theme } from '../Theme/Theme';
+import { ThemeContext } from "../../context/ThemeProvider" 
+
+
+const getStyles = (mode) =>({
+  background: {
+      backgroundColor: Theme[mode].backgroundColor,
+     
+  },
+  text:{
+      color:Theme[mode].color
+  },
+  theme: {
+      color:Theme[mode].highlight
+
+  }
+});
 const Email = () => {
+  const {mode} = useContext(ThemeContext);
+  const styles = getStyles(mode);
   return (
-    <div className='EmailContainer'>
-        <div className="con-holder">
+    <div className='EmailContainer' style={styles.background}>
+        <div className="con-holder" style={styles.background}>
         <div className="con1">
             <p>Our Email</p>
             <span>Recyclepay7@gmail.com</span>

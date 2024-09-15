@@ -6,42 +6,63 @@ import Bottle from "../../assets/Bottle.png"
 import Metal from "../../assets/Metal.png"
 import Plastic from "../../assets/Plastic.png"
 
+import { useContext} from "react"
+import { Theme } from '../Theme/Theme';
+import { ThemeContext } from "../../context/ThemeProvider" 
+import ThemeSwitch from "../ThemeSwitch/ThemeSwitch"
+
+
+const getStyles = (mode) =>({
+  background: {
+      backgroundColor: Theme[mode].backgroundColor,
+     
+  },
+  text:{
+      color:Theme[mode].color
+  },
+  theme: {
+      color:Theme[mode].highlight
+
+  }
+});
 const Recyclables = () => {
+  const {mode} = useContext(ThemeContext);
+  const styles = getStyles(mode);
   return (
-    <div className="RecyclablesContainer">
-      <div className="RecyclablesContainer-holder">
+    <div className="RecyclablesContainer" style={styles.background}>
+      <div className="RecyclablesContainer-holder" style={styles.background}>
         <div className="subhead">
-        <h2>Recyclables</h2>
-        <span>Here are the list of item we take from our customer</span>
+        <h2 style={styles.text}>Recyclables</h2>
+        <span style={styles.text}>Here are the list of item we take from our customer</span>
         </div>
     
-      <div className="box-holder">
-      <div className="imgContainer">
-        <div className="box">
+      <div className="box-holder" style={styles.background}>
+      <div className="imgContainer" style={styles.background}>
+        <div className="box" style={styles.background}>
           <img src={Carton} alt="Carton" />
-          <p>Carton</p>
+          <p style={styles.text}>Carton</p>
         </div>
-        <div className="box">
+        <div className="box" style={styles.background}>
         <img src={Paper} alt="Paper" />
-        <p>Paper</p>
+        <p style={styles.text}>Paper</p>
         </div>
-        <div className="box">
+        <div className="box" style={styles.background}>
         <img src={Nylon} alt="Nylon" />
-        <p>Nylon</p>
+        <p style={styles.text}>Nylon</p>
         </div>
       </div>
       <div className="imgContainer">
-        <div className="box">
+        <div className="box" style={styles.background}>
         <img src={Bottle} alt="Bottle" />
-        <p>Bottle</p>
+        <p style={styles.text}>Bottle</p>
         </div>
-        <div className="box">
+        <div className="box" style={styles.background}>
         <img src={Metal} alt="Metal" />
-        <p>Metal</p>
+        <p style={styles.text}>Metal</p>
         </div>
-        <div className="box">
+        <div className="box" style={styles.background}>
         <img src={Plastic} alt="Plastic" />
-        <p>Plastic</p>
+        <p style={styles.text}>Plastic</p>
         </div>
       </div>
       </div>

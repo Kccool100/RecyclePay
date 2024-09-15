@@ -29,17 +29,6 @@
     /* background-color:#E0DEDE; */
     background: #E0DEDE;
     border-radius: 20px;
-    @media (max-width:320px) {
-        width: 83%;
-    }
-
-    @media (max-width:375px) {
-        width: 80%;
-    }
-    @media (max-width:425px) {
-        width: 80%;
-    }
-
 
 }
 
@@ -67,34 +56,7 @@
         text-transform: capitalize;
         }
 
-    @media (max-width:768px) {
-        h3{
-            font-weight: 700;
-            font-size: 20px;
-        }
     }
-
-    /* @media (max-width:320px) {
-        h3{
-            font-weight: bold;
-            font-size: 32px;
-        }
-    } */
-     @media (max-width:375px) {
-        h3{
-            font-weight: 400;
-            font-size: 100px;
-        }
-    }
-    @media (max-width:425px) {
-        h3{
-            font-weight: 600;
-            font-size: 19px;
-        }
-    }
-
-}
-
 .logininput{
     height: 33%;
     width: 100%;
@@ -126,36 +88,10 @@
         display: flex;
         justify-content: center;
         align-items: center;
-
-        @media (max-width:768px) {
-            p{
-                font-size: 12px;
-                
-            }
-        }
-
-        @media (max-width:425px) {
-            p{
-                font-size: 10px;
-                
-            }
-        }
-        @media (max-width:375px) {
-            p{
-                font-size: 10px;
-                
-            }
-        }
-        @media (max-width:320px) {
-            p{
-                font-size: 10px;
-             
-            }
-        }
     }
 
     input{
-        width: 80%;
+        width: 1090%;
         height: 60%;
         background-color: transparent;
         border: 2px solid rgba(128, 128, 128, 0.297);
@@ -233,3 +169,232 @@ button:hover{
     color: white;
     transition: ease-in-out;
 } 
+
+@media (max-width:1024px) {
+    .login{
+        width: 60%;
+        height: 65%;
+    }
+    .loginhead h3{
+        font-size: 30px;
+        margin-top: 20px;
+    }
+    .logininput{
+        border: 1px solid black;
+        height: 40%;
+    }
+    .inputholder{
+        width: 85%;
+        height: 25px;
+    }
+    .inputholder input{
+        width: 70%;
+        height: 40px;
+    }
+    .inputtext{
+        width: 25%;
+        font-size: 15px;
+    }
+    
+ 
+.buttlogin button{
+    width: 140px;
+    height: 35px;
+    font-size: 15px;
+}
+}
+
+@media (max-width:768px) {
+    .SignUpForm{
+        width: 60%;
+        height: 50%;
+    }
+    .SignUpForm h3{
+        font-size: 25px;
+        /* margin-top: 20px; */
+    }
+    .SignUpinput{
+        width: 85%;
+        height: 25px;
+    }
+    .SignUpinput input{
+        width: 70%;
+    }
+    .SignUpinput label{
+        width: 25%;
+        font-size: 12px;
+        font-weight: 650;
+    }
+    .radio{
+        margin-right: 650px;
+    }
+    .radio p{
+        font-size: 12px;
+    }
+    .custom-radio .radio-indicator {
+    
+    height: 15px;
+    width: 15px;
+  }
+  .logg{
+    width: 90%;
+    height: 30px;
+    gap: 10px;
+    padding: 0px;
+  }
+  .logg p{
+    font-size: 13px;
+  }
+
+.SignUpForm button{
+    width: 120px;
+    height: 35px;
+    font-size: 15px;
+}
+}
+@media (max-width:425px) {
+    .SignUpForm{
+        width: 60%;
+        height: 70%;
+    }
+    .SignUpForm h3{
+        font-size: 20px;
+        /* margin-top: 20px; */
+    }
+    .SignUpinput{
+        width: 85%;
+        height: 25px;
+    }
+    .SignUpinput input{
+        width: 70%;
+    }
+    .SignUpinput label{
+        width: 25%;
+        font-size: 11px;
+        font-weight: 650;
+    }
+    .radio{
+        margin-right: 650px;
+    }
+    .radio p{
+        font-size: 11px;
+    }
+    .custom-radio .radio-indicator {
+    
+    height: 15px;
+    width: 15px;
+  }
+  .logg{
+    width: 90%;
+    height: 30px;
+    gap: 10px;
+    padding: 0px;
+  }
+  .logg p{
+    font-size: 13px;
+  }
+
+.SignUpForm button{
+    width: 120px;
+    height: 35px;
+    font-size: 13px;
+}
+}
+
+@media (max-width:375px) {
+    .SignUpForm{
+        width: 60%;
+        height: 70%;
+    }
+    .SignUpForm h3{
+        font-size: 19px;
+        /* margin-top: 20px; */
+    }
+    .SignUpinput{
+        width: 85%;
+        height: 25px;
+    }
+    .SignUpinput input{
+        width: 70%;
+    }
+    .SignUpinput label{
+        width: 25%;
+        font-size: 11px;
+        font-weight: 650;
+    }
+    .radio{
+        margin-right: 650px;
+    }
+    .radio p{
+        font-size: 11px;
+    }
+    .custom-radio .radio-indicator {
+    
+    height: 15px;
+    width: 15px;
+  }
+  .logg{
+    width: 90%;
+    height: 30px;
+    gap: 10px;
+    padding: 0px;
+  }
+  .logg p{
+    font-size: 13px;
+  }
+
+.SignUpForm button{
+    width: 110px;
+    height: 35px;
+    font-size: 13px;
+}
+}
+
+@media (max-width:320px) {
+    .SignUpForm{
+        width: 60%;
+        height: 70%;
+    }
+    .SignUpForm h3{
+        font-size: 20px;
+        /* margin-top: 20px; */
+    }
+    .SignUpinput{
+        width: 85%;
+        height: 25px;
+    }
+    .SignUpinput input{
+        width: 70%;
+    }
+    .SignUpinput label{
+        width: 25%;
+        font-size: 11px;
+        font-weight: 650;
+    }
+    .radio{
+        margin-right: 650px;
+    }
+    .radio p{
+        font-size: 11px;
+    }
+    .custom-radio .radio-indicator {
+    
+    height: 15px;
+    width: 15px;
+  }
+  .logg{
+    width: 90%;
+    height: 30px;
+    gap: 10px;
+    padding: 0px;
+  }
+  .logg p{
+    font-size: 13px;
+  }
+
+.SignUpForm button{
+    width: 120px;
+    height: 35px;
+    font-size: 13px;
+}
+}

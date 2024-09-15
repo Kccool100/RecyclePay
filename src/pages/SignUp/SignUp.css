@@ -39,26 +39,16 @@ text-transform: capitalize;
     display: flex;
 width: 800px;
 height: 50px;
-justify-content: space-between;
+justify-content: space-around;
 align-items: center;
-gap: 58px;
+text-align: center;
+/* gap: 20px; */
 
 }
-.SignUpinput label{
-    color: var(--Black-text, #2A2A2A);
 
-/* Subheading 2 */
-font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-font-size: 20px;
-font-style: normal;
-font-weight: 700;
-line-height: 31px; /* 129.167% */
-letter-spacing: -0.3px;
-text-transform: capitalize;
-}
 .SignUpinput input{
     display: flex;
-width: 600px;
+width: 100%;
 font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 font-size: 20px;
 font-style: normal;
@@ -125,7 +115,7 @@ border: 1px solid #FF7043;
     width: 350px;
     height: 40px;
     display: flex;
-    margin-right: 500px;
+    margin-right: 450px;
     padding-top: 20px;
     justify-content: center;
     align-items: center;
@@ -175,7 +165,7 @@ border: 1px solid #FF7043;
 .radio p{
 color: rgba(42, 42, 42, 0.50);
 font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-font-size: 20px;
+font-size: 18px;
 font-style: normal;
 font-weight: 600;
 line-height: normal;
@@ -193,60 +183,29 @@ line-height: normal;
 .logg p{
     color: rgba(42, 42, 42, 0.50);
 font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-font-size: 20px;
+font-size: 18px;
 font-style: normal;
 font-weight: 600;
 line-height: normal;
 }
-
-@media screen and (width <= 850px) {
+@media (max-width:1024px) {
     .SignUpForm{
-        width: 80%;
+        width: 60%;
+        height: 65%;
     }
     .SignUpForm h3{
         font-size: 30px;
-    }
-    .SignUpinput{
-        width: 90%;
-    }
-    .SignUpinput input{
-        width: 73%;
-    }
-    .SignUpinput label{
-        width: 27%;
-    }
-    .radio{
-
-        margin-left: 500px;
-    }
-    .radio p{
-
-    }
-
-
-}
-
-    @media (max-width:320px) {
-    
-    
-    .SignUpForm{
-        width: 90%;
-
-
-     }
-    .SignUpForm h3{
-        font-size: 17px;
         margin-top: 20px;
     }
     .SignUpinput{
-        width: 90%;
+        width: 85%;
         height: 25px;
     }
     .SignUpinput input{
-        width: 60%;
+        width: 70%;
     }
     .SignUpinput label{
-        width: 20%;
+        width: 25%;
         font-size: 15px;
     }
     .radio{
@@ -275,32 +234,34 @@ line-height: normal;
     height: 35px;
     font-size: 15px;
 }
-
 }
-@media (max-width:426px) {
+
+@media (max-width:768px) {
     .SignUpForm{
-        width: 90%;
+        width: 60%;
+        height: 50%;
     }
     .SignUpForm h3{
-        font-size: 17px;
-        margin-top: 20px;
+        font-size: 25px;
+        /* margin-top: 20px; */
     }
     .SignUpinput{
-        width: 90%;
+        width: 85%;
         height: 25px;
     }
     .SignUpinput input{
-        width: 60%;
+        width: 70%;
     }
     .SignUpinput label{
-        width: 20%;
-        font-size: 15px;
+        width: 25%;
+        font-size: 12px;
+        font-weight: 650;
     }
     .radio{
-        margin-left: 500px;
+        margin-right: 650px;
     }
     .radio p{
-        font-size: 15px;
+        font-size: 12px;
     }
     .custom-radio .radio-indicator {
     
@@ -318,8 +279,154 @@ line-height: normal;
   }
 
 .SignUpForm button{
-    width: 140px;
+    width: 120px;
     height: 35px;
     font-size: 15px;
+}
+}
+@media (max-width:425px) {
+    .SignUpForm{
+        width: 60%;
+        height: 70%;
+    }
+    .SignUpForm h3{
+        font-size: 20px;
+        /* margin-top: 20px; */
+    }
+    .SignUpinput{
+        width: 85%;
+        height: 25px;
+    }
+    .SignUpinput input{
+        width: 70%;
+    }
+    .SignUpinput label{
+        width: 25%;
+        font-size: 11px;
+        font-weight: 650;
+    }
+    .radio{
+        margin-right: 650px;
+    }
+    .radio p{
+        font-size: 11px;
+    }
+    .custom-radio .radio-indicator {
+    
+    height: 15px;
+    width: 15px;
+  }
+  .logg{
+    width: 90%;
+    height: 30px;
+    gap: 10px;
+    padding: 0px;
+  }
+  .logg p{
+    font-size: 13px;
+  }
+
+.SignUpForm button{
+    width: 120px;
+    height: 35px;
+    font-size: 13px;
+}
+}
+
+@media (max-width:375px) {
+    .SignUpForm{
+        width: 60%;
+        height: 70%;
+    }
+    .SignUpForm h3{
+        font-size: 19px;
+        /* margin-top: 20px; */
+    }
+    .SignUpinput{
+        width: 85%;
+        height: 25px;
+    }
+    .SignUpinput input{
+        width: 70%;
+    }
+    .SignUpinput label{
+        width: 25%;
+        font-size: 11px;
+        font-weight: 650;
+    }
+    .radio{
+        margin-right: 650px;
+    }
+    .radio p{
+        font-size: 11px;
+    }
+    .custom-radio .radio-indicator {
+    
+    height: 15px;
+    width: 15px;
+  }
+  .logg{
+    width: 90%;
+    height: 30px;
+    gap: 10px;
+    padding: 0px;
+  }
+  .logg p{
+    font-size: 13px;
+  }
+
+.SignUpForm button{
+    width: 110px;
+    height: 35px;
+    font-size: 13px;
+}
+}
+
+@media (max-width:320px) {
+    .SignUpForm{
+        width: 60%;
+        height: 70%;
+    }
+    .SignUpForm h3{
+        font-size: 20px;
+        /* margin-top: 20px; */
+    }
+    .SignUpinput{
+        width: 85%;
+        height: 25px;
+    }
+    .SignUpinput input{
+        width: 70%;
+    }
+    .SignUpinput label{
+        width: 25%;
+        font-size: 11px;
+        font-weight: 650;
+    }
+    .radio{
+        margin-right: 650px;
+    }
+    .radio p{
+        font-size: 11px;
+    }
+    .custom-radio .radio-indicator {
+    
+    height: 15px;
+    width: 15px;
+  }
+  .logg{
+    width: 90%;
+    height: 30px;
+    gap: 10px;
+    padding: 0px;
+  }
+  .logg p{
+    font-size: 13px;
+  }
+
+.SignUpForm button{
+    width: 120px;
+    height: 35px;
+    font-size: 13px;
 }
 }

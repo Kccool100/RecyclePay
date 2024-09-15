@@ -9,9 +9,31 @@ import Footer from "../../components/Footer/Footer"
 import Slider from "../../components/Slider/Slider"
 import Our from "../../components/Our/Our"
 import Header from "../../components/Header/Header"
+
+
+import { useContext} from "react"
+import { Theme } from '../../components/Theme/Theme';
+import { ThemeContext } from "../../context/ThemeProvider" 
+
+
+const getStyles = (mode) =>({
+  background: {
+      backgroundColor: Theme[mode].backgroundColor,
+     
+  },
+  text:{
+      color:Theme[mode].color
+  },
+  theme: {
+      color:Theme[mode].highlight
+
+  }
+});
 const Home = () => {
+  const {mode} = useContext(ThemeContext);
+  const styles = getStyles(mode);
   return (
-    <div className="HomeContainer">
+    <div className="HomeContainer" style={styles.background}>
         <Header/>
         <Hero/>
         <Make />

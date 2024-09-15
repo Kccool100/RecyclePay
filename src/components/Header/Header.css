@@ -30,7 +30,7 @@
    
 }
 .NavLink{
-    width: 60%;
+    width: 50%;
     height: 100%;
     display: flex;
     justify-content: space-around;
@@ -45,6 +45,7 @@
   padding: 10px;
   justify-content: center;
   align-items: center;
+  text-decoration: none;
   cursor: pointer;
   font-weight: 500;
   font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
@@ -69,7 +70,6 @@
   color: #FF7043;
   align-items: center;
   gap: 10px;
-  background-color: #ffff;
   border-radius: 10px;
   transition: all 350ms;
   border: 1px solid var(--Hover-effect, #FF7043);
@@ -85,10 +85,10 @@
     display: none;
   }
   .rightNav{
-    width: 40%;
+    width: 50%;
     height: 100%;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
   }
   
@@ -129,14 +129,15 @@
       justify-content: center;
       box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
       align-items: flex-start;
-      height: 280px;
+      height: 300px;
       transition: all 350ms;
       transform: scale(1.0);
+      gap: 1.5rem;
      
-      margin-top: 430px;
+      margin-top: 450px;
       min-width: 30%;
       background-color: #F5F5F5;
-      padding:  1rem;
+      padding:  1.5rem;
     }
     .hamburger{
       display: block;
@@ -144,7 +145,6 @@
       font-size: 25px;
     }
     .headContainer button{
-      background-color: #F5F5F5;
       height: 50px;
       width: 150px;
 
@@ -222,7 +222,7 @@
   .NavLink{
     display: flex;
       flex-direction: column;
-      height: 600px;
+    height: 600px;
       align-items: flex-start;
   }
   
@@ -232,7 +232,6 @@
     justify-content:center ;
     gap: 1rem;
     font-size: 14px;
-
     align-items: flex-start;
 
   }

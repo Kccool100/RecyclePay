@@ -3,8 +3,8 @@
     height: 90vh;
     display: flex;
     justify-content: center;
+    padding-top: 100px;
     flex-direction: column;
-    margin-top: 100px;
     align-items: center;
 }
 .KeepContainer h3{
@@ -94,7 +94,6 @@
     }
     .texts{
         width: 100%;
-        margin-top: 20px;
         justify-content: center;
         align-items: center;
     

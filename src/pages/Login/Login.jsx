@@ -10,22 +10,20 @@ function Login() {
     <div className='loginbox'>
       <div className='loginblur'>
            <div className='login'>
-           <div className='loginhead'>
+             <div className='loginhead'>
                 <h3> Sign In With RecyclePay</h3>
-                  </div>
+             </div>
                   <div className='logininput'>
                     <div className='inputholder'>
-                      <div className='inputtext'> <p> Email</p></div>
-                      <input type="text" />
+                      <input type="text" placeholder='Email'/>
                     </div>
                     <div className='inputholder'>
-                      <div className='inputtext'> <p> Password</p></div>
-                      <input type="text" />
+                      <input type="text" placeholder='Password'/>
                     </div>
                   </div>
                   <div className='buttlogin'>
                   <button onClick={()=> navigate("/Pick")}> Sign In</button>
-                  <p onClick={()=> navigate("/forgetpassword")}> Forget Password?</p>
+                  <p onClick={()=> navigate("/forgetpassword")}> Forgot Password?</p>
                   </div>
 
            </div>

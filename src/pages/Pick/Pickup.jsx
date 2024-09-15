@@ -2,12 +2,32 @@ import React from 'react'
 import './Pickup.css'
 import { Link } from "react-router-dom";
 
+import { useContext} from "react"
+import { Theme } from '../../components/Theme/Theme';
+import { ThemeContext } from "../../context/ThemeProvider" 
+
+
+const getStyles = (mode) =>({
+  background: {
+      backgroundColor: Theme[mode].backgroundColor,
+     
+  },
+  text:{
+      color:Theme[mode].color
+  },
+  theme: {
+      color:Theme[mode].highlight
+
+  }
+});
 const Pickup = () => {
+  const {mode} = useContext(ThemeContext);
+  const styles = getStyles(mode);
 
   return (
            <div className="pick-container">
             <div className="pickblur">
-            <form  className="SigUpForm">
+            <form  className="SigUpForm" style={styles.background}>
       <h2>Pick Up Details</h2>
    
       <label>
@@ -15,6 +35,7 @@ const Pickup = () => {
           placeholder='Name'
           type="text" 
           required
+          style={styles.background}
         />
       </label>
       <label>
@@ -22,6 +43,7 @@ const Pickup = () => {
           placeholder='Email'
           type='email'
           required 
+          style={styles.background}
         />
         </label>
         <label>
@@ -29,6 +51,7 @@ const Pickup = () => {
           placeholder='Address'
           type='text'
           required 
+          style={styles.background}
         />
         </label>
         <label>
@@ -36,10 +59,11 @@ const Pickup = () => {
           placeholder='Phone Number'
           type='number'
           required 
+          style={styles.background}
         />
         </label>
         <label>
-        <select placeholder='Waste Kg'>
+        <select placeholder='Waste Kg' style={styles.background}>
           <option value=""> 10Kg </option>
           <option value=""> 20Kg </option>
           <option value=""> 30Kg </option>

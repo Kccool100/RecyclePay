@@ -2,7 +2,28 @@ import "./Login.css"
 import { useState } from "react";
 import { Link } from "react-router-dom";
 
-function Login() {
+import { useContext} from "react"
+import { Theme } from '../../components/Theme/Theme';
+import { ThemeContext } from "../../context/ThemeProvider" 
+
+
+const getStyles = (mode) =>({
+  background: {
+      backgroundColor: Theme[mode].backgroundColor,
+     
+  },
+  text:{
+      color:Theme[mode].color
+  },
+  theme: {
+      color:Theme[mode].highlight
+
+  }
+});
+const Login = () => {
+  const {mode} = useContext(ThemeContext);
+  const styles = getStyles(mode);
+
   const [formData, setFormData] = useState({
     email: '',
     password: '',
@@ -25,7 +46,7 @@ function Login() {
 
 return (
   <div className="loginCon">
-    <form onSubmit={handleSubmit} className="SigUpForm">
+    <form onSubmit={handleSubmit} className="SigUpForm"  style={styles.background}>
       <h2>Sign In With RecyclePay</h2>
    
       <label>
@@ -36,6 +57,7 @@ return (
           value={formData.email} 
           onChange={handleChange} 
           required 
+          style={styles.background}
         />
       </label>
       <label>
@@ -46,6 +68,7 @@ return (
           value={formData.password} 
           onChange={handleChange} 
           required 
+          style={styles.background}
         />
         </label>
  

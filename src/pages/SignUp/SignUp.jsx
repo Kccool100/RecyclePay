@@ -2,7 +2,27 @@ import React, { useState } from 'react';
 import { Link } from "react-router-dom";
 import "./SignUp.css"
 
-function SignUp() {
+import { useContext} from "react"
+import { Theme } from '../../components/Theme/Theme';
+import { ThemeContext } from "../../context/ThemeProvider" 
+
+
+const getStyles = (mode) =>({
+  background: {
+      backgroundColor: Theme[mode].backgroundColor,
+     
+  },
+  text:{
+      color:Theme[mode].color
+  },
+  theme: {
+      color:Theme[mode].highlight
+
+  }
+});
+const SignUp = () => {
+  const {mode} = useContext(ThemeContext);
+  const styles = getStyles(mode);
 
   const [formData, setFormData] = useState({
     name: '',
@@ -27,8 +47,8 @@ function SignUp() {
   };
 
   return (
-    <div className="SignUpCon">
-      <form onSubmit={handleSubmit} className="SigUpForm">
+    <div className="SignUpCon" >
+      <form onSubmit={handleSubmit} className="SigUpForm" style={styles.background}>
         <h2>Sign Up With RecyclePay</h2>
         <label>
           <input 
@@ -37,7 +57,9 @@ function SignUp() {
             name="name" 
             value={formData.name} 
             onChange={handleChange} 
-            required 
+            required   
+            
+            style={styles.background}
           />
         </label>
         <label>
@@ -48,6 +70,8 @@ function SignUp() {
             value={formData.email} 
             onChange={handleChange} 
             required 
+            style={styles.background}
+
           />
         </label>
         <label>
@@ -58,6 +82,8 @@ function SignUp() {
             value={formData.password} 
             onChange={handleChange} 
             required 
+            style={styles.background}
+
           />
         </label>
         <label>
@@ -68,6 +94,8 @@ function SignUp() {
             value={formData.phoneNumber} 
             onChange={handleChange} 
             required 
+            style={styles.background}
+
           />
         </label>
         <label>
@@ -78,12 +106,14 @@ function SignUp() {
             value={formData.location} 
             onChange={handleChange} 
             required 
+            style={styles.background}
+
           />
         </label>
         <div className="radio">
         <input type="radio" />
         <Link to="/Terms" style={{textDecoration:"none"}}>
-              <p>I accept Terms and Conditions</p>
+              <p style={styles.text}>I accept Terms and Conditions</p>
             </Link>
         </div>
           
@@ -91,8 +121,8 @@ function SignUp() {
           <button type="submit">Sign Up</button>
         </Link>
         <div className="logg">
-                <p>if you already have an account </p>
-                <Link to='/Login'  style={{textDecoration:"none"}}><p>Sign in</p></Link>
+                <p style={styles.text}>if you already have an account </p>
+                <Link to='/Login'  style={{textDecoration:"none"}}><p style={styles.text}>Sign in</p></Link>
             </div>
       </form>
     </div>

@@ -184,24 +184,39 @@
     justify-content: center;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
     align-items: flex-start;
-    height: 300px;
+    height: 280px;
     transition: all 350ms;
     transform: scale(1.0);
-    margin-top: 450px;
+    margin-top: 430px;
     min-width: 40%;
     background-color: #F5F5F5;
     padding:  1rem;
+    font-size: 12px;
+    
+
+    .NavLink{
+      width: 100%;
+      cursor: pointer;
+      
+    }
   }
   .hamburger{
     display: block;
     color: black;
-    font-size: 20px;
+    /* font-size: 20px; */
+    font-size: 17px;
+    margin-bottom: 20px;
   }
-
+  button{
+    margin-bottom: 30px;
+  }
 }
 
 
-@media (max-width:426px) {
+@media (max-width:425px) {
+  button{
+    margin-bottom: 30px;
+  }
   .logoContainer{
     width: 180px;
   }
@@ -239,26 +254,38 @@
     justify-content: center;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
     align-items: flex-start;
-    height: 230px;
+    height: 250px;
     transition: all 350ms;
     transform: scale(1.0);
-    margin-top: 330px;
+    margin-top: 310px;
     min-width: 45%;
     background-color: #F5F5F5;
     /* padding:  1rem; */
+   
   }
+  .NavLink{
+    width: 100%;
+    cursor: pointer;
+    
+  }
+  
+  .link{
+    font-size: 12px;
+  }
+ 
   .hamburger{
     display: block;
     color: black;
-    font-size: 15px;
+    font-size: 12px;
   }
   .headContainer button{
     height: 45px;
     width: 140px;
     font-size: 17px;
+    margin-bottom: 20px;
   }
 }
-@media (max-width:376px) {
+@media (max-width:375px) {
   .logoContainer{
     width: 150px;
   }
@@ -273,13 +300,21 @@
     justify-content: center;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
     align-items: flex-start;
-    height: 200px;
+    height: 250px;
     transition: all 350ms;
     transform: scale(1.0);
-    margin-top: 300px;
+    margin-top: 600px;
     min-width: 50%;
+    font-size: 10px;
     background-color: #F5F5F5;
+    /* background-color: red; */
     /* padding:  1rem; */
+  }
+  .link{
+    font-size: 12px;
+  }
+  .NavLink{
+    width: 100%;
   }
   .headContainer button{
     height: 45px;
@@ -303,12 +338,14 @@
     justify-content: center;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
     align-items: flex-start;
-    height: 200px;
+    height: 250px;
     transition: all 350ms;
     transform: scale(1.0);
     margin-top: 300px;
     min-width: 50%;
+    /* font-size: 5px; */
     background-color: #F5F5F5;
+    /* background-color: yellow; */
     /* padding:  1rem; */
   }
   .link{
@@ -319,6 +356,10 @@
     height: 40px;
     width: 120px;
     
+  }
+
+  .NavLink{
+    width: 100%;
   }
 
 

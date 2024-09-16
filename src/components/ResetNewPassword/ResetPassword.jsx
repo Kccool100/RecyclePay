@@ -3,30 +3,34 @@ import "./ResetPassword.css"
 function ResetPassword() {
   return (
     <div className='LoginCon'>
-        <div className="SigUpForm">
-            <h2>Reset Your Password?</h2>
-            <label>
-          <input 
+     <div className="LoginForm">
+     <div className="SigUpForm">
+        <h2>Reset Your Password?</h2>
+        <label>
+          <input
             placeholder='New Password'
-            type="password" 
-            required 
+            type="password"
+            required
           />
         </label>
         <label>
-          <input 
+          <input
             placeholder='Confirm Password'
-            type="password" 
-            required 
+            type="password"
+            required
           />
         </label>
-            <Link to="/Rpassword" style={{textDecoration:"none"}}>
-            <button>Continue</button>
-            </Link>
-            
-        </div>
-   
+      <div className="mid">
+      <Link to="/Rpassword" style={{ textDecoration: "none" }}>
+          <button>Continue</button>
+        </Link>
+      </div>
+
+      </div>
+     </div>
+
     </div>
-   
+
   );
 }
 

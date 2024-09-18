@@ -1,9 +1,38 @@
-import React from 'react'
+import React, { useState } from 'react'
+import Modal from 'react-modal';
 import './Usersidebar.css'
 import userlogo from '../../assets/recycleLogo.png'
+import { useNavigate } from 'react-router-dom'
 
+
+// Modal custom styles
+const customStyles = {
+  content: {
+    top: '50%',
+    left: '50%',
+    right: 'auto',
+    padding: '30px',
+    bottom: 'auto',
+    marginRight: '-50%',
+    transform: 'translate(-50%, -50%)',
+  },
+};
 
 const Usersidebar = () => {
+
+  const navigate = useNavigate()
+  const [modalIsOpen, setIsOpen] = useState(false);
+
+  // Function to open modal
+  function openModal() {
+    setIsOpen(true);
+  }
+
+  // Function to close modal
+
+  function closeModal() {
+    setIsOpen(false);
+  }
   return (
     <div className='userside-container'>
       <div className='usersidetext'>
@@ -11,15 +40,26 @@ const Usersidebar = () => {
             
             <img src={userlogo} alt="" />
         </div>
-        <div className='usersidtext'>
-                <h6>Application </h6>
+        <div className='usersidext'>
+                <h6> Waste history </h6>
             </div>
-            <div className='usersidext'>
-                <h6> User</h6>
+            <div className='usersidtext' onClick={()=> navigate("/Pick")}>
+                <h6> Pick Up</h6>
             </div>
          
          </div>
-      <footer> Log Out</footer>     
+      <footer onClick={openModal}> Log Out</footer>  
+      <Modal
+        isOpen={modalIsOpen}
+        onRequestClose={closeModal} // Ensures modal can be closed via overlay or ESC
+        style={customStyles}
+      >
+        <h2>Are you sure you want to log out?</h2>
+        <div className='modebutton'>
+          <button onClick={() => navigate('/')}>Yes</button>
+          <button onClick={closeModal}>No</button>
+        </div>
+      </Modal>   
 
     </div>
   )

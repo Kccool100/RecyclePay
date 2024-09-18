@@ -4,16 +4,58 @@
     background-color: white;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
+    flex-direction: column;
 }
 
 .usermainbox{
-    height: 75%;
-    width: 60%;
+    height: 60%;
+    width: 70%;
     background-color: #FCF9F9;
     padding: 30px;
+    font-size: 20px;
 }
+.usermainheaderbox{
+    height: 30%;
+    width: 70%;
+    /* background-color: yellow; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 
+
+    .headerbox1{
+        height: 70%;
+        width: 30%;
+        background-color: #FF9800;
+        display: flex;
+        justify-content: flex-end;
+        border-radius: 10px;
+        border: 2px solid #FF9800;
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+
+        .header2{
+            height: 100%;
+            width: 85%;
+            background-color: white;
+            border-top-right-radius: 10px;
+            border-bottom-right-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+
+
+            h4{
+                font-size: 30px;
+            }
+            h2{
+                font-size: 40px;
+                font-weight: 600;
+            }
+        }
+    }
+}
 .usermainheader{
     height: 20%;
     width: 100%;
@@ -23,20 +65,29 @@
    justify-content: center;
    flex-direction: column;
 
+   h4{
+    font-size: 35px;
+    font-weight: bold;
+   }
+
 }
 
-.usermainholder{
+.mainholder{
     height: 80%;
     width: 100%;
     /* background-color: pink; */
     display: flex;
     padding: 5px;
+    justify-content: space-between;
+    font-size: 25px;
+    font-weight: 500;
+    overflow: hidden;
     
 }
 
 .usermainid{
     height: 100%;
-    width: 20%;
+    width: 10%;
     /* background-color: green; */
     /* text-indent: 40px; */
     display: flex;
@@ -45,24 +96,17 @@
 }
 .usermainname{
     height: 100%;
-    width: 20%;
+    width: 40%;
     /* background-color: rgb(65, 77, 65); */
     display: flex;
     align-items: center;
     flex-direction: column;
 }
-.usermainemail{
-    height: 100%;
-    width: 20%;
-    /* background-color: rgb(142, 69, 69); */
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-}
+
 
 .usermainkg{
     height: 100%;
-    width: 20%;
+    width: 30%;
     /* background-color: green; */
     display: flex;
     align-items: center;
@@ -70,36 +114,23 @@
 }
 .usermainstatus{
     height: 100%;
-    width: 20%;
+    width: 30%;
     /* background-color: rgb(86, 235, 86); */
     display: flex;
     align-items: center;
     flex-direction: column;
 }
-.usermainaction{
-    height: 100%;
-    width: 20%;
-    /* background-color: rgb(129, 169, 129); */
-    display: flex;
-    align-items: center;
-    flex-direction: column;
 
-    header{
-        color:#FCF9F9 ;
-    }
-
-    
-}
 
 .usermainidtext{
-    height: 40px;
+    height: 55px;
     width: 100%;
     background-color: white;
     display: flex;
     align-items: center;
-    margin-top: 20px;
+    margin-top: 40px;
     justify-content: center;
-    font-size: 12px;
+    font-size: 25px;
     font-weight: 600;
     /* overflow: hidden;
     text-align: justify; */
@@ -125,3 +156,169 @@
         justify-content: center;
     }
 }
+
+.waste{
+    display: none;
+}
+
+.ft{
+    display: none;
+}
+
+
+@media (max-width:768px) {
+    .usermain-container{
+        height: max-content;
+        overflow: hidden;
+        width: 100%;
+    }
+    .usermainheaderbox{
+        margin-top: 20px;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        /* background-color: red; */
+        /* height: 40%; */
+        gap: 10px;
+
+        .headerbox1{
+            height: 120px;
+            width: 60%;
+
+
+            .header2{
+                width: 80%;
+                height: 100%;
+                h4{
+                    font-size: 18px;
+                }
+                h2{
+                    font-size: 20px;
+                }
+
+            }
+        }
+    }
+
+    .usermainbox{
+        margin-top: 20px;
+        width: 100vw;
+        height: max-content;
+        min-height: 50vh;
+    }
+
+    .usermainheader{
+        h4{
+            font-size: 20px;
+        }
+
+    }
+
+    .mainholder{
+        header{
+            font-size: 12px;
+        }
+
+        p{
+            font-size: 13px;
+        }
+    }
+
+    .waste{
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        height: 40px;
+        width: 100%;
+        gap: 10px;
+        margin-top: 0;
+        /* background-color: rebeccapurple; */
+
+        button{
+            height: 80%;
+            width: 60px;
+            font-size: 10px;
+            border-radius: 5px;
+
+        }
+
+        .nut1{
+            background-color: #FF9800;
+            color: white;
+            cursor: pointer;
+        }
+
+        button:hover{
+            color: white;
+            background-color: #FF9800;
+            cursor: pointer;
+        }
+    }
+
+    .ft{
+        display: flex;
+        margin-top: 30px;
+        color: #FF9800;
+        font-size: 12px;
+        cursor: pointer;
+        background-color: white;
+        width: 80px;
+        height: 30px;
+        border: 2px solid #FF9800;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 5px;
+        margin-bottom: 10px;
+    p{
+        position: relative;
+        top: 6px;
+        /* left: -8px; */
+    }
+
+    }
+}
+
+.modebutton{
+    width: 100%;
+    height: 50px;
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    button{
+        height: 100%;
+        width: 30%;
+        border: 5px;
+        cursor: pointer;
+        border: 2px solid #FF9800;
+    }
+}
+
+/* @media (max-width:768px) {
+    .usermainheaderbox{
+        width: max-content;
+        height: 40%;
+        background-color: red; */
+/* 
+        .headerbox1{
+            height: 120px;
+            width: 60%;
+            background-color: palevioletred;
+
+
+            .header2{
+                width: 80%;
+                height: 100%;
+                h4{
+                    font-size: 18px;
+                }
+                h2{
+                    font-size: 20px;
+                }
+
+            }
+        }
+    }
+    
+} */

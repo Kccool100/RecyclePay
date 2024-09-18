@@ -76,7 +76,7 @@ const Pickup = () => {
         </label>
    
       <Link to='/Detailsconfirm'  style={{textDecoration:"none"}}>
-        <button type="submit">Next</button>
+        <button type="submit" className='pickbutton'>Next</button>
       </Link>
      
     </form>

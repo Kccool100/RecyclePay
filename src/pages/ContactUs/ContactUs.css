@@ -14,7 +14,7 @@
 @media screen and (width <= 850px) {
     .ContactUs-container{
         height: auto;
-        gap: 2rem;
+        /* gap: 2rem; */
     }
 
 

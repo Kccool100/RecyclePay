@@ -113,16 +113,16 @@ const SignUp = () => {
         <div className="radio">
         <input type="radio" />
         <Link to="/Terms" style={{textDecoration:"none"}}>
-              <p style={styles.text}>I accept Terms and Conditions</p>
+              <p style={styles.text} className='terms'>I accept Terms and Conditions</p>
             </Link>
         </div>
           
         <Link to='/Login'  style={{textDecoration:"none"}}>
-          <button type="submit">Sign Up</button>
+          <button type="submit" className='buttonsign'>Sign Up</button>
         </Link>
         <div className="logg">
-                <p style={styles.text}>if you already have an account </p>
-                <Link to='/Login'  style={{textDecoration:"none"}}><p style={styles.text}>Sign in</p></Link>
+                <h7 style={styles.text}>if you already have an account </h7>
+                <Link to='/Login'  style={{textDecoration:"none", color:"#FF7043"}}><p style={styles.text} className='terms'>Sign in</p></Link>
             </div>
       </form>
     </div>

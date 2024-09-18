@@ -81,7 +81,6 @@ line-height: 10px;
     .ImgContainer{
         width: 82%;
         flex-direction: column;
-        height: auto;
         gap: 1.5rem;
         padding-top: 50px;
     }
@@ -102,9 +101,8 @@ line-height: 10px;
     .ImgContainer{
         width: 82%;
         flex-direction: column;
-        height: auto;
         gap: 1.5rem;
-        margin-top: 80px;
+        margin-top: 40px;
     }
     .ImgCon{
         width: 50%;

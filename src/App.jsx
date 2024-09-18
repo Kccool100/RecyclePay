@@ -21,6 +21,8 @@ import Adminsidebar from "./components/Adminsidebar/Adminsidebar";
 import Userdashboard from "./pages/Userdashboard/Userdashboard";
 import Usermain from "./components/Usermain/Usermain";
 import Usersidebar from "./components/Usersidebar/Usersidebar";
+import Emailmessage from "./components/Emailmessage/Emailmessage";
+
 
 
 
@@ -48,6 +50,8 @@ function App() {
           <Route path='/Userdashboard' element = {<Userdashboard/>}/>
           <Route path='/Usermain' element = {<Usermain/>}/>
             <Route path='/Usersidebar' element = {<Usersidebar/>}/>
+            <Route path='/emails' element = {<Emailmessage/>}/>
+          
 
 
           </Routes>

@@ -9,12 +9,16 @@
 }
 
 .imagebox{
-    height: 40%;
-    background-color: red;
+    height: 50%;
+    background-color: transparent;
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 30%;
+    width: 50%;
+
+    img{
+        height: 100%;
+    }
 }
 
 .confirmtext{

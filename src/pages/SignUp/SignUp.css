@@ -50,16 +50,17 @@
   }
   
   .buttonsign {
-    width: 100%;
+    width: 200px !important;
     height: 60px;
     background: transparent;
     border: 1px solid #FF7043 !important;
     color: #FF7043;
-    border: none;
-    border-radius: 4px;
+    font-size: 29px;
+    border-radius: 16px !important;
     transition: all 350ms;
     /* font-size: 1rem; */
     cursor: pointer;
+    margin-left: 200px;
   }
   
   .buttonsign:hover {
@@ -80,14 +81,23 @@
     width: 15px;
   }
   .radio p{
-    font-size: 14px;
+    font-size: 19px;
     color: #1d1d1d;
     text-decoration: none;
+    /* margin-bottom: 60px; */
+    /* background-color: red; */
+    position: relative;
+    top: -7px;
 
   }
 
   h7{
-    font-size: 14px;
+    font-size: 19px;
+  }
+  .terms{
+    font-size: 19px;
+    color: #1d1d1d;
+    text-decoration: none;
   }
 
   .terms:hover{
@@ -130,6 +140,16 @@
       font-size: 0.9rem;
       padding: 8px;
     }
+    .radio p{
+      font-size: 19px;
+      color: #1d1d1d;
+      text-decoration: none;
+  
+    }
+  
+    h7{
+      font-size: 19px;
+    }
   }
   
   @media (max-width: 480px) {
@@ -147,12 +167,15 @@
       padding: 6px;
     }
 
-    h7{
-      font-size: 12px;
+    .radio p{
+      font-size: 19px;
+      color: #1d1d1d;
+      text-decoration: none;
+  
     }
-
-    p{
-      font-size: 8px;
+  
+    h7{
+      font-size: 19px;
     }
   }
   

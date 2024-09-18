@@ -19,7 +19,7 @@ const ForgetPassword = () => {
         </label>
             
             <Link to="/ResetPassword" style={{textDecoration:"none"}}>
-               <button className='forgetbutton'>Continue</button>
+             <div className='forgetbutton'>   <button >Continue</button></div>
             </Link>
             
         </div>

@@ -31,7 +31,19 @@
     flex-direction: column;
 
     @media (max-width:768px) {
-        
+        h1{
+            font-size: 20px;
+        }
+
+        h2{
+            font-size: 16px;
+        }
+
+        button{
+            width: max-content;
+            padding: 5px;
+            font-size: 15px;
+        }
     }
 }
 

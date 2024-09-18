@@ -50,8 +50,15 @@
   }
   
   .buttonsign {
-    width: 200px !important;
     height: 60px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+   button{
+    width: 200px !important;
+    height: 100%;
     background: transparent;
     border: 1px solid #FF7043 !important;
     color: #FF7043;
@@ -60,16 +67,19 @@
     transition: all 350ms;
     /* font-size: 1rem; */
     cursor: pointer;
-    margin-left: 200px;
-  }
-  
-  .buttonsign:hover {
+    /* margin-left: 200px; */
+   }
+
+   button:hover {
     background-color: #FF7043;
     color: white;
     cursor: pointer;
     border: 1px solid #FF7043;
     /* transform: scale(1.0); */
   }
+  }
+  
+
   .radio{
     width: 100%;
     padding: 10px;
@@ -123,8 +133,15 @@
   
   /* Responsive Design */
   @media (max-width: 768px) {
+    .SignUpForm{
+      height: max-content;
+    }
     .SigUpForm {
       padding: 20px;
+    }
+
+    .terms{
+      font-size: 12px;
     }
   
     .SigUpForm h2 {
@@ -150,6 +167,10 @@
     h7{
       font-size: 19px;
     }
+
+    /* .buttonsign{
+      margin-left: 50px;
+    } */
   }
   
   @media (max-width: 480px) {
@@ -178,7 +199,19 @@
       font-size: 19px;
     }
   }
-  
+  @media (max-width:376px) {
+   .radio{
+    .terms{
+      font-size: 15px !important;
+      position: relative;
+      top: -10px;
+    }
+   }
+
+    h7{
+      font-size: 15px !important;
+    }
+  }
 
 
 

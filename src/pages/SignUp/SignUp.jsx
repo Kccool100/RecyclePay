@@ -118,7 +118,7 @@ const SignUp = () => {
         </div>
           
         <Link to='/SignupConfirmation'  style={{textDecoration:"none"}}>
-          <button type="submit" className='buttonsign'>Sign Up</button>
+          <div  className='buttonsign'><button type="submit">Sign Up</button></div>
         </Link>
         <div className="logg">
                 <h7 style={styles.text}>if you already have an account </h7>

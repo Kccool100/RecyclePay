@@ -42,6 +42,9 @@
     height: 50px;
     font-weight: 700;
     line-height: 35px; 
+    margin: 0 0.5rem;
+    animation: bounce; /* referring directly to the animation's @keyframe declaration */
+    animation-duration: 2s;
     text-align: center;
     letter-spacing: -0.3px;
     text-transform: capitalize;
@@ -53,6 +56,10 @@
     height: 250px;
     flex-direction: column;
     display: flex;
+    flex-shrink: 0;
+    animation:fadeInLeft;
+    margin: 0 0.5rem;
+    animation-duration: 1s;
     gap: 1rem;
     justify-content: flex-start;
     align-items: center;

@@ -27,15 +27,15 @@ const Email = () => {
     <div className='EmailContainer' style={styles.background}>
         <div className="con-holder" style={styles.background}>
         <div className="con1">
-            <p>Our Email</p>
-            <span>Recyclepay7@gmail.com</span>
-        </div>
-        <div className="con2">
-          <p>Our Social</p>
+            <p>Our Social</p>
            <span>X @recyclepay </span>
            <span>Facebook @recyclepay</span>
            <span>Whatsapp @+23470235927</span>
            <span>Instagram @recyclepay</span> 
+        </div>
+        <div className="con2">
+          <p>Our Email</p>
+          <span>Recyclepay7@gmail.com</span>
         </div>
         <div className="con3">
             <p>Contact Us</p>

@@ -30,14 +30,6 @@ const Pickup = () => {
             <form  className="SigUpForm" style={styles.background}>
       <h2>Pick Up Details</h2>
    
-      <label>
-        <input 
-          placeholder='Name'
-          type="text" 
-          required
-          style={styles.background}
-        />
-      </label>
       
         <label>
         <input 
@@ -47,16 +39,10 @@ const Pickup = () => {
           style={styles.background}
         />
         </label>
-        <label>
-        <input 
-          placeholder='Phone Number'
-          type='number'
-          required 
-          style={styles.background}
-        />
-        </label>
+       
         <label>
         <select placeholder='Waste Kg' style={styles.background}>
+          <option value=""> Waste Kg</option>
           <option value=""> 10Kg </option>
           <option value=""> 20Kg </option>
           <option value=""> 30Kg </option>
@@ -69,7 +55,7 @@ const Pickup = () => {
         </label>
    
       <Link to='/Detailsconfirm'  style={{textDecoration:"none"}}>
-        <button type="submit" className='pickbutton'>Next</button>
+       <div  className='pickbutton'>  <button type="submit">Next</button></div>
       </Link>
      
     </form>

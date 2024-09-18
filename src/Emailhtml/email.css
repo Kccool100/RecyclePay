@@ -1,0 +1,117 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    width: 100%;
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.conTop{
+    width: 90%;
+    height: 20%;
+    background: #ff9700;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    top: -18px;
+}
+
+.conTopLeft{
+    height: 100%;
+    width: 25%;
+    display: flex;align-items: center;
+    justify-content: center;
+
+    img{
+        width: 80%;
+    }
+}
+
+.conTopRight{
+    height: 100%;
+    width: 68%;
+    display: flex;
+    align-items: center;
+
+    p{
+        font-size: 52px;
+        color: #fff;
+        font-family: arial;
+        font-weight: 700;
+    }
+}
+
+.conBottom{
+    width: 70%;
+    height: 75%;
+    /* background: rgb(169, 169, 207); */
+    display: flex;
+    /* justify-content: center; */
+    /* align-items: center; */
+    justify-content: flex-start;
+    flex-direction: column;
+    gap: 20px;
+    padding-left: 20px;
+    /* padding-top: 20px; */
+    font-size: 20px;
+}
+
+
+@media (max-width:768px) {
+    body{
+        /* background-color: red; */
+        .conBottom{
+            width: 100vw;
+            height: max-content;
+            overflow: hidden;
+            /* background-color: yellow; */
+        }
+    
+        .conTopP{
+            width: 100vw;
+            background-color: black;
+            display: flex;
+            flex-direction: column;
+    
+            .conTopLeft{
+                width: 40%;
+    
+                img{
+                    height: 100%;
+                }
+            }
+    
+            .conTopRight{
+                width: 60%;
+                /* background-color: green; */
+            }
+        }
+    }
+}
+
+
+@media (max-width:426px) {
+
+    .conTopLeft{
+        height: 100%;
+        width:40%;
+        img{
+            /* height: 60%; */
+            width:60%;
+            height: 22%;
+        }
+    }
+    .conTopRight{
+        p{
+            font-size: 25px;
+        }
+    }
+}

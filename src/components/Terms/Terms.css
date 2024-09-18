@@ -93,6 +93,9 @@ height: max-content;
 /* background-color: #8f3535; */
 padding-left: 100px;
 margin-top: 80px;
+p{
+  font-size: 24px;
+}
 
 h1{
     color: #222;

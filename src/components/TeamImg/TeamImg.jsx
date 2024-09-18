@@ -70,7 +70,7 @@ const TeamImg = () => {
                 <img src={tony} alt="tony" />
             </div>
             <div className="names">
-                <p style={styles.text}>Aji Anthony</p>
+                <p style={styles.text}>Eji Anthony</p>
                <p style={styles.text}> Backend Developer</p>
             </div>
         </div>

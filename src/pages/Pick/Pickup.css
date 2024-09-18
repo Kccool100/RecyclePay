@@ -35,7 +35,7 @@
   .pickbutton{
 
     height: 60px;
-    width: 200px;
+    width: 100%;
     background-color: transparent !important;
     border-radius: 10px;
     border: 2px solid #FF7043 !important   ;

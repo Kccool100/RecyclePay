@@ -139,7 +139,16 @@ background: #000;
 gap: 10px;
 }
 
-
+.emailbutn:hover{
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.526);
+    color: white;
+}
+.futt:hover{
+    cursor: pointer;
+    transform: scale(1.3);
+    transition: 350ms all ease-in-out;
+}
 
 
 .list2{

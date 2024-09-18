@@ -6,6 +6,10 @@
     align-items: center;
     justify-content: space-around;
     flex-direction: column;
+
+    img{
+        display: none;
+    }
 }
 
 .usermainbox{
@@ -27,7 +31,7 @@
     .headerbox1{
         height: 70%;
         width: 30%;
-        background-color: #FF9800;
+        background-color: #FF7043;
         display: flex;
         justify-content: flex-end;
         border-radius: 10px;
@@ -84,6 +88,8 @@
     overflow: hidden;
     
 }
+
+
 
 .usermainid{
     height: 100%;
@@ -171,6 +177,14 @@
         height: max-content;
         overflow: hidden;
         width: 100%;
+
+        
+        img{
+            display: flex;
+            height: 30%;
+            width: 80%;
+            margin-top: 30px;
+        }
     }
     .usermainheaderbox{
         margin-top: 20px;
@@ -190,7 +204,7 @@
                 width: 80%;
                 height: 100%;
                 h4{
-                    font-size: 18px;
+                    font-size: 15px;
                 }
                 h2{
                     font-size: 20px;
@@ -198,6 +212,7 @@
 
             }
         }
+
     }
 
     .usermainbox{

@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import Modal from 'react-modal';
 import './Usermain.css';
 import { useNavigate } from 'react-router-dom';
+import logo from '../../assets/recycleLogo.png'
 
 // Modal custom styles
 const customStyles = {
@@ -33,6 +34,7 @@ const Usermain = () => {
 
   return (
     <div className='usermain-container'>
+      <img src={logo} alt="" />
       <div className='usermainheaderbox'>
         <div className='headerbox1'>
           <div className='header2'>

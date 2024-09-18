@@ -80,14 +80,14 @@
     width: 15px;
   }
   .radio p{
-    font-size: 22px;
+    font-size: 14px;
     color: #1d1d1d;
     text-decoration: none;
 
   }
 
   h7{
-    font-size: 22px;
+    font-size: 14px;
   }
 
   .terms:hover{
@@ -145,6 +145,14 @@
     .SigUpForm button {
       font-size: 0.8rem;
       padding: 6px;
+    }
+
+    h7{
+      font-size: 12px;
+    }
+
+    p{
+      font-size: 8px;
     }
   }
   

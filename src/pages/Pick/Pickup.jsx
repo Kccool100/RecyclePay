@@ -38,17 +38,10 @@ const Pickup = () => {
           style={styles.background}
         />
       </label>
-      <label>
-        <input 
-          placeholder='Email'
-          type='email'
-          required 
-          style={styles.background}
-        />
-        </label>
+      
         <label>
         <input 
-          placeholder='Address'
+          placeholder='Pickup Address'
           type='text'
           required 
           style={styles.background}

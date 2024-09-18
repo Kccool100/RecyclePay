@@ -14,10 +14,10 @@ const Pickupconfirmed = () => {
           <div className='confirmedbox'>
             <div className='confirmedheader'>
               <div className="iconn">
-                <FaAngleLeft onClick={()=> navigate("/")} />
+                {/* <FaAngleLeft onClick={()=> navigate("/")} /> */}
               </div>
                <div className="logoImg">
-               <img src={logo} alt=""  />
+               <img src={logo} alt="" onClick={()=> navigate("/")} style={{cursor:"pointer"}}  />
                </div>
             </div>
            

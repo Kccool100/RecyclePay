@@ -3,7 +3,25 @@ import Modal from 'react-modal';
 import './Usersidebar.css'
 import userlogo from '../../assets/recycleLogo.png'
 import { useNavigate } from 'react-router-dom'
+import logout from '../../assets/logout.png'
+import { useContext} from "react"
+import { Theme } from '../Theme/Theme';
+import { ThemeContext } from "../../context/ThemeProvider" 
 
+
+const getStyles = (mode) =>({
+  background: {
+      backgroundColor: Theme[mode].backgroundColor,
+     
+  },
+  text:{
+      color:Theme[mode].color
+  },
+  theme: {
+      color:Theme[mode].highlight
+
+  }
+});
 
 // Modal custom styles
 const customStyles = {
@@ -19,7 +37,8 @@ const customStyles = {
 };
 
 const Usersidebar = () => {
-
+  const {mode} = useContext(ThemeContext);
+  const styles = getStyles(mode);
   const navigate = useNavigate()
   const [modalIsOpen, setIsOpen] = useState(false);
 
@@ -34,8 +53,8 @@ const Usersidebar = () => {
     setIsOpen(false);
   }
   return (
-    <div className='userside-container'>
-      <div className='usersidetext'>
+    <div className='userside-container' style={styles.background}>
+      <div className='usersidetext' style={styles.background}>
         <div className='userlogo'>
             
             <img src={userlogo} alt="" />
@@ -48,7 +67,7 @@ const Usersidebar = () => {
             </div>
          
          </div>
-      <footer onClick={openModal}> Log Out</footer>  
+      <footer onClick={openModal} style={styles.background}> <p >Log Out</p>  <img src={logout} alt='logout'/></footer>  
       <Modal
         isOpen={modalIsOpen}
         onRequestClose={closeModal} // Ensures modal can be closed via overlay or ESC

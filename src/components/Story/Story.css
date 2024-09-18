@@ -1,8 +1,9 @@
 .StoryContainer{
     width: 100%;
-    height: 55vh;
+    height: 40vh;
     display: flex;
     flex-direction: column;
+    padding-top: 50px;
     justify-content: center;
     align-items: center;
 }
@@ -36,7 +37,7 @@
 @media (max-width:768px) {
     .StoryContainer{
         width: 100%;
-        height: max-content;
+        height: auto;
         padding-top: 50px;
 
     }

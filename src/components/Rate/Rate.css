@@ -4,6 +4,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    padding-top:30px ;
     align-items: center;
 }
 .subHead{
@@ -80,12 +81,14 @@ line-height: 145.1%;
     }
     .subHead{
         width: 50%;
-        flex-direction: column;
-        margin-left: 650px;
+        margin-left: 350px;
     }
     .rateText p{
         font-size: 19px;
     }
+.rateText{
+    height: auto;
+}
 
 }
 @media (max-width:768px) {
@@ -100,10 +103,13 @@ line-height: 145.1%;
         margin-left: 650px;
     }
     .rateText p{
-        font-size: 18px;
+        font-size: 16px;
     }
     .kgg{
         font-size: 20px;
+    }
+    .rateText{
+        height: auto;
     }
 }
 
@@ -133,6 +139,9 @@ line-height: 145.1%;
     .kgg{
         font-size: 15px;
     }
+    .rateText{
+        height: auto;
+    }
 }
 @media (max-width:376px) {
     .rateHead h3{
@@ -145,8 +154,16 @@ line-height: 145.1%;
     .rateText p{
         font-size: 13px;
     }
+    .rateText{
+        height: auto;
+    }
 }
 @media (max-width:320px) {
 
-   
+    .rateText p{
+        font-size: 12px;
+    }
+    .rateText{
+        height: auto;
+    }
 }

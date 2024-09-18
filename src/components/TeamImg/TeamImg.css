@@ -56,7 +56,7 @@ line-height: 10px;
 
     .TeamImgContainer{
         width: 100%;
-        padding-top: 50px;
+        padding-top: 30px;
         height: auto;
     }
     .ImgContainer{
@@ -82,7 +82,6 @@ line-height: 10px;
         width: 82%;
         flex-direction: column;
         gap: 1.5rem;
-        padding-top: 50px;
     }
     .ImgCon{
         width: 50%;
@@ -102,7 +101,6 @@ line-height: 10px;
         width: 82%;
         flex-direction: column;
         gap: 1.5rem;
-        margin-top: 40px;
     }
     .ImgCon{
         width: 50%;
@@ -116,9 +114,7 @@ line-height: 10px;
     
 }
 @media (max-width:376px) {
-    .ImgContainer{
-      margin-top: 100px;
-    }
+   
     .names p{
         font-size: 15px;
         font-weight: 700;
@@ -129,9 +125,6 @@ line-height: 10px;
 }
 @media (max-width:320px) {
 
-    .ImgContainer {
-        margin-top: 150px;
-    }
     .names p{
         font-size: 14px;
         font-weight: 700;

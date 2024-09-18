@@ -1,6 +1,6 @@
 .TeamContainer{
     width: 100%;
-    height:100vh;
+    height:60vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -23,6 +23,7 @@
     .TeamContainer{
         width: 100%;
         height:auto;
+        padding-top: 30px;
 
     }
     .TeamContainer h3{
@@ -39,10 +40,7 @@
       .TeamContainer h3{
         font-size: 25px;
       }
-      .TeamContainer{
-        border: 1px solid black;
-        
-      }
+   
 }
 @media (max-width:376px) {
     .TeamContainer h3{
@@ -50,9 +48,6 @@
       }
 }
 @media (max-width:320px) {
-    .TeamContainer{
-        margin-top: 150px;
-
-    }
+   
 
 }

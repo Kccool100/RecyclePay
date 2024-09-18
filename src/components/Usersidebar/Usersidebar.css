@@ -103,15 +103,24 @@ footer{
     align-items: center;
     /* justify-content: center; */
     padding-left: 30px;
-    font-size: 30px;
-    font-weight: bold;
+    gap: 10px;
     cursor: pointer;
 }
-
-footer:hover{
-  color: #FF9800;
+footer p{
+    font-size: 30px;
+    color:#000;
+    margin-top: 10px;
+    font-weight: bold;
 }
 
+footer p:hover{
+  color: #FF9800;
+}
+footer img{
+    height: 40px;
+    width: 40px;
+    object-fit: contain;
+}
 
 
 @media (max-width:768px) {

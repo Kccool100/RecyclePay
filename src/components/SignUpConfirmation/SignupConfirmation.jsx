@@ -12,14 +12,19 @@ const SignupConfirmation = () => {
   const [isVerified, setIsVerified] = useState(1);
 
   const baseURL = "https://waste-project.onrender.com";
+  const navigate = useNavigate();
 
   useEffect(() => {
+    
     const verifyUser = () => {
       axios
         .get(`${baseURL}/api/v1/user/verify/${token}`)
         .then((res) => {
           console.log(res);
           setIsVerified(2);
+          setTimeout(() => {
+            navigate("/Login")
+          }, 3000);
         })
         .catch((err) => {
           console.log("Error response:", err);
@@ -30,7 +35,6 @@ const SignupConfirmation = () => {
   }, []);
 
   console.log(token);
-  const navigate = useNavigate();
   return (
     
     <div className='confirm-container'>

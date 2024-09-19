@@ -52,7 +52,7 @@ const Header = () => {
         </div>
         <ThemeSwitch />
         <Link to="/SignUp" className='LogLink' style={{textDecoration:"none"}}>
-               <button style={styles.background.text}>Waste Pickup</button>
+        <button style={styles.background.text}>Waste Pickup</button>
         </Link>
              
             </div>

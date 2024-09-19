@@ -26,23 +26,23 @@ const Email = () => {
   return (
     <div className='EmailContainer' style={styles.background}>
         <div className="con-holder" style={styles.background}>
-        <div className="con1">
-            <p>Our Social</p>
-           <span>X @recyclepay </span>
-           <span>Facebook @recyclepay</span>
-           <span>Whatsapp @+23470235927</span>
-           <span>Instagram @recyclepay</span> 
+        <div className="con1" style={styles.background}>
+            <p style={styles.text}>Our Social</p>
+           <span style={styles.text}>X @recyclepay </span>
+           <span style={styles.text}>Facebook @recyclepay</span>
+           <span style={styles.text}>Whatsapp @+23470235927</span>
+           <span style={styles.text}>Instagram @recyclepay</span> 
         </div>
-        <div className="con2">
-          <p>Our Email</p>
-          <span>Recyclepay7@gmail.com</span>
+        <div className="con2" style={styles.background}> 
+          <p style={styles.text}>Our Email</p>
+          <span style={styles.text}>Recyclepay7@gmail.com</span>
         </div>
-        <div className="con3">
-            <p>Contact Us</p>
-            <span>Address:</span>
-            <span>149. Bamgbose Street,</span>
-            <span>Lagos-Island, Lagos, Nigeria.</span>
-            <li>Phones: 07025235927, 08132601195</li>
+        <div className="con3" style={styles.background}>
+            <p style={styles.text}>Contact Us</p>
+            <span style={styles.text}>Address:</span>
+            <span style={styles.text}>149. Bamgbose Street,</span>
+            <span style={styles.text}>Lagos-Island, Lagos, Nigeria.</span>
+            <li style={styles.text}>Phones: 07025235927, 08132601195</li>
         </div>
 
         </div>

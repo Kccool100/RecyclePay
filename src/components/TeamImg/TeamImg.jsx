@@ -4,7 +4,7 @@ import williams from "../../assets/williams.png"
 import ife from "../../assets/ife.png"
 import kc from "../../assets/kc.png"
 import folake from "../../assets/folake.png"
-import tony from "../../assets/tony.png"
+import anthony from "../../assets/anthony.png"
 import { useContext} from "react"
 import { Theme } from '../Theme/Theme';
 import { ThemeContext } from "../../context/ThemeProvider" 
@@ -67,7 +67,7 @@ const TeamImg = () => {
         </div>
         <div className="ImgCon">
             <div className="ImG">
-                <img src={tony} alt="tony" />
+                <img src={anthony} alt="anthony" />
             </div>
             <div className="names">
                 <p style={styles.text}>Eji Anthony</p>

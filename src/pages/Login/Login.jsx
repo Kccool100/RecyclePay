@@ -1,6 +1,6 @@
 import "./Login.css"
 import { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link , useNavigate} from "react-router-dom";
 
 import {useForm} from "react-hook-form"
 import { useContext} from "react"
@@ -38,6 +38,7 @@ const Login = () => {
   const {mode} = useContext(ThemeContext);
   const styles = getStyles(mode);
   const [Loading, setLoading] = useState(false);
+  const navigate = useNavigate();
 
   
   const {

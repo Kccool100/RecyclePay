@@ -1,10 +1,12 @@
 import React from 'react'
 import './Pickup.css'
-import { Link } from "react-router-dom";
-
-import { useContext} from "react"
+import {useForm} from "react-hook-form"
+import {yupResolver} from "@hookform/resolvers/yup"
+import * as yup from "yup"
+import { useContext, useState} from "react"
 import { Theme } from '../../components/Theme/Theme';
 import { ThemeContext } from "../../context/ThemeProvider" 
+import  axios from "axios";
 
 
 const getStyles = (mode) =>({
@@ -20,43 +22,78 @@ const getStyles = (mode) =>({
 
   }
 });
+
+
+
+const schema = yup
+  .object({
+    PickUpAddress: yup.string().required("Please input your Pick up Address"),
+    WasteKG: yup.number().required("Please select your Waste KG")
+  })
+  .required()
+
+  const baseURL = "https://waste-project.onrender.com";
+
 const Pickup = () => {
   const {mode} = useContext(ThemeContext);
   const styles = getStyles(mode);
+  const [Loading, setLoading] = useState(false);
+
+  const {
+    register,
+    handleSubmit,
+    formState: { errors },
+  } = useForm({
+    resolver: yupResolver(schema),
+  })
+  const onSubmit = async(data) => {
+    setLoading(true)
+    const res= await axios.post(
+      `${baseURL}/api/v1/user/create-waste/:id`,
+      data
+    )
+    console.log(res)
+  setLoading(false)
+
+  };
 
   return (
            <div className="pick-container">
             <div className="pickblur">
-            <form  className="SigUpForm" style={styles.background}>
+            <form onSubmit={handleSubmit (onSubmit)} className="SigUpForm" style={styles.background}>
       <h2>Pick Up Details</h2>
    
       
-        <label>
-        <input 
-          placeholder='Pickup Address'
-          type='text'
-          required 
-          style={styles.background}
-        />
+      <label>
+          <input 
+            placeholder='Pick Up Address'
+            type="text" 
+            {...register("PickUpAddress")}
+            
+            style={styles.background}
+          />
+           <p className="error">{errors.PickUpAddress?.message}</p>
         </label>
        
         <label>
-        <select placeholder='Waste Kg' style={styles.background}>
-          <option value=""> Waste Kg</option>
-          <option value=""> 10Kg </option>
-          <option value=""> 20Kg </option>
-          <option value=""> 30Kg </option>
-          <option value=""> 40Kg </option>
-          <option value=""> 50Kg </option>
-          <option value=""> 60Kg </option>
-          <option value=""> 70Kg </option>
+        <input 
+            placeholder='Waste KG'
+            type="number" 
+            {...register("WasteKG")}
+            
+            style={styles.background}
+          />
+        <p className="error">{errors.WasteKG?.message}</p>
 
-        </select> 
         </label>
    
-      <Link to='/Detailsconfirm'  style={{textDecoration:"none"}}>
-       <div  className='pickbutton'>  <button type="submit">Next</button></div>
-      </Link>
+       <div  className='pickbutton'>  
+
+         {Loading? (
+            <p>Loading...</p>
+           ): (<button type="submit">Next</button>)  }
+        
+        </div>
      
     </form>
             </div>

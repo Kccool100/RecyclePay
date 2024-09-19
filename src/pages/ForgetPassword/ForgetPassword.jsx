@@ -60,7 +60,7 @@ const ForgetPassword = () => {
     console.log(res)
   setLoading(false)
   setTimeout(() => {
-    navigate("/ResetPassword")
+    navigate("/ResetPassword/:token")
   }, 3000);
 
   };

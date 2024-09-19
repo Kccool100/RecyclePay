@@ -42,7 +42,7 @@ function App() {
           <Route path='/Rpassword' element = {<Rpassword/>}/>
           <Route path='/Detailsconfirm' element = {<Detailsconfirm/>}/>
           <Route path='/Pickupconfirmed' element = {<Pickupconfirmed/>}/>
-          <Route path='/ResetPassword' element = {<ResetPassword/>}/>
+          <Route path='/ResetPassword/:token' element = {<ResetPassword/>}/>
           <Route path='/Terms' element = {<Terms/>}/>
           <Route path='/Admindashboard' element = {<Admindashboard/>}/>
           <Route path='/Adminmain' element = {<Adminmain/>}/>

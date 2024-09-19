@@ -2,7 +2,7 @@ import React from 'react'
 import './SignupConfirmation.css'
 import { useNavigate, useParams  } from 'react-router-dom'
 import confirm from '../../assets/confirm.png'
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import axios from 'axios'
 
 

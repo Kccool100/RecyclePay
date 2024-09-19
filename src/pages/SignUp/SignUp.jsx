@@ -56,7 +56,7 @@ const SignUp = () => {
     )
     console.log(res)
   setLoading(false)
-  
+
   };
 
   return (
@@ -102,7 +102,6 @@ const SignUp = () => {
             placeholder='Phone Number'
             type="text" 
             {...register("PhoneNumber")}
-          
             style={styles.background}
 
           />

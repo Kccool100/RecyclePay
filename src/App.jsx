@@ -38,7 +38,7 @@ function App() {
           <Route path='/SignUp' element = {<SignUp/>}/>
           <Route path='/forgetpassword' element = {<ForgetPassword/>}/>
           <Route path='/Pick' element = {<Pickup/>}/>
-          <Route path='/SignupConfirmation' element = {<SignupConfirmation/>}/>
+          <Route path='/SignupConfirmation/:token' element = {<SignupConfirmation/>}/>
           <Route path='/Rpassword' element = {<Rpassword/>}/>
           <Route path='/Detailsconfirm' element = {<Detailsconfirm/>}/>
           <Route path='/Pickupconfirmed' element = {<Pickupconfirmed/>}/>

@@ -1,10 +1,13 @@
 import React, { useState } from 'react';
 import { Link } from "react-router-dom";
 import "./SignUp.css"
-
+import {useForm} from "react-hook-form"
 import { useContext} from "react"
+import {yupResolver} from "@hookform/resolvers/yup"
+import * as yup from "yup"
 import { Theme } from '../../components/Theme/Theme';
 import { ThemeContext } from "../../context/ThemeProvider" 
+import  axios from "axios";
 
 
 const getStyles = (mode) =>({
@@ -20,95 +23,104 @@ const getStyles = (mode) =>({
 
   }
 });
+
+const schema = yup
+  .object({
+    Name: yup.string().required("Please input your name"),
+    Email: yup.string().email().required("Please input your Email"),
+    Location: yup.string().required("Please input your Location"),
+    PhoneNumber: yup.string().required("Please input your Phone Number"),
+    Password:yup.string().required("Please input your Password and must be 6 characters").min(6),
+  })
+  .required()
+
+  const baseURL = "https://waste-project.onrender.com";
+
 const SignUp = () => {
   const {mode} = useContext(ThemeContext);
   const styles = getStyles(mode);
+  const [Loading, setLoading] = useState(false);
 
-  const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    password: '',
-    phoneNumber: '',
-    location:'',
-  });
-
-  const handleChange = (e) => {
-    const { name, value } = e.target;
-    setFormData({
-      ...formData,
-      [name]: value,
-    });
-  };
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    // Submit form logic here
-    console.log('Form data:', formData);
+  const {
+    register,
+    handleSubmit,
+    formState: { errors },
+  } = useForm({
+    resolver: yupResolver(schema),
+  })
+  const onSubmit = async(data) => {
+    setLoading(true)
+    const res= await axios.post(
+      `${baseURL}/api/v1/user/signUp`,
+      data
+    )
+    console.log(res)
+  setLoading(false)
+  
   };
 
   return (
     <div className="SignUpCon" >
-      <form onSubmit={handleSubmit} className="SigUpForm" style={styles.background}>
+      <form  onSubmit={handleSubmit (onSubmit)} className="SigUpForm" style={styles.background}>
         <h2>Sign Up With RecyclePay</h2>
         <label>
           <input 
             placeholder='Name'
             type="text" 
-            name="name" 
-            value={formData.name} 
-            onChange={handleChange} 
-            required   
+            {...register("Name")}
             
             style={styles.background}
           />
+           <p className="error">{errors.Name?.message}</p>
         </label>
         <label>
           <input 
             placeholder='Email'
             type="email" 
-            name="email" 
-            value={formData.email} 
-            onChange={handleChange} 
-            required 
+            {...register("Email")}
+           
             style={styles.background}
 
           />
+           <p className="error">{errors.Email?.message}</p>
+
         </label>
         <label>
           <input 
             placeholder='Password'
             type="password" 
-            name="password" 
-            value={formData.password} 
-            onChange={handleChange} 
-            required 
+            {...register("Password")}
+            
             style={styles.background}
 
           />
+           <p className="error">{errors.Password?.message}</p>
+
         </label>
         <label>
           <input 
             placeholder='Phone Number'
-            type="number" 
-            name="phone number" 
-            value={formData.phoneNumber} 
-            onChange={handleChange} 
-            required 
+            type="text" 
+            {...register("PhoneNumber")}
+          
             style={styles.background}
 
           />
+           <p className="error">{errors.PhoneNumber?.message}</p>
+
         </label>
         <label>
           <input 
             placeholder='Location'
             type="text" 
-            name="location" 
-            value={formData.location} 
-            onChange={handleChange} 
-            required 
+            {...register("Location")}
+           
             style={styles.background}
 
           />
+          
+           <p className="error">{errors.Location?.message}</p>
+
         </label>
         <div className="radio">
         <input type="radio" />
@@ -116,10 +128,12 @@ const SignUp = () => {
               <p style={styles.text} className='terms'>I accept Terms and Conditions</p>
             </Link>
         </div>
-          
-        <Link to='/SignupConfirmation'  style={{textDecoration:"none"}}>
-          <div  className='buttonsign'><button type="submit">Sign Up</button></div>
-        </Link>
+          <div  className='buttonsign'>
+
+           {Loading? (
+            <p>Loading...</p>
+           ): (<button type="submit">Sign Up</button>)  }
+            </div>
         <div className="logg">
                 <h7 style={styles.text}>if you already have an account </h7>
                 <Link to='/Login'  style={{textDecoration:"none", color:"#FF7043"}}><p style={styles.text} className='terms'>Sign in</p></Link>

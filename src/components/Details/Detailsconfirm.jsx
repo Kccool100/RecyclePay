@@ -2,7 +2,7 @@ import React from 'react'
 import './Detailsconfirm.css'
 import { Link, useNavigate } from 'react-router-dom'
 
-const Detailsconfirm = () => {
+const Detailsconfirm = (data) => {
 
   const navigate = useNavigate()
   return (
@@ -18,7 +18,7 @@ const Detailsconfirm = () => {
                 <h3> Name : </h3>
               </div>
               <div className='infotext'>
-                <h3> Adenekan Ifeoluwa</h3>
+                <h3> name.data</h3>
               </div>
             </div>
             <div className='inp'>

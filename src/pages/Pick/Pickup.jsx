@@ -6,6 +6,7 @@ import * as yup from "yup"
 import { useContext, useState} from "react"
 import { Theme } from '../../components/Theme/Theme';
 import { ThemeContext } from "../../context/ThemeProvider" 
+import { useDispatch } from "react-redux";
 import  axios from "axios";
 import { useNavigate } from 'react-router-dom'
 
@@ -36,15 +37,17 @@ const schema = yup
   const Id = localStorage.getItem("id")
   console.log(Id);
 
-  const baseURL = `https://waste-project.onrender.com/api/v1/user/create-waste/${Id}`;
 
+  const baseURL = `https://waste-project.onrender.com`;
   
 
 const Pickup = () => {
   const {mode} = useContext(ThemeContext);
   const styles = getStyles(mode);
   const [Loading, setLoading] = useState(false);
+  const dispatch = useDispatch()
   const navigate = useNavigate()
+
 
   const {
     register,
@@ -53,21 +56,23 @@ const Pickup = () => {
   } = useForm({
     resolver: yupResolver(schema),
   })
+
+  
   const onSubmit = async(data) => {
     setLoading(true)
-   try{
-    const response = await axios.post(baseURL,data)
-    console.log(response.data);
-   }catch(error){
-    console.log(error);
-    
-   }finally{
+    const res= await axios.post(
+      `${baseURL}/api/v1/user/create-waste/:id`,
+      data
+    )
+ 
+    console.log(res)
+   
     setLoading(false)
     setTimeout(() => {
-      navigate("/Pickupconfirmed")
+      navigate("/Detailsconfirm")
     }, 3000);
 
-   }
+   
 
   };
 
@@ -78,6 +83,18 @@ const Pickup = () => {
       <h2>Pick Up Details</h2>
    
       
+      {/* <label>
+          <input 
+            placeholder='Phone Number'
+            type="text" 
+            {...register("phoneNumber")}
+            style={styles.background}
+
+          />
+           <p className="error">{errors.PhoneNumber?.message}</p>
+
+        </label> */}
+
       <label>
           <input 
             placeholder='Pick Up Address'

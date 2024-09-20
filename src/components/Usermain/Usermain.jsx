@@ -59,58 +59,39 @@ const Usermain = () => {
   }
 
   return (
-    <div className='usermain-container' style={styles.background}>
+    <div className='usermain-container' >
       <img src={logo} alt="" />
-      <div className='usermainheaderbox'>
-        <div className='headerbox1'>
-          <div className='header2' style={styles.background}>
-            <h4 style={styles.text}>Total waste(Kg)</h4>
-            <h2 style={styles.text}>0Kg</h2>
-          </div>
-        </div>
-        <div className='headerbox1'>
-          <div className='header2' style={styles.background}>
-            <h4 style={styles.text}>Total Accepted(Kg)</h4>
-            <h2 style={styles.text}>0kg</h2>
-          </div>
-        </div>
-        <div className='headerbox1'>
-          <div className='header2' style={styles.background}>
-            <h4 style={styles.text}>Pending request</h4>
-            <h2 style={styles.text}>0</h2>
-          </div>
-        </div>
-      </div>
-      <div className='usermainbox' style={styles.background}>
+ 
+      <div className='usermainbox' >
         <div className='waste'>
           <button className='nut1'>Waste history</button>
           <button onClick={() => navigate('/Pick')}>Pick Up</button>
         </div>
-        <div className='usermainheader' style={styles.background}>
+        <div className='usermainheader' >
           <h4 style={styles.text}>Transaction History</h4>
         </div>
-        <div className='mainholder' style={styles.background}>
+        <div className='mainholder' >
           <div className='usermainid'>
             <header style={styles.text}>ID</header>
-            <div className='usermainidtext' style={styles.background}>
+            <div className='usermainidtext' >
               <p style={styles.text}>1</p>
             </div>
           </div>
-          <div className='usermainname' style={styles.background}>
+          <div className='usermainname' >
             <header style={styles.text}>Name</header>
-            <div className='usermainidtext' style={styles.background}>
+            <div className='usermainidtext' >
               <p style={styles.text}>John Kate</p>
             </div>
           </div>
-          <div className='usermainkg' style={styles.background}>
+          <div className='usermainkg' >
             <header style={styles.text}>Weight(Kg)</header>
-            <div className='usermainidtext' style={styles.background}>
+            <div className='usermainidtext' >
               <p style={styles.text}>10Kg</p>
             </div>
           </div>
-          <div className='usermainstatus' style={styles.background}>
+          <div className='usermainstatus' >
             <header style={styles.text}>Date & Time</header>
-            <div className='usermainidtext' style={styles.background}>
+            <div className='usermainidtext' >
               <p style={styles.text}>28, Aug & 3:30pm</p>
             </div>
           </div>

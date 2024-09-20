@@ -48,7 +48,7 @@ const Pickupconfirmed = () => {
               </div>
               
                <div className="logoImg">
-               <img src={logo} alt="" onClick={()=> navigate("/")} style={{cursor:"pointer"}}  />
+               <img src={logo} alt="" onClick={()=> navigate("/Userdashboard")} style={{cursor:"pointer"}}  />
                </div>
             </div>
            

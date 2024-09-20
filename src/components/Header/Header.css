@@ -70,6 +70,7 @@
   color: #FF7043;
   align-items: center;
   gap: 10px;
+  background: none;
   border-radius: 10px;
   transition: all 350ms;
   border: 1px solid var(--Hover-effect, #FF7043);

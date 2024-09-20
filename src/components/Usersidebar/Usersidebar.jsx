@@ -6,6 +6,7 @@ import { useNavigate } from 'react-router-dom'
 import logout from '../../assets/logout.png'
 import { useContext} from "react"
 import { Theme } from '../Theme/Theme';
+import Logout from '../Logout/Logout';
 import { ThemeContext } from "../../context/ThemeProvider" 
 
 
@@ -67,7 +68,7 @@ const Usersidebar = () => {
             </div>
          
          </div>
-      <footer onClick={openModal} style={styles.background}> <p >Log Out</p>  <img src={logout} alt='logout'/></footer>  
+      <footer onClick={openModal} ><Logout/></footer>  
       <Modal
         isOpen={modalIsOpen}
         onRequestClose={closeModal} // Ensures modal can be closed via overlay or ESC

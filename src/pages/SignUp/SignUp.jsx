@@ -132,7 +132,7 @@ const SignUp = () => {
 
            {Loading? (
             <p>Loading...</p>
-           ): (<button type="submit">Sign Up</button>)  }
+           ): (<button type="submit" disabled={Loading}>Sign Up</button>)  }
             </div>
         <div className="logg">
                 <h7 style={styles.text}>if you already have an account </h7>

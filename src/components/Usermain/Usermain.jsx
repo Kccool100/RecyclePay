@@ -6,6 +6,7 @@ import logo from '../../assets/recycleLogo.png'
 import { useContext} from "react"
 import { Theme } from '../Theme/Theme';
 import { ThemeContext } from "../../context/ThemeProvider" 
+import { useSelector } from 'react-redux';
 
 
 const getStyles = (mode) =>({
@@ -37,6 +38,10 @@ const customStyles = {
 };
 
 const Usermain = () => {
+
+  const userInfo = useSelector((state)=>state.user.user)
+  console.log(userInfo);
+  
   const navigate = useNavigate();
   const [modalIsOpen, setIsOpen] = useState(false);
   const {mode} = useContext(ThemeContext);

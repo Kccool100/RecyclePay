@@ -7,6 +7,7 @@ import { useContext, useState} from "react"
 import { Theme } from '../../components/Theme/Theme';
 import { ThemeContext } from "../../context/ThemeProvider" 
 import  axios from "axios";
+import { useNavigate } from 'react-router-dom'
 
 
 const getStyles = (mode) =>({
@@ -27,12 +28,18 @@ const getStyles = (mode) =>({
 
 const schema = yup
   .object({
-    PickUpAddress: yup.string().required("Please input your Pick up Address"),
+    pickUpAddress: yup.string().required("Please input your Pick up Address"),
     WasteKG: yup.number().required("Please select your Waste KG")
   })
   .required()
 
-  const baseURL = "https://waste-project.onrender.com";
+  const Id = localStorage.getItem("id")
+  console.log(Id);
+
+  const baseURL = `https://waste-project.onrender.com/api/v1/user/create-waste/${Id}`;
+
+// const navigate = useNavigate()
+  
 
 const Pickup = () => {
   const {mode} = useContext(ThemeContext);
@@ -48,12 +55,16 @@ const Pickup = () => {
   })
   const onSubmit = async(data) => {
     setLoading(true)
-    const res= await axios.post(
-      `${baseURL}/api/v1/user/create-waste/:id`,
-      data
-    )
-    console.log(res)
-  setLoading(false)
+   try{
+    const response = await axios.post(baseURL,data)
+    console.log(response.data);
+    // navigate("/Pickupconfirmed")
+   }catch(error){
+    console.log(error);
+    
+   }finally{
+    setLoading(false)
+   }
 
   };
 
@@ -68,11 +79,11 @@ const Pickup = () => {
           <input 
             placeholder='Pick Up Address'
             type="text" 
-            {...register("PickUpAddress")}
+            {...register("pickUpAddress")}
             
             style={styles.background}
           />
-           <p className="error">{errors.PickUpAddress?.message}</p>
+           <p className="error">{errors.pickUpAddress?.message}</p>
         </label>
        
         <label>
@@ -91,7 +102,7 @@ const Pickup = () => {
 
          {Loading? (
             <p>Loading...</p>
-           ): (<button type="submit">Next</button>)  }
+           ): (<button type="submit" disabled={Loading}>Next</button>)  }
         
         </div>
      

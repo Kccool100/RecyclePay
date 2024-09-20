@@ -9,6 +9,8 @@ import * as yup from "yup"
 import { Theme } from '../../components/Theme/Theme';
 import { ThemeContext } from "../../context/ThemeProvider" 
 import  axios from "axios";
+import { useDispatch } from "react-redux";
+import { setToken, setUsers } from "../../Global/Slice";
 
 
 const getStyles = (mode) =>({
@@ -39,6 +41,7 @@ const Login = () => {
   const styles = getStyles(mode);
   const [Loading, setLoading] = useState(false);
   const navigate = useNavigate();
+  const dispatch = useDispatch()
 
   
   const {
@@ -55,7 +58,11 @@ const Login = () => {
       `${baseURL}/api/v1/user/sign-in`,
       data
     )
+ 
     console.log(res)
+    localStorage.setItem("id", res.data.data._id)
+    dispatch(setUsers(res.data.data))
+    dispatch(setToken(res.data.token))
   setLoading(false)
   setTimeout(() => {
     navigate("/Userdashboard")

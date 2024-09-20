@@ -58,12 +58,15 @@ const Pickup = () => {
    try{
     const response = await axios.post(baseURL,data)
     console.log(response.data);
-    navigate("/Pickupconfirmed")
    }catch(error){
     console.log(error);
     
    }finally{
     setLoading(false)
+    setTimeout(() => {
+      navigate("/Pickupconfirmed")
+    }, 3000);
+
    }
 
   };

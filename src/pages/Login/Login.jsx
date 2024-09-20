@@ -106,7 +106,7 @@ return (
 
         {Loading? (
             <p>Loading...</p>
-           ): (<button type="submit">Sign In</button>)  }
+           ): (<button type="submit" disabled={Loading}>Sign In</button>)  }
 
         </div>
 

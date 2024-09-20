@@ -1,6 +1,6 @@
 .main-container{
     height: 100%;
-    width: 90%;
+    width: 95%;
     background-color: white;
     display: flex;
     align-items: center;
@@ -8,8 +8,8 @@
 }
 
 .mainbox{
-    height: 75%;
-    width: 60%;
+    height: 85%;
+    width: 90%;
     background-color: #FCF9F9;
     padding: 30px;
 }

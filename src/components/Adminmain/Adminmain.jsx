@@ -28,22 +28,8 @@ const Adminmain = () => {
                   John Doe
                 </div>
               </div>
-              <div className='mainwaste'>
-                <header>
-                  Waste Type
-                </header>
-                 <div className='mainidtext'>
-                  Plastic
-                 </div>
-              </div>
-              <div className='mainkg'>
-                <header>
-                  Est.Waste (Kg)
-                </header>
-                <div className='mainidtext'>
-                  10Kg
-                </div>
-              </div>
+              
+              
               <div className='mainstatus'>
                 <header> Status</header>
                 <div className='mainidtext'>

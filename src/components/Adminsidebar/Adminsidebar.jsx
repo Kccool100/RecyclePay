@@ -1,6 +1,7 @@
 import React from 'react'
 import './Adminsidebar.css'
 import logo from '../../assets/recycleLogo.png'
+import MakeAdminButton from '../MakeAdmin/MakeAdminButton'
 
 
 const Adminsidebar = () => {
@@ -13,8 +14,8 @@ const Adminsidebar = () => {
         <div className='sidtext'>
                 <h6>Application </h6>
             </div>
-            <div className='usertext'>
-                <h6> User</h6>
+            <div className='sidtext'>
+                 <MakeAdminButton/>
             </div>
          
          </div>

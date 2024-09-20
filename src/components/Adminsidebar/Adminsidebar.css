@@ -1,6 +1,6 @@
 .side-container{
     height: 100%;
-    width: 240px;
+    width: 300px;
     background-color: #F6F2EE;
     display: flex;
     align-items: center;
@@ -19,19 +19,34 @@
     gap: 20px;
 
     .sidtext{
-        height: 30px;
+        height: 40px;
         border-radius: 4px;
         width: 80%;
+        border: none;
+        justify-content: center;
+        align-items: center;
+        display: flex;
         background: #FF9800;
         color: white;
         text-indent: 20px;
+        
+        button{
+            width: 100%;
+        }
+    }
+    .sidtext:hover{
+        background: #fff;
+        color: #FF9800;
+        border: 1px solid #FF9800;
     }
 }
 
 .usertext{
-    height: 20px;
+    height: 30px;
+    border-radius: 4px;
     width: 80%;
-    /* background-color: red; */
+    background: #FF9800;
+    color: white;
     text-indent: 20px;
 }
 .logo{

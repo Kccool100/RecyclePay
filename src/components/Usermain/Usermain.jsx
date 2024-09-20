@@ -65,19 +65,19 @@ const Usermain = () => {
         <div className='headerbox1'>
           <div className='header2' style={styles.background}>
             <h4 style={styles.text}>Total waste(Kg)</h4>
-            <h2 style={styles.text}>40Kg</h2>
+            <h2 style={styles.text}>0Kg</h2>
           </div>
         </div>
         <div className='headerbox1'>
           <div className='header2' style={styles.background}>
             <h4 style={styles.text}>Total Accepted(Kg)</h4>
-            <h2 style={styles.text}>30Kg</h2>
+            <h2 style={styles.text}>0kg</h2>
           </div>
         </div>
         <div className='headerbox1'>
           <div className='header2' style={styles.background}>
             <h4 style={styles.text}>Pending request</h4>
-            <h2 style={styles.text}>1</h2>
+            <h2 style={styles.text}>0</h2>
           </div>
         </div>
       </div>

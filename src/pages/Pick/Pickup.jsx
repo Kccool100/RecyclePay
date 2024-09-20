@@ -38,13 +38,13 @@ const schema = yup
 
   const baseURL = `https://waste-project.onrender.com/api/v1/user/create-waste/${Id}`;
 
-const navigate = useNavigate()
   
 
 const Pickup = () => {
   const {mode} = useContext(ThemeContext);
   const styles = getStyles(mode);
   const [Loading, setLoading] = useState(false);
+  const navigate = useNavigate()
 
   const {
     register,

@@ -135,7 +135,7 @@ const SignUp = () => {
            ): (<button type="submit" disabled={Loading}>Sign Up</button>)  }
             </div>
         <div className="logg">
-                <h7 style={styles.text}>if you already have an account </h7>
+                <h6 style={styles.text}>if you already have an account </h6>
                 <Link to='/Login'  style={{textDecoration:"none", color:"#FF7043"}}><p style={styles.text} className='terms'>Sign in</p></Link>
             </div>
       </form>

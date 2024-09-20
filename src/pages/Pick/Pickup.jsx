@@ -38,7 +38,7 @@ const schema = yup
 
   const baseURL = `https://waste-project.onrender.com/api/v1/user/create-waste/${Id}`;
 
-// const navigate = useNavigate()
+const navigate = useNavigate()
   
 
 const Pickup = () => {
@@ -58,7 +58,7 @@ const Pickup = () => {
    try{
     const response = await axios.post(baseURL,data)
     console.log(response.data);
-    // navigate("/Pickupconfirmed")
+    navigate("/Pickupconfirmed")
    }catch(error){
     console.log(error);
     

@@ -40,6 +40,8 @@ const Adminsidebar = () => {
   const styles = getStyles(mode);
   const navigate = useNavigate()
   const [modalIsOpen, setIsOpen] = useState(false);
+  const [data, setData] = useState([]);
+  console.log(data)
 
   // Function to open modal
   function openModal() {
@@ -60,9 +62,10 @@ const Adminsidebar = () => {
         <div className='sidtext'>
                 <h6>Application </h6>
             </div>
-            <div className='sidtext'>
-                 Total request : 0
-            </div>
+            {/* <div className='sidtext'>
+                 Total request : {data.reduce((total, request) => total + request.WasteKG, 0) || 0} 
+                 Kg
+            </div> */}
          
          </div>
          <footer onClick={openModal} > <Logout/> </footer>  

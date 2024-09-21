@@ -47,12 +47,14 @@
 
 .mainid{
     height: 100%;
-    width: 20%;
+    width: 100%;
     /* background-color: green; */
     /* text-indent: 40px; */
     display: flex;
     align-items: center;
-    flex-direction: column;
+    /* flex-direction: column; */
+    justify-content: space-between;
+
 }
 .mainname{
     height: 100%;
@@ -96,11 +98,32 @@
 
     
 }
-
+.mainidkg{
+    height: 40px;
+    width: 60px;
+    /* background-color: rgb(90, 75, 75); */
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    justify-content: center;
+    position: relative;
+    left: -70px;
+}
+.mainidpend{
+    height: 40px;
+    width:90px;
+    /* background-color: red; */
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    justify-content: center;
+    position: relative;
+    left: -60px;
+}
 .mainidtext{
     height: 40px;
-    width: 100%;
-    background-color: white;
+    width: 30%;
+    /* background-color: red; */
     display: flex;
     align-items: center;
     margin-top: 20px;

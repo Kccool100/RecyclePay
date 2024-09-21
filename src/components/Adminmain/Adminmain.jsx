@@ -20,7 +20,7 @@ const Adminmain = () => {
     try {
       const res = await axios.get(`${url}/get-all`, {headers});
       console.log("Data: ",res)
-      setData(res.data);
+      setData(res.data.data);
     } catch (error) {
       console.error('API Error', error);
       setError(error.message);
@@ -47,41 +47,29 @@ const Adminmain = () => {
           <h2>Recent Application</h2>
           <p>Review and manage recent recycling orders as Admin.</p>
         </div>
+        <div className='sidtext'>
+                 Total request : {data.reduce((total, request) => total + request.WasteKG, 0) || 0} 
+                 Kg
+            </div>
       <div className='mhead'>
       <header>Date</header>
-        <header>Name of User</header>
         <header>WasteKg</header>
-        <header>Contact</header>
+        <header> Address</header>
         <header>Status</header>
         <header>Action</header>
       </div>
-        {data?.map((data, index) => (
+        {data.map((data, index) => (
           <div className='mainholder' key={index}>
             <div className='mainid'>
-            
-              <div className='mainidtext'>
-              <p style={styles.text}>{new Date(data.createdAt).toLocaleString()}</p>
+              <div className='mainidtextt'>
+              <p>{new Date(data.createdAt).toLocaleString()}</p>
                  </div>
-            </div>
-            <div className='mainname'>
-             
-              <div className='mainidtext'>{data.userInfo?.Name}</div>
-            </div>
-            <div className='mainname'>
-            
-              <div className='mainidtext'>{data.WasteKG}Kg</div>
-            </div>
-            <div className='mainname'>
-              
-              <div className='mainidtext'>{data.phoneNumber}</div>
-            </div>
-            <div className='mainstatus'>
-             
-              <div className='mainidtext'><span>Pending</span></div>
-            </div>
-            <div className='mainaction'>
-
-              <div className='mainidtext'>
+              <div className='mainidtextt'>{data.userInfo?.Name}</div>
+              <div className='mainidkg'>{data.WasteKG}Kg</div>
+              <div className='mainidtext'>{data.pickUpAddress}</div>
+              <div className='mainidtextt'>{data.phoneNumber}</div>
+              <div className='mainidpend'><span>Pending</span></div>
+              <div className='mainidtextt'>
                 <select onChange={(e) => handleActionChange(item.id, e.target.value)}>
                   <option value="">Select Action</option>
                   <option value="accept">Accept</option>

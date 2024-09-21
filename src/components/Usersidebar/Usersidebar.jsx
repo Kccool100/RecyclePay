@@ -54,8 +54,8 @@ const Usersidebar = () => {
     setIsOpen(false);
   }
   return (
-    <div className='userside-container' style={styles.background}>
-      <div className='usersidetext' style={styles.background}>
+    <div className='userside-container' >
+      <div className='usersidetext'>
         <div className='userlogo'>
             
             <img src={userlogo} alt="" />
@@ -76,7 +76,7 @@ const Usersidebar = () => {
       >
         <h2>Are you sure you want to log out?</h2>
         <div className='modebutton'>
-          <button onClick={() => navigate('/')}>Yes</button>
+          <button onClick={() => navigate('/Login')}>Yes</button>
           <button onClick={closeModal}>No</button>
         </div>
       </Modal>   

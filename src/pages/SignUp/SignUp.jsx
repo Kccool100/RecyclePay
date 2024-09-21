@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import "./SignUp.css"
 import {useForm} from "react-hook-form"
 import { useContext} from "react"
@@ -41,6 +41,7 @@ const SignUp = () => {
   const {mode} = useContext(ThemeContext);
   const styles = getStyles(mode);
   const [Loading, setLoading] = useState(false);
+  const navigate = useNavigate()
 
   const {
     register,
@@ -51,12 +52,22 @@ const SignUp = () => {
   })
   const onSubmit = async(data) => {
     setLoading(true)
+   try{
     const res= await axios.post(
       `${baseURL}/api/v1/user/signUp`,
       data
     )
     console.log(res)
   setLoading(false)
+  setTimeout(() => {
+    navigate("/SignupConfirmation/:token")
+  }, 2000);
+   }catch(error){
+    console.log(error)
+   }finally{
+    setLoading(false)
+   }
+    
 
   };
 
@@ -123,7 +134,7 @@ const SignUp = () => {
 
         </label>
         <div className="radio">
-        <input type="radio" />
+        <input type="radio" required={true}/>
         <Link to="/Terms" style={{textDecoration:"none"}}>
               <p style={styles.text} className='terms'>I accept Terms and Conditions</p>
             </Link>

@@ -22,7 +22,7 @@ const Logout = () => {
     
           if (response.status === 200) {
             localStorage.removeItem('token');
-            navigate('/');
+            navigate('/Login');
           }
         } catch (error) {
           console.error('Error during logout', error);

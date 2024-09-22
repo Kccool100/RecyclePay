@@ -83,6 +83,128 @@
   font-weight: bold;
 }
 
+@media (max-width: 1024px) {
+  .usermainheaderbox {
+    width: 90%; /* Increase width */
+    height: auto; /* Make height flexible */
+    flex-direction: column; /* Stack elements vertically */
+    align-items: flex-start;
+  }
+}
+
+.headerbox1 {
+  height: 70%;
+  width: 30%;
+  background-color: #ff7043;
+  display: flex;
+  justify-content: flex-end;
+  border-radius: 10px;
+  border: 2px solid #ff9800;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
+/* For small tablets and phones */
+@media (max-width: 768px) {
+  .headerbox1 {
+    width: 100%; /* Full width */
+    margin-bottom: 10px; /* Add spacing */
+  }
+}
+
+.header2 {
+  height: 100%;
+  width: 85%;
+  background-color: white;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.header2 h4 {
+  font-size: 30px;
+}
+
+/* Adjust header font sizes for small devices */
+@media (max-width: 768px) {
+  .header2 h4 {
+    font-size: 20px;
+  }
+  .header2 h2 {
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 425px) {
+  .header2 h4 {
+    font-size: 18px;
+  }
+  .header2 h2 {
+    font-size: 25px;
+  }
+}
+
+.header2 h2 {
+  font-size: 40px;
+  font-weight: 600;
+}
+
+/* Main box styling */
+.usermainbox {
+  height: 60%;
+  width: 70%;
+  background-color: #f6f2ee;
+  padding: 30px;
+  border: 1px solid #ff7043;
+  font-size: 20px;
+  overflow-y: scroll;
+}
+
+/* Adjust width and padding for smaller screens */
+@media (max-width: 1024px) {
+  .usermainbox {
+    width: 90%;
+    padding: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .usermainbox {
+    width: 95%;
+    padding: 15px;
+  }
+}
+
+.usermainheader {
+  height: auto;
+  width: 100%;
+  text-indent: 20px;
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.usermainheader h4 {
+  font-size: 35px;
+  font-weight: bold;
+}
+
+/* Adjust header font size for small devices */
+@media (max-width: 768px) {
+  .usermainheader h4 {
+    font-size: 25px;
+  }
+}
+
+@media (max-width: 425px) {
+  .usermainheader h4 {
+    font-size: 20px;
+  }
+}
+
 .usermainid {
   height: 25%;
   width: 100%;
@@ -121,10 +243,6 @@
 
 .usermain-table th.table-header span {
   margin-left: 5px;
-}
-
-.usermain-table th.table-header {
-  /* Additional styles if needed */
 }
 
 .table-body tr:nth-child(even) {
@@ -229,11 +347,30 @@
     flex-direction: column;
     width: 100%;
     gap: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 
   .headerbox1 {
-    height: 120px;
+    height: 160px;
     width: 60%;
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+    /* background-color: red; */
+
+    .headerbox2 {
+      width: 80%;
+    }
+  }
+
+  .usermainid {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
   }
 
   .header2 h4 {
@@ -383,7 +520,7 @@
   }
 
   .usermainid header {
-    font-size: 17px;
+    font-size: 12px;
   }
 }
 

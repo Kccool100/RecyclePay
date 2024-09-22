@@ -41,6 +41,7 @@ const Usermain = () => {
   const URL = `https://waste-project.onrender.com`;
   const dispatch = useDispatch();
   const wasteData = useSelector((state) => state.WasteData);
+  console.log(wasteData);
 
   // Fetch all waste data
   const getAllWaste = async () => {
@@ -97,12 +98,6 @@ const Usermain = () => {
             <h2>{totalAcceptedWaste}Kg</h2>
           </div>
         </div>
-        <div className="headerbox1">
-          <div className="header2">
-            <h4>Pending Requests</h4>
-            <h2> 0</h2>
-          </div>
-        </div>
       </div>
       <div className="waste">
         <button className="nut1">Waste History</button>
@@ -119,7 +114,7 @@ const Usermain = () => {
           <header style={styles.text}>Contact</header>
           <header style={styles.text}>Address</header>
           <header style={styles.text}>Date & Time</header>
-          <header style={styles.text}>Status</header> {/* New Status Header */}
+          {/* <header style={styles.text}>Status</header> New Status Header */}
         </div>
 
         <table className="usermain-table">
@@ -133,11 +128,10 @@ const Usermain = () => {
                   <td style={styles.text}>
                     {new Date(item.createdAt).toLocaleString()}
                   </td>
-                  <td style={getStatusStyle(item.status || "Pending")}>
-                    {" "}
-                    {/* Dynamic style */}
-                    {item.status || "Pending"}
-                  </td>
+                  {/* <td style={getStatusStyle(item.status || "Pending")}> */}{" "}
+                  {/* Dynamic style */}
+                  {/* {item.status || "Pending"} */}
+                  {/* </td> */}
                 </tr>
               ))
             ) : (

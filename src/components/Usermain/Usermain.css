@@ -86,7 +86,7 @@
 
 
 
-.mainholder{
+.usermain-table{
     height: max-content;
     width: 100%;
     /* background-color: #FF7043; */
@@ -94,6 +94,7 @@
     padding: 5px;
     justify-content: space-between;
     font-size: 25px;
+    flex-direction: column;
     font-weight: 500;
     
     
@@ -197,6 +198,8 @@
         width: 80%;
     }
 }
+
+
 
 
 @media (max-width:768px) {

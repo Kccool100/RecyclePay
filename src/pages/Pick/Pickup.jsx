@@ -6,6 +6,7 @@ import * as yup from "yup";
 import { Theme } from '../../components/Theme/Theme';
 import { ThemeContext } from "../../context/ThemeProvider"; 
 import { useNavigate } from 'react-router-dom';
+import { useDispatch } from 'react-redux';
 
 const getStyles = (mode) => ({
   background: {
@@ -33,6 +34,7 @@ const Pickup = () => {
   const [Loading, setLoading] = useState(false);
   const navigate = useNavigate();
   const [error, setError] = useState(null)
+  const dispatch = useDispatch()
 
   const {
     register,

@@ -6,7 +6,8 @@ const MySlice = createSlice({
     initialState : {
         user : {},
         Token : "",
-        PickUp : {}
+        PickUp : {},
+        WasteData : []
     },
     reducers : {
         setUsers: (state, action)=>{
@@ -17,12 +18,15 @@ const MySlice = createSlice({
         },
         setPickup: (state, action)=>{
             state.PickUp = action.payload
+        },
+        setUpdateWaste: (state, action)=>{
+            state.WasteData = action.payload
         }
 
         
     }
 })
 
-export const {setUsers,setToken,setPickup} = MySlice.actions
+export const {setUsers,setToken,setPickup, setUpdateWaste} = MySlice.actions
 
 export default MySlice.reducer

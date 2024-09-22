@@ -5,6 +5,7 @@ import { ThemeContext } from '../../context/ThemeProvider';
 import { Theme } from '../Theme/Theme';
 import { useDispatch, useSelector } from 'react-redux';
 import axios from 'axios';
+import { setUpdateWaste } from '../../Global/Slice';
 
 const getStyles = (mode) => ({
   background: {
@@ -28,6 +29,8 @@ const Detailsconfirm = () => {
   // Get the pickup info from the location state
   const location = useLocation();
   const { kg, phoneNumber, pickUpAddress } = location.state || {};
+
+
 
   const Token = useSelector((state) => state.Token);
   const headers = {
@@ -54,8 +57,12 @@ const Detailsconfirm = () => {
         pickUpAddress,
         phoneNumber,
       };
+      
+
 
       const res = await axios.post(`${baseURL}/api/v1/user/create-waste`, data, { headers });
+      
+      dispatch(setUpdateWaste(res.data.data))
       console.log(res.data);
       alert(res.data.message);
       await getAllWaste();

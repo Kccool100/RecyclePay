@@ -15,7 +15,23 @@
     justify-content: center;
     width: 30%;
   }
-  
+
+  .confirm-container button {
+    height: 60px;
+    width: 200px;
+    background-color: transparent;
+    border-radius: 10px;
+    border: 1px solid #FF7043;
+    color: #FF7043;
+    font-size: 20px;
+    font-weight: 400;
+    transition: all 0.3s ease-in-out;
+}
+
+.confirm-container button:hover {
+    background-color: #FF7043;
+    color: white;
+}
   /* Adjust image size for smaller devices */
   @media (max-width: 768px) {
     .imagebox {

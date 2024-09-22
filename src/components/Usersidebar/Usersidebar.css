@@ -82,16 +82,17 @@
     }
 }
 .userlogo{
-    height: 20%;
+    height: 25%;
     width: 90%;
     /* background-color: red; */
     position: relative; 
-    top: -70px;
+    top: -40px;
    
 
     img{
         height: 100%;
         width: 100%;
+        object-fit: contain;
     }
 
    

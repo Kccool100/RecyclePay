@@ -92,8 +92,8 @@ const Usermain = () => {
   return (
     <div className="usermain-container">
       <img src={logo} alt="Logo" onClick={() => navigate("/")} />
-      <div className="usermainheaderbox">
-        <div className="headerbox1">
+      <div className="usermainheaderbox" >
+        <div className="headerbox1" >
           <div className="header2">
             <h4>Total waste</h4>
             <h2>{totalWaste} Kg</h2>

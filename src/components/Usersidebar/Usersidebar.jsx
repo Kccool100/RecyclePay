@@ -57,15 +57,14 @@ const Usersidebar = () => {
     <div className='userside-container' >
       <div className='usersidetext'>
         <div className='userlogo'>
-            
             <img src={userlogo} alt="" />
         </div>
         <div className='usersidext'>
-                <h6> Waste history </h6>
-            </div>
-            <div className='usersidtext' onClick={()=> navigate("/Pick")}>
-                <h6> Pick Up</h6>
-            </div>
+             <h6> Waste history </h6>
+        </div>
+        <div className='usersidtext' onClick={()=> navigate("/Pick")}>
+             <h6> Pick Up</h6>
+        </div>
          
          </div>
       <footer onClick={openModal} ><Logout/></footer>  

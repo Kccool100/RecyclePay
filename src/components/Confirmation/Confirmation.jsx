@@ -9,20 +9,15 @@ const SignupConfirmation = () => {
   return (
     <div className='confirm-container'>
         <div className='imagebox'>  
-        <img src={confirm} alt="" />
-           </div>
+          <img src={confirm} alt="" />
+       </div>
 
            <div className='confirmtext'>
-            <h1> Confirm Your Email</h1>
-            <h2>You're Almost Ready To Start Enjoying Recyclepay.</h2>
-            <h2>Just Verify From Your Email Address </h2>
-          
+               <h1> Confirm Your Email</h1>
+               <h2>You're Almost Ready To Start Enjoying Recyclepay.</h2>
+               <h2>Just Verify From Your Email Address </h2>
            </div>
-      
-
-
-
-
+          <button onClick={() => navigate("/")}>Go Back</button>
     </div>
   )
 }

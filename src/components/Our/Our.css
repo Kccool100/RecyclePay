@@ -107,7 +107,7 @@ line-height: 145.1%;
     
     }
     .text p{
-        width: 82%;
+        width: 85%;
         font-size: 23px;
     
     }
@@ -205,7 +205,7 @@ line-height: 145.1%;
   }
 
   .text {
-      width: 90%; /* Full width on mobile screens */
+      width: 100%; /* Full width on mobile screens */
       height: auto;
       margin-bottom: 20px; /* Space between text and image */
   }

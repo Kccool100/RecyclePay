@@ -100,7 +100,7 @@
     
     }
     .text p{
-        width: 82%;
+        width: 85%;
         font-size: 23px;
     
     }
@@ -184,7 +184,7 @@
       }
     
       .text {
-          width: 90%; /* Full width on mobile screens */
+          width: 100%; /* Full width on mobile screens */
           height: auto;
           margin-bottom: 20px; /* Space between text and image */
       }

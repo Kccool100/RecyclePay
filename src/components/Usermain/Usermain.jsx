@@ -114,7 +114,7 @@ const Usermain = () => {
           <header style={styles.text}>Contact</header>
           <header style={styles.text}>Address</header>
           <header style={styles.text}>Date & Time</header>
-          <header style={styles.text}>Status</header> {/* New Status Header */}
+          {/* <header style={styles.text}>Status</header> New Status Header */}
         </div>
 
         <table className="usermain-table">
@@ -128,11 +128,10 @@ const Usermain = () => {
                   <td style={styles.text}>
                     {new Date(item.createdAt).toLocaleString()}
                   </td>
-                  <td style={getStatusStyle(item.status || "Pending")}>
-                    {" "}
-                    {/* Dynamic style */}
-                    {item.status || "Pending"}
-                  </td>
+                  {/* <td style={getStatusStyle(item.status || "Pending")}> */}{" "}
+                  {/* Dynamic style */}
+                  {/* {item.status || "Pending"} */}
+                  {/* </td> */}
                 </tr>
               ))
             ) : (

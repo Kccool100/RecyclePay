@@ -114,8 +114,8 @@ const Usermain = () => {
           <h4 style={styles.text}>Transaction History</h4>
         </div>
         <div className='usermainid'>
-          <header style={styles.text} className='headname'>Weight(Kg)</header>
-          <header style={styles.text} className='headname'>Contact</header>
+          <header style={styles.text} >Weight(Kg)</header>
+          <header style={styles.text} >Contact</header>
           <header style={styles.text}>Address</header>
           <header style={styles.text}>Date & Time</header>
         </div>

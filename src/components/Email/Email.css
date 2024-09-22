@@ -216,21 +216,83 @@ text-transform: capitalize;
     }
     .con1{
         width: 80%;
-        margin-left: 80px;
         height: 200px;
 
+
+    }
+    .con2{
+        width: 80%;
 
     }
 
     .con3{
         width: 80%;
-        margin-left: 80px;
         height: 200px;
 
     }
 }
 
 
+
+@media (max-width:430px) {
+    .EmailContainer{
+        width: 100%;
+        height: auto;
+        flex-direction: column;
+    }
+    .con-holder{
+        width: 90%;
+        height: auto;
+        justify-content: center;
+        gap: 1rem;
+        flex-direction: column;
+        align-items: center;
+    }
+    .con1{
+        width: 80%;
+        height: 200px;
+
+    }
+    .con2{
+        width: 80%;
+        height: 140px;
+
+    }
+
+    .con1 p{
+        font-size: 22px;
+    }
+    .con1 span{
+        font-size: 15px;
+        line-height: 20px;
+    }
+   
+    
+    .con2 p{
+        font-size: 22px;
+    }
+    .con2 span{
+        font-size: 13px;
+        line-height: 15px;
+        
+    }
+    .con3{
+        width: 80%;
+        height: 200px;
+    }
+    .con3 p{
+        font-size: 23px;
+    }
+    .con3 span{
+        font-size: 15px;
+        line-height: 20px;
+    }
+    .con3 li{
+        font-size: 15px;
+        line-height: 20px;
+
+    }
+}
 @media (max-width:426px) {
     .EmailContainer{
         width: 100%;
@@ -247,10 +309,15 @@ text-transform: capitalize;
     }
     .con1{
         width: 80%;
-        margin-left: 50px;
         height: 200px;
 
     }
+    .con2{
+        width: 80%;
+        height: 140px;
+
+    }
+
     .con1 p{
         font-size: 22px;
     }
@@ -258,11 +325,8 @@ text-transform: capitalize;
         font-size: 15px;
         line-height: 20px;
     }
-    .con2{
-        width: 50%;
-        height: 140px;
-
-    }
+   
+    
     .con2 p{
         font-size: 22px;
     }
@@ -273,7 +337,6 @@ text-transform: capitalize;
     }
     .con3{
         width: 80%;
-        margin-left: 50px;
         height: 200px;
     }
     .con3 p{
@@ -305,7 +368,6 @@ text-transform: capitalize;
     }
     .con1{
         width: 90%;
-        margin-left: 20px;
         height: 200px;
 
     }
@@ -317,7 +379,7 @@ text-transform: capitalize;
         line-height: 20px;
     }
     .con2{
-        width: 65%;
+        width: 80%;
         height: 140px;
 
     }
@@ -331,7 +393,6 @@ text-transform: capitalize;
     }
     .con3{
         width: 90%;
-        margin-left: 20px;
         height: 200px;
     }
     .con3 p{
@@ -349,5 +410,9 @@ text-transform: capitalize;
 }
 @media (max-width:320px) {
 
+    .con2{
+        width: 80%;
+        height: 140px;
 
+    }
 }

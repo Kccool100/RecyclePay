@@ -18,19 +18,18 @@
     background-color: #f6f2ee;
     padding: 30px;
     font-size: 20px;
-    overflow-y: scroll;
+       flex-direction: column;
+       overflow-y: scroll;
     /* background-color: yellow; */
 
     .usermainheader{
-        height: 3%;
+        height: 70px;
         width: 50%;
         text-indent: 20px;
-        margin-bottom: 30px;
        display: flex;
        justify-content: center;
        flex-direction: column;
-       /* position: fixed; */
-       /* z-index: 99; */
+    
     
        h4{
         font-size: 35px;
@@ -295,11 +294,11 @@
     .waste{
         display: flex;
         align-items: center;
-        justify-content: flex-end;
+        justify-content: center;
         height: 40px;
         width: 100%;
         gap: 10px;
-        margin-top: 0;
+        margin-top: 30px;
         /* background-color: rebeccapurple; */
 
         button{
@@ -394,5 +393,238 @@
     }
     .headname{
         display: none;
+    }
+}
+
+
+.usermainbox {
+    height: 60%;
+    width: 80%;
+    background-color: #f6f2ee;
+    padding: 30px;
+    border: 1px solid #FF7043;
+    font-size: 20px;
+    overflow-y: scroll;
+}
+
+.usermainbox .usermainheader {
+    height: auto; /* Allow it to adjust based on content */
+    width: 100%;
+    text-indent: 20px;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.usermainbox .usermainheader h4 {
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.usermainheaderbox {
+    height: 30%;
+    width: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Responsive Adjustments */
+
+/* For tablets (max-width: 1024px) */
+@media (max-width: 1024px) {
+    .usermainbox {
+        width: 80%; /* Increase width for better utilization of space */
+        font-size: 18px;
+        padding: 20px;
+    }
+
+    .usermainbox .usermainheader h4 {
+        font-size: 30px; /* Reduce font size */
+    }
+
+    .usermainheaderbox {
+        width: 80%;
+    }
+}
+
+/* For small tablets and large phones (max-width: 768px) */
+@media (max-width: 768px) {
+    .usermainbox {
+        width: 85%; /* Expand width */
+        font-size: 16px;
+        padding: 15px;
+    }
+
+    .usermainbox .usermainheader h4 {
+        font-size: 25px;
+    }
+
+    .usermainheaderbox {
+        width: 85%;
+    }
+}
+
+/* For phones (max-width: 425px) */
+@media (max-width: 425px) {
+    .usermainbox {
+        width: 90%;
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    .usermainbox .usermainheader h4 {
+        font-size: 20px; /* Further reduce font size for small screens */
+    }
+
+    .usermainheaderbox {
+        width: 90%;
+    }
+}
+
+/* For small phones (max-width: 375px) */
+@media (max-width: 375px) {
+    .usermainbox {
+        width: 95%;
+        font-size: 12px;
+        padding: 8px;
+    }
+
+    .usermainbox .usermainheader h4 {
+        font-size: 20px;
+    }
+
+    .usermainheaderbox {
+        width: 95%;
+    }
+    .usermainid header{
+        font-size: 17px;
+    }
+}
+
+/* For extra small devices (max-width: 320px) */
+@media (max-width: 320px) {
+    .usermainbox {
+        width: 100%;
+        font-size: 10px;
+        padding: 5px;
+    }
+
+    .usermainbox .usermainheader h4 {
+        font-size: 18px;
+    }
+    .usermainid header{
+        font-size: 17px;
+    }
+
+    .usermainheaderbox {
+        width: 100%;
+    }
+}
+
+
+.usermainid {
+    height: 25%;
+    width: 100%;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* Responsive Adjustments */
+
+/* For tablets (max-width: 1024px) */
+@media (max-width: 1024px) {
+    .usermainid {
+        font-size: 18px;
+    }
+}
+
+/* For small tablets and large phones (max-width: 768px) */
+@media (max-width: 768px) {
+    .usermainid {
+        font-size: 16px;
+        align-items: flex-start;
+    }
+}
+
+/* For phones (max-width: 425px) */
+@media (max-width: 425px) {
+    .usermainid {
+        font-size: 14px;
+        align-items: flex-start;
+        justify-content: center;
+    }
+}
+
+/* For small phones (max-width: 375px) */
+@media (max-width: 375px) {
+    .usermainid {
+        font-size: 12px;
+        align-items: flex-start;
+    }
+}
+
+/* For extra small devices (max-width: 320px) */
+@media (max-width: 320px) {
+    .usermainid {
+        font-size: 10px;
+        align-items: flex-start;
+    }
+}
+
+/* Responsive Adjustments */
+
+/* For tablets (max-width: 1024px) */
+@media (max-width: 1024px) {
+    .usermainbox {
+        width: 80%; /* Increase width to better utilize space */
+        height: auto; /* Make height flexible to adjust based on content */
+    }
+}
+
+/* For small tablets and large phones (max-width: 768px) */
+@media (max-width: 768px) {
+    .usermainbox {
+        width: 90%; /* Full width on smaller screens */
+        height: auto; /* Height adapts to content */
+        flex-direction: column; /* Stack elements vertically */
+        align-items: flex-start; /* Align items to the left for a cleaner layout */
+        justify-content: center; /* Center content vertically */
+    }
+}
+
+/* For phones (max-width: 425px) */
+@media (max-width: 425px) {
+    .usermainbox {
+        width: 100%;
+        height: auto; /* Ensure height adjusts dynamically */
+        flex-direction: column; /* Stack content vertically */
+        justify-content: center;
+        align-items: center; /* Center-align content */
+    }
+}
+
+/* For small phones (max-width: 375px) */
+@media (max-width: 375px) {
+    .usermainbox {
+        width: 100%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+/* For extra small devices (max-width: 320px) */
+@media (max-width: 320px) {
+    .usermainbox {
+        width: 100%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
 }

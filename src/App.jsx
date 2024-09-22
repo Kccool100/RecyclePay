@@ -22,6 +22,7 @@ import Userdashboard from "./pages/Userdashboard/Userdashboard";
 import Usermain from "./components/Usermain/Usermain";
 import Usersidebar from "./components/Usersidebar/Usersidebar";
 import Emailmessage from "./components/Emailmessage/Emailmessage";
+import Confirmation from "./components/Confirmation/Confirmation";
 
 
 
@@ -51,6 +52,7 @@ function App() {
           <Route path='/Usermain' element = {<Usermain/>}/>
             <Route path='/Usersidebar' element = {<Usersidebar/>}/>
             <Route path='/emails' element = {<Emailmessage/>}/>
+            <Route path='/Confirmation' element = {<Confirmation/>}/>
           
 
 

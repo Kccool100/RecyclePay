@@ -61,13 +61,13 @@ const SignUp = () => {
     alert(res.data.message || "Signup Successful check your mail for verification")
   setLoading(false)
   setTimeout(() => {
-    navigate("/SignupConfirmation/:token")
+    navigate("/Confirmation")
   }, 2000);
    }catch(error){
     console.log(error.response)
     alert(error.response?.data?.message || 'Network Error')
    }finally{
-    setLoading(false)
+    // setLoading(false)
    }
     
 

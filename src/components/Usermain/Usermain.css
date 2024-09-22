@@ -84,6 +84,8 @@
 }
 
 
+
+
 .mainholder{
     height: max-content;
     width: 100%;
@@ -181,6 +183,19 @@
 
 .ft{
     display: none;
+
+    .modalbox{
+        /* background: white;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        width: 400px; /* Set width */
+        /* text-align: center; Center text */
+        /* margin: 30px;  */
+
+        height: auto;
+        width: 80%;
+    }
 }
 
 
@@ -327,6 +342,10 @@
         position: relative;
         top: 6px;
         /* left: -8px; */
+    }
+
+    .modalbox{
+        width: 80px;
     }
 
     }

@@ -23,7 +23,13 @@ const getStyles = (mode) => ({
 // Modal custom styles
 const customStyles = {
   content: {
-    height: 'auto',
+    top: '50%',
+    left: '50%',
+    right: 'auto',
+    padding: '30px',
+    bottom: 'auto',
+    marginRight: '-50%',
+    transform: 'translate(-50%, -50%)',
   },
 };
 
@@ -150,11 +156,13 @@ const Usermain = () => {
         onRequestClose={closeModal}
         style={customStyles}
       >
-        <h2>Are you sure you want to log out?</h2>
+       <div className='modalbox'>
+       <h2>Are you sure you want to log out?</h2>
         <div className='modebutton'>
           <button onClick={() => navigate('/Login')}>Yes</button>
           <button onClick={closeModal}>No</button>
         </div>
+       </div>
       </Modal>
     </div>
   );

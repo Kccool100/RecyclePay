@@ -123,6 +123,29 @@ footer img{
     object-fit: contain;
 }
 
+.modebutton{
+    width: 100%;
+    height: 100px;
+    /* background-color: red; */
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    button{
+           height: 60%;
+           width: 30%;
+           border: 2px solid #FF9800;
+           background-color: transparent;
+           font-size:22px ;
+           font-weight: bold;
+    }
+    button:hover{
+        background-color: #ff7043;
+        cursor: pointer;
+        transition: 350ms ease-in-out;
+    }
+}
+
 
 @media (max-width:768px) {
     .userside-container{

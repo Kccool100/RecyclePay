@@ -1,633 +1,492 @@
-.usermain-container{
-    height: 100%;
-    width: 90%;
-    background-color: white;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    flex-direction: column;
+/* Usermain.css */
 
-    img{
-        display: none;
-    }
+.usermain-container {
+  height: 100%;
+  width: 90%;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
 }
 
-.usermainbox{
-    height: 60%;
-    width: 70%; 
-    background-color: #f6f2ee;
-    padding: 30px;
-    font-size: 20px;
-       flex-direction: column;
-       overflow-y: scroll;
-    /* background-color: yellow; */
-
-    .usermainheader{
-        height: 70px;
-        width: 50%;
-        text-indent: 20px;
-       display: flex;
-       justify-content: center;
-       flex-direction: column;
-    
-    
-       h4{
-        font-size: 35px;
-        font-weight: bold;
-       }
-    
-    }
-}
-.usermainheaderbox{
-    height: 30%;
-    width: 70%;
-    /* background-color: rgb(70, 70, 37); */
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    /* position: fixed;
-    z-index: 999; */
-
-
-    .headerbox1{
-        height: 70%;
-        width: 30%;
-        background-color: #FF7043;
-        display: flex;
-        justify-content: flex-end;
-        border-radius: 10px;
-        border: 2px solid #FF9800;
-        box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
-
-        .header2{
-            height: 100%;
-            width: 85%;
-            background-color: white;
-            border-top-right-radius: 10px;
-            border-bottom-right-radius: 10px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            flex-direction: column;
-
-
-            h4{
-                font-size: 30px;
-            }
-            h2{
-                font-size: 40px;
-                font-weight: 600;
-            }
-        }
-    }
-}
-
-
-
-
-.usermain-table{
-    height: max-content;
-    width: 100%;
-    /* background-color: #FF7043; */
-    display: flex;
-    padding: 5px;
-    justify-content: space-between;
-    font-size: 25px;
-    flex-direction: column;
-    font-weight: 500;
-    
-    
-}
-
-
-
-.usermainid{
-    height: 25%;
-    width: 100%;
-    padding: 15px;
-    /* background-color: green; */
-    /* text-indent: 40px; */
-    display: flex;
-    align-items: center;
-    /* flex-direction: column; */
-    justify-content: space-between;
-    font-size: 20px;
-    font-weight: bold;
-}
-.usermainname{
-    height: 100%;
-    width: 30%;
-    background-color: white;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-}
-
-
-.usermainkg{
-    height: 100%;
-    width: 30%;
-    background-color: white;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-}
-.usermainstatus{
-    height: 100%;
-    width: 30%;
-    background-color: white;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-}
-
-
-.usermainidtext{
-    height: 55px;
-    width: 100%;
-    background-color: white;
-    display: flex;
-    align-items: center;
-    margin-top: 40px;
-    justify-content: center;
-    font-size: 25px;
-    font-weight: 600;
-    /* overflow: hidden;
-    text-align: justify; */
-    /* justify-content: center;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis; */
-    /* overflow: hidden;
-    overflow-wrap: break-word;
-    white-space: normal;
-    padding-left: auto; */
-
-
-    span{
-        height: 17px;
-        width: 60px;
-        border-radius: 40%;
-        background-color: #E45B56;
-        color: white;
-        font-weight:200;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-}
-
-.waste{
-    display: none;
-}
-
-.ft{
-    display: none;
-
-    .modalbox{
-        /* background: white;
-        padding: 20px;
-        border-radius: 8px;
-        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-        width: 400px; /* Set width */
-        /* text-align: center; Center text */
-        /* margin: 30px;  */
-
-        height: auto;
-        width: 80%;
-    }
-}
-
-
-
-
-@media (max-width:768px) {
-    .usermain-container{
-        height: max-content;
-        overflow: hidden;
-        width: 100%;
-        background-color: #f6f2ee;
-
-        
-        img{
-            display: flex;
-            height: 30%;
-            width: 80%;
-            margin-top: 30px;
-        }
-    }
-
-    .modebutton{
-        width: 100%;
-        height: 70px;
-        margin-top: 20px;
-        display: flex;
-        align-items: center;
-        justify-content: space-around;
-
-        button{
-            height: 100%;
-            width: 40%;
-            border: 5px;
-            cursor: pointer;
-            border: 2px solid #FF9800;
-        }
-    }
-    .usermainheaderbox{
-        margin-top: 20px;
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-        /* background-color: red; */
-        /* height: 40%; */
-        gap: 10px;
-
-        .headerbox1{
-            height: 120px;
-            width: 60%;
-
-
-            .header2{
-                width: 80%;
-                height: 100%;
-                h4{
-                    font-size: 15px;
-                }
-                h2{
-                    font-size: 20px;
-                }
-               
-
-            }
-        }
-
-    }
-
-    .usermainbox{
-        margin-top: 20px;
-        width: 100vw;
-        height: max-content;
-        min-height: 50vh;
-    }
-
-    .usermainheader{
-        /* width: 100%;
-        height: 60px; */
-        /* background-color: green; */
-
-        h4{
-            font-size: 5px;
-            font-weight: 100;
-            margin-bottom: 20px;
-            /* color: red; */
-        }
-
-    }
-
-    .mainholder{
-        header{
-            font-size: 12px;
-        }
-
-        p{
-            font-size: 13px;
-        }
-    }
-
-    .waste{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        height: 40px;
-        width: 100%;
-        gap: 10px;
-        margin-top: 30px;
-        /* background-color: rebeccapurple; */
-
-        button{
-            height: 80%;
-            width: 60px;
-            font-size: 10px;
-            border-radius: 5px;
-
-        }
-
-        .nut1{
-            background-color: #FF9800;
-            color: white;
-            cursor: pointer;
-        }
-
-        button:hover{
-            color: white;
-            background-color: #FF9800;
-            cursor: pointer;
-        }
-    }
-
-    .ft{
-        display: flex;
-        margin-top: 30px;
-        color: #FF9800;
-        font-size: 12px;
-        cursor: pointer;
-        background-color: white;
-        width: 80px;
-        height: 30px;
-        border: 2px solid #FF9800;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        border-radius: 5px;
-        margin-bottom: 10px;
-    p{
-        position: relative;
-        top: 6px;
-        /* left: -8px; */
-    }
-
-    .modalbox{
-        width: 80px;
-    }
-
-    }
-}
-
-@media (max-width:426px) {
-    .mainholder{
-        width: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        .usermainname{
-            display: none;
-        }
-    }
-
-    .headname{
-        display: none;
-    }
-}
-
-
-@media (max-width:376px) {
-    .mainholder{
-        width: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        .usermainname{
-            display: none;
-        }
-    }
-    .headname{
-        display: none;
-    }
-}
-@media (max-width:326px) {
-    .mainholder{
-        width: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        .usermainname{
-            display: none;
-        }
-    }
-    .headname{
-        display: none;
-    }
-}
-
-
-.usermainbox {
-    height: 60%;
-    width: 80%;
-    background-color: #f6f2ee;
-    padding: 30px;
-    border: 1px solid #FF7043;
-    font-size: 20px;
-    overflow-y: scroll;
-}
-
-.usermainbox .usermainheader {
-    height: auto; /* Allow it to adjust based on content */
-    width: 100%;
-    text-indent: 20px;
-    margin-bottom: 30px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.usermainbox .usermainheader h4 {
-    font-size: 35px;
-    font-weight: bold;
+.usermain-container img {
+  display: none;
 }
 
 .usermainheaderbox {
-    height: 30%;
-    width: 70%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+  height: 30%;
+  width: 70%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
-/* Responsive Adjustments */
-
-/* For tablets (max-width: 1024px) */
-@media (max-width: 1024px) {
-    .usermainbox {
-        width: 80%; /* Increase width for better utilization of space */
-        font-size: 18px;
-        padding: 20px;
-    }
-
-    .usermainbox .usermainheader h4 {
-        font-size: 30px; /* Reduce font size */
-    }
-
-    .usermainheaderbox {
-        width: 80%;
-    }
+.headerbox1 {
+  height: 70%;
+  width: 30%;
+  background-color: #ff7043;
+  display: flex;
+  justify-content: flex-end;
+  border-radius: 10px;
+  border: 2px solid #ff9800;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
 }
 
-/* For small tablets and large phones (max-width: 768px) */
-@media (max-width: 768px) {
-    .usermainbox {
-        width: 85%; /* Expand width */
-        font-size: 16px;
-        padding: 15px;
-    }
-
-    .usermainbox .usermainheader h4 {
-        font-size: 25px;
-    }
-
-    .usermainheaderbox {
-        width: 85%;
-    }
+.header2 {
+  height: 100%;
+  width: 85%;
+  background-color: white;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
 
-/* For phones (max-width: 425px) */
-@media (max-width: 425px) {
-    .usermainbox {
-        width: 90%;
-        font-size: 14px;
-        padding: 10px;
-    }
-
-    .usermainbox .usermainheader h4 {
-        font-size: 20px; /* Further reduce font size for small screens */
-    }
-
-    .usermainheaderbox {
-        width: 90%;
-    }
+.header2 h4 {
+  font-size: 30px;
 }
 
-/* For small phones (max-width: 375px) */
-@media (max-width: 375px) {
-    .usermainbox {
-        width: 95%;
-        font-size: 12px;
-        padding: 8px;
-    }
-
-    .usermainbox .usermainheader h4 {
-        font-size: 20px;
-    }
-
-    .usermainheaderbox {
-        width: 95%;
-    }
-    .usermainid header{
-        font-size: 17px;
-    }
+.header2 h2 {
+  font-size: 40px;
+  font-weight: 600;
 }
 
-/* For extra small devices (max-width: 320px) */
-@media (max-width: 320px) {
-    .usermainbox {
-        width: 100%;
-        font-size: 10px;
-        padding: 5px;
-    }
-
-    .usermainbox .usermainheader h4 {
-        font-size: 18px;
-    }
-    .usermainid header{
-        font-size: 17px;
-    }
-
-    .usermainheaderbox {
-        width: 100%;
-    }
+.waste {
+  display: none;
 }
 
+.usermainbox {
+  height: 60%;
+  width: 70%;
+  background-color: #f6f2ee;
+  padding: 30px;
+  border: 1px solid #ff7043;
+  font-size: 20px;
+  overflow-y: scroll;
+}
+
+.usermainheader {
+  height: auto; /* Allow it to adjust based on content */
+  width: 100%;
+  text-indent: 20px;
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.usermainheader h4 {
+  font-size: 35px;
+  font-weight: bold;
+}
 
 .usermainid {
-    height: 25%;
+  height: 25%;
+  width: 100%;
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.usermain-table-container {
+  width: 100%;
+  overflow-x: auto;
+}
+
+.usermain-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+.usermain-table th,
+.usermain-table td {
+  padding: 12px 15px;
+  border: 1px solid #ddd;
+  text-align: left;
+}
+
+.usermain-table th {
+  background-color: #f2f2f2;
+  cursor: pointer;
+  user-select: none;
+  position: relative;
+}
+
+.usermain-table th.table-header span {
+  margin-left: 5px;
+}
+
+.usermain-table th.table-header {
+  /* Additional styles if needed */
+}
+
+.table-body tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.no-history-message {
+  text-align: center;
+  color: #555;
+  font-size: 18px;
+  margin-top: 20px;
+}
+
+/* Modal Styles */
+.modalbox {
+  text-align: center;
+}
+
+.modebutton {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+
+.modebutton button {
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.modebutton button:first-child {
+  background-color: #ff7043;
+  color: white;
+}
+
+.modebutton button:last-child {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Responsive Adjustments */
+
+/* For tablets (max-width: 1024px) */
+@media (max-width: 1024px) {
+  .usermain-container {
+    width: 80%;
+  }
+
+  .usermainheaderbox {
+    width: 80%;
+  }
+
+  .usermainbox {
+    width: 80%;
+    font-size: 18px;
+    padding: 20px;
+  }
+
+  .header2 h4 {
+    font-size: 25px;
+  }
+
+  .header2 h2 {
+    font-size: 35px;
+  }
+
+  .usermainheader h4 {
+    font-size: 30px;
+  }
+
+  .usermainid header {
+    font-size: 18px;
+  }
+}
+
+/* For small tablets and large phones (max-width: 768px) */
+@media (max-width: 768px) {
+  .usermain-container {
     width: 100%;
-    padding: 15px;
+    background-color: #f6f2ee;
+  }
+
+  .usermain-container img {
+    display: flex;
+    height: 30%;
+    width: 80%;
+    margin-top: 30px;
+  }
+
+  .modebutton {
+    width: 100%;
+    height: 70px;
+    margin-top: 20px;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
+  }
+
+  .usermainheaderbox {
+    margin-top: 20px;
+    flex-direction: column;
+    width: 100%;
+    gap: 10px;
+  }
+
+  .headerbox1 {
+    height: 120px;
+    width: 60%;
+  }
+
+  .header2 h4 {
+    font-size: 15px;
+  }
+
+  .header2 h2 {
     font-size: 20px;
-    font-weight: bold;
-}
+  }
 
-/* Responsive Adjustments */
+  .usermainbox {
+    margin-top: 20px;
+    width: 100vw;
+    height: max-content;
+    min-height: 50vh;
+    font-size: 16px;
+    padding: 15px;
+  }
 
-/* For tablets (max-width: 1024px) */
-@media (max-width: 1024px) {
-    .usermainid {
-        font-size: 18px;
-    }
-}
+  .usermainheader h4 {
+    font-size: 25px;
+  }
 
-/* For small tablets and large phones (max-width: 768px) */
-@media (max-width: 768px) {
-    .usermainid {
-        font-size: 16px;
-        align-items: flex-start;
-    }
-}
+  .usermainid header {
+    font-size: 16px;
+  }
 
-/* For phones (max-width: 425px) */
-@media (max-width: 425px) {
-    .usermainid {
-        font-size: 14px;
-        align-items: flex-start;
-        justify-content: center;
-    }
-}
+  .usermain-table th,
+  .usermain-table td {
+    padding: 10px 12px;
+    font-size: 16px;
+  }
 
-/* For small phones (max-width: 375px) */
-@media (max-width: 375px) {
-    .usermainid {
-        font-size: 12px;
-        align-items: flex-start;
-    }
-}
-
-/* For extra small devices (max-width: 320px) */
-@media (max-width: 320px) {
-    .usermainid {
-        font-size: 10px;
-        align-items: flex-start;
-    }
-}
-
-/* Responsive Adjustments */
-
-/* For tablets (max-width: 1024px) */
-@media (max-width: 1024px) {
-    .usermainbox {
-        width: 80%; /* Increase width to better utilize space */
-        height: auto; /* Make height flexible to adjust based on content */
-    }
-}
-
-/* For small tablets and large phones (max-width: 768px) */
-@media (max-width: 768px) {
-    .usermainbox {
-        width: 90%; /* Full width on smaller screens */
-        height: auto; /* Height adapts to content */
-        flex-direction: column; /* Stack elements vertically */
-        align-items: flex-start; /* Align items to the left for a cleaner layout */
-        justify-content: center; /* Center content vertically */
-    }
+  .usermain-table th.table-header span {
+    display: none; /* Hide sort indicators on smaller screens */
+  }
 }
 
 /* For phones (max-width: 425px) */
 @media (max-width: 425px) {
-    .usermainbox {
-        width: 100%;
-        height: auto; /* Ensure height adjusts dynamically */
-        flex-direction: column; /* Stack content vertically */
-        justify-content: center;
-        align-items: center; /* Center-align content */
-    }
+  .usermainbox {
+    width: 90%;
+    font-size: 14px;
+    padding: 10px;
+  }
+
+  .usermainheader h4 {
+    font-size: 20px;
+  }
+
+  .usermainid header {
+    font-size: 14px;
+  }
+
+  .usermain-table th,
+  .usermain-table td {
+    padding: 8px 10px;
+    font-size: 14px;
+  }
+
+  .usermainid {
+    justify-content: center;
+  }
+
+  .usermain-table th.table-header span {
+    display: none;
+  }
+
+  .waste {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 10rem;
+    width: 100%;
+    gap: 10px;
+    margin-top: 30px;
+  }
+
+  .nut1 {
+    background-color: #ff9800;
+    color: white;
+    cursor: pointer;
+    height: 90%;
+    width: 60px;
+    font-size: 10px;
+    border-radius: 5px;
+  }
+  .nut2 {
+    border: 1px solid #ff9800;
+    color: #ff9800;
+    cursor: pointer;
+    height: 80%;
+    width: 60px;
+    font-size: 10px;
+    border-radius: 5px;
+  }
+
+  .nut1:hover {
+    background-color: #ff9800;
+    color: white;
+  }
+
+  .ft {
+    display: flex;
+    margin-top: 30px;
+    color: #ff9800;
+    font-size: 12px;
+    cursor: pointer;
+    background-color: white;
+    width: 80px;
+    height: 30px;
+    border: 2px solid #ff9800;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    margin-bottom: 10px;
+  }
+
+  .ft p {
+    position: relative;
+    top: 6px;
+  }
+
+  .modalbox {
+    width: 80px;
+  }
 }
 
 /* For small phones (max-width: 375px) */
 @media (max-width: 375px) {
-    .usermainbox {
-        width: 100%;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
+  .usermainbox {
+    width: 100%;
+    font-size: 12px;
+    padding: 8px;
+  }
+
+  .usermainheader h4 {
+    font-size: 20px;
+  }
+
+  .usermainid header {
+    font-size: 17px;
+  }
+
+  .usermainheaderbox {
+    width: 95%;
+  }
+
+  .usermainid header {
+    font-size: 17px;
+  }
 }
 
 /* For extra small devices (max-width: 320px) */
 @media (max-width: 320px) {
-    .usermainbox {
-        width: 100%;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
+  .usermainbox {
+    width: 100%;
+    font-size: 10px;
+    padding: 5px;
+  }
+
+  .usermainheader h4 {
+    font-size: 18px;
+  }
+
+  .usermainid header {
+    font-size: 10px;
+  }
+
+  .usermainheaderbox {
+    width: 100%;
+  }
+}
+
+/* react-table Specific Styles */
+
+.usermain-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.usermain-table th,
+.usermain-table td {
+  border: 1px solid #ddd;
+  padding: 12px 15px;
+  text-align: left;
+}
+
+.usermain-table th {
+  background-color: #f2f2f2;
+  cursor: pointer;
+  user-select: none;
+  position: relative;
+}
+
+.usermain-table th.table-header span {
+  margin-left: 5px;
+}
+
+.table-body tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.usermain-table-container table tr:hover {
+  background-color: #eaeaea;
+}
+
+.usermain-table th,
+.usermain-table td {
+  font-size: 16px;
+}
+
+.usermain-table th.sortable:hover {
+  background-color: #e0e0e0;
+}
+
+.no-history-message {
+  text-align: center;
+  color: #555;
+  font-size: 18px;
+  margin-top: 20px;
+}
+
+/* Pagination Styles (if you add pagination) */
+.pagination {
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+
+.pagination button {
+  padding: 5px 10px;
+  border: 1px solid #ddd;
+  background-color: #fff;
+  cursor: pointer;
+  border-radius: 3px;
+}
+
+.pagination button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.pagination input {
+  padding: 5px;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+}
+
+.pagination select {
+  padding: 5px;
+  border: 1px solid #ddd;
+  border-radius: 3px;
 }

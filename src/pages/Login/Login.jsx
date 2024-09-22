@@ -23,10 +23,7 @@ const getStyles = (mode) => ({
 const schema = yup
   .object({
     Email: yup.string().email().required("Please input your Email"),
-    Password: yup
-      .string()
-      .required("Please input your Password and must be 6 characters")
-      .min(6),
+    Password: yup.string().required("Please input your Password").min(6),
   })
   .required();
 
@@ -50,25 +47,33 @@ const Login = () => {
   const onSubmit = async (data) => {
     setLoading(true);
     try {
-      const res = await axios.post(`${baseURL}/api/v1/user/signUp`, data);
+      const res = await axios.post(`${baseURL}/api/v1/user/sign-in`, data);
       Swal.fire({
         icon: "success",
-        title: "Signup Successful",
-        text: res.data.message || "Check your mail for verification.",
+        title: "Login Successful",
+        text: res?.data?.message || `Welcome back ${data.Name}`,
       });
+
+      localStorage.setItem("id", res.data.data._id);
       dispatch(setUsers(res.data.data));
       dispatch(setToken(res.data.Token));
 
-      setLoading(false);
-      setTimeout(() => {
-        navigate("/Confirmation");
-      }, 2000);
+      const role = res.data.data.isAdmin;
+      if (role === true) {
+        navigate("/Admindashboard");
+      } else {
+        navigate("/Userdashboard");
+      }
     } catch (error) {
       Swal.fire({
         icon: "error",
-        title: "Oops...",
-        text: error.response?.data?.message || "Network Error",
+        title: "Login Failed",
+        text:
+          error.response?.data?.message ||
+          "Failed to fetch data. Please try again later.",
       });
+    } finally {
+      setLoading(false);
     }
   };
 

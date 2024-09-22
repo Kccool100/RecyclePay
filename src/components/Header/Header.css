@@ -130,7 +130,8 @@
       justify-content: center;
       box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
       align-items: flex-start;
-      height: 300px;
+      height: 320px;
+      margin-top: 430px;
       transition: all 350ms;
       transform: scale(1.0);
       gap: 1.5rem;

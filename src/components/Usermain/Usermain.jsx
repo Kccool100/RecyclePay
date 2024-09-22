@@ -41,6 +41,7 @@ const Usermain = () => {
   const URL = `https://waste-project.onrender.com`;
   const dispatch = useDispatch();
   const wasteData = useSelector((state) => state.WasteData);
+  console.log(wasteData);
 
   // Fetch all waste data
   const getAllWaste = async () => {
@@ -95,12 +96,6 @@ const Usermain = () => {
           <div className="header2">
             <h4>Total Accepted </h4>
             <h2>{totalAcceptedWaste}Kg</h2>
-          </div>
-        </div>
-        <div className="headerbox1">
-          <div className="header2">
-            <h4>Pending Requests</h4>
-            <h2> 0</h2>
           </div>
         </div>
       </div>

@@ -3,7 +3,7 @@
     height: 30vh;
     display: flex;
     flex-direction: column;
-    padding-top: 50px;
+    /* padding-top: 50px; */
     justify-content: center;
     align-items: center;
 }
@@ -28,7 +28,7 @@
     .StoryContainer{
         width: 100%;
         height: max-content;
-        padding-top: 50px;
+        padding-top: 20px;
 
     }
     .StoryContainer h3{
@@ -42,7 +42,7 @@
     .StoryContainer{
         width: 100%;
         height: auto;
-        padding-top: 50px;
+        /* padding-top: 50px; */
 
     }
 }

@@ -1,4 +1,4 @@
-.pconfirm{
+.pconfirm {
     height: 100vh;
     width: 100%;
     background-image: url(../../assets/recycleLogo.png);
@@ -6,30 +6,29 @@
     align-items: center;
     justify-content: center;
     background-repeat: no-repeat;
-
+    background-size: cover; /* Ensure the background covers the container */
 }
 
-.pconfirm-box{
+.pconfirm-box {
     height: 100%;
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #e0dedea7;
+    background-color: rgba(224, 222, 222, 0.65); /* Adjusted for transparency */
     backdrop-filter: blur(30px);
 }
 
-
-.Confirm{
+.Confirm {
     height: 95%;
     width: 80%;
-    /* background-color: yellow; */
     display: flex;
     align-items: center;
     justify-content: space-around;
-    flex-direction: column;    
+    flex-direction: column;
 }
-.Confirm button{
+
+.Confirm button {
     height: 60px;
     width: 200px;
     background-color: transparent;
@@ -38,195 +37,125 @@
     color: #FF7043;
     font-size: 20px;
     font-weight: 400;
-    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    }
+    transition: all 0.3s ease-in-out;
+}
 
-.Confirm button:hover{
+.Confirm button:hover {
     background-color: #FF7043;
     color: white;
-    transition: ease-in-out;
 }
-.pconfirmhead{
-    height: 10%;
-    width: 100%;
-    /* background-color: red; */
+
+/* Adjusting header */
+.pconfirmhead {
     display: flex;
     align-items: center;
     justify-content: center;
+    width: 100%;
+}
 
+.pconfirmhead h1 {
+    color: #FF7043;
+    font-size: 80px;
+    font-weight: bold;
+    text-align: center;
+}
 
-    h1{
-        /* height: 100%;
-        width: 60%;
-        display: flex;
-        align-items: center; */
-        color: #FF7043;
-        font-size: 80px;
-        font-weight: bold;
-    
-    }
-
-
-    @media (max-width:768px) {
-       h1{
-        font-size: 22px;
-       
-       }
-       margin-top: 20px;
-       width: 100%;
-       /* background-color: green; */
-       display: flex;
-       align-items: center;
-       justify-content: center;
-    }
-    
-    
-    @media (max-width:426px) {
-       h1{
-        font-size: 18px;
-       }
-       margin-top: 20px;
-       width: 100%;
-       /* background-color: green; */
-       display: flex;
-       align-items: center;
-       justify-content: center;
-    }
-    @media (max-width:375px) {
-    
-    }
-    @media (max-width:320px) {
-    
-    
+@media (max-width: 768px) {
+    .pconfirmhead h1 {
+        font-size: 40px;
     }
 }
 
-.pconfirmarrow{
-    
-        height: 100%;
-        width:30%;
-        /* background-color: wheat; */
-    
+@media (max-width: 426px) {
+    .pconfirmhead h1 {
+        font-size: 30px;
+    }
 }
 
-.confirmdetails{
-    height: 50%;width:100%;
-    /* background-color: rebeccapurple; */
+@media (max-width: 375px) {
+    .pconfirmhead h1 {
+        font-size: 25px;
+    }
+}
+
+.confirmdetails {
+    height: 50%;
+    width: 100%;
     display: flex;
-    align-items:center;
+    align-items: center;
     justify-content: center;
     flex-direction: column;
-    @media (max-width:768px) {
-        h3{
-            font-size: 17px;
-           }
-    
-           .inp{
-            width: 100%;
-            /* background-color: gray; */
-           }
-    }
-    
-    
-    @media (max-width:426px) {
-       h3{
-        font-size: 12px;
-       }
-
-       .inp{
-        width: 100%;
-        /* background-color: gray; */
-       }
-    }
-    @media (max-width:375px) {
-    
-    }
-    @media (max-width:320px) {
-    
-    
-    }
-   
-
 }
 
-.inp{
+.confirmdetails h3 {
+    font-size: 22px;
+}
+
+@media (max-width: 768px) {
+    .confirmdetails h3 {
+        font-size: 17px;
+    }
+}
+
+@media (max-width: 426px) {
+    .confirmdetails h3 {
+        font-size: 12px;
+    }
+}
+
+.inp {
     height: 20%;
     width: 50%;
-    /* background-color: yellow; */
     display: flex;
     align-items: center;
     justify-content: center;
-
-    
-
-
-    .infotext{
-        width: 80%;
-        height: 80%;
-        font-weight: bold;
-        color:black ;
-        font-size: bold;
-        background-color: transparent;
-        text-indent: 40px;
-        display: flex;
-        align-items: center;
-        justify-content: flex-start;
-        h3{
-            font-weight: bold;
-            color: black;
-        }
-
-       
-       
-    }
-
 }
 
-.ptext{
-    height: 100%;
-    width: 25%;
-    /* background-color: red; */
+.inp .infotext {
+    width: 80%;
+    height: 80%;
+    font-weight: bold;
+    font-size: 18px;
+    text-indent: 40px;
     display: flex;
     align-items: center;
     justify-content: flex-start;
-
-    
+    color: black;
+    background-color: transparent;
 }
 
-.reconfirm{
+/* Text section */
+.ptext {
+    height: 100%;
+    width: 25%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+/* Confirm section */
+.reconfirm {
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
     width: 100%;
     height: 20%;
-    /* background-color: yellow; */
-    
-    h2{
-        font-weight: bold;
-        font-size: 30px;
-    }
-    @media (max-width:768px) {
-      h2{
-        font-size: 20px;
-      }
-    }
-    
-    
-    @media (max-width:426px) {
-       /* background-color: red; */
-       h2{
-        font-size: 15px;
-       }
-    }
-    @media (max-width:375px) {
-    
-    }
-    @media (max-width:320px) {
-    
-    
-    }
-   
 }
 
+.reconfirm h2 {
+    font-weight: bold;
+    font-size: 30px;
+}
 
+@media (max-width: 768px) {
+    .reconfirm h2 {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 426px) {
+    .reconfirm h2 {
+        font-size: 15px;
+    }
+}

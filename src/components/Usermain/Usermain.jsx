@@ -93,7 +93,43 @@ const Usermain = () => {
       </div>
       <div className='usermainbox'>
         <div className='usermainheader'>
+<<<<<<< HEAD
           <h4 style={styles.text}>Waste History</h4>
+=======
+          <h4 style={styles.text}>Transaction History</h4>
+        </div>
+        <div className='usermainid'>
+          <header style={styles.text} >Weight(Kg)</header>
+          <header style={styles.text} >Contact</header>
+          <header style={styles.text}>Address</header>
+          <header style={styles.text}>Date & Time</header>
+        </div>
+
+        <div>
+         
+          { data.length > 0 ? (
+            data?.map((data, index) => (
+              <div className='mainholder' key={index}>
+                <div className='usermainname'>
+                  <p style={styles.text}>{data.WasteKG} kg</p>
+                </div>
+                <div className='usermainname'>
+                  <p style={styles.text}>{data.phoneNumber}</p>
+                </div>
+                <div className='usermainkg'>
+                  <p style={styles.text}>{data.pickUpAddress}</p>
+                </div>
+                <div className='usermainstatus'>
+                  <p style={styles.text}>{new Date(data.createdAt).toLocaleString()}</p>
+                </div>
+              </div>
+             ))
+          ) :(
+            <p> No History available</p>
+          )
+          }
+         
+>>>>>>> 3ff58a098a5b28fce0368d45040da8bcc12eec9c
         </div>
         <table className='usermain-table'>
           <thead>

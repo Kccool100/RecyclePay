@@ -9,6 +9,7 @@ import { Theme } from "../../components/Theme/Theme";
 import { ThemeContext } from "../../context/ThemeProvider";
 import axios from "axios";
 import Swal from "sweetalert2";
+import toast from "react-hot-toast";
 
 const getStyles = (mode) => ({
   background: {
@@ -50,20 +51,21 @@ const SignUp = () => {
   } = useForm({
     resolver: yupResolver(schema),
   });
+
   const onSubmit = async (data) => {
     setLoading(true);
+    const ToastloadingId = toast.loading("Please wait....");
     try {
       const res = await axios.post(`${baseURL}/api/v1/user/signUp`, data);
       console.log(res.data);
 
-      Swal.fire({
-        title: "Success!",
-        text:
-          res.data.message ||
+      toast.success(
+        res.data.message ||
           "Signup Successful! Check your mail for verification.",
-        icon: "success",
-        confirmButtonText: "OK",
-      });
+        {
+          duration: 4000,
+        }
+      );
 
       setLoading(false);
       setTimeout(() => {
@@ -71,14 +73,11 @@ const SignUp = () => {
       }, 2000);
     } catch (error) {
       console.log(error.response);
-
-      Swal.fire({
-        title: "Error!",
-        text: error.response?.data?.message || "Network Error",
-        icon: "error",
-        confirmButtonText: "Try Again",
+      toast.error(error.response?.data?.message || "Network Error", {
+        duration: 4000,
       });
     } finally {
+      toast.dismiss(ToastloadingId);
       setLoading(false);
     }
   };

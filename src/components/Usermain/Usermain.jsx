@@ -1,4 +1,4 @@
-import React, { useEffect, useState, useContext } from "react";
+import React, { useEffect, useState, useContext, useMemo } from "react";
 import Modal from "react-modal";
 import "./Usermain.css";
 import { useNavigate } from "react-router-dom";
@@ -71,6 +71,16 @@ const Usermain = () => {
     }
   };
 
+  const totalWaste = useMemo(() => {
+    return wasteData.reduce((acc, item) => acc + (item.WasteKG || 0), 0);
+  }, [wasteData]);
+
+  const totalAcceptedWaste = useMemo(() => {
+    return wasteData
+      .filter((item) => item.status === "Approved")
+      .reduce((acc, item) => acc + (item.WasteKG || 0), 0);
+  }, [wasteData]);
+
   return (
     <div className="usermain-container">
       <img src={logo} alt="Logo" onClick={() => navigate("/")} />
@@ -78,13 +88,13 @@ const Usermain = () => {
         <div className="headerbox1">
           <div className="header2">
             <h4>Total waste</h4>
-            <h2> Kg</h2>
+            <h2>{totalWaste} Kg</h2>
           </div>
         </div>
         <div className="headerbox1">
           <div className="header2">
             <h4>Total Accepted </h4>
-            <h2>Kg</h2>
+            <h2>{totalAcceptedWaste}Kg</h2>
           </div>
         </div>
         <div className="headerbox1">

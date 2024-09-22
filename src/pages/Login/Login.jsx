@@ -10,6 +10,7 @@ import axios from "axios";
 import { useDispatch } from "react-redux";
 import { setToken, setUsers } from "../../Global/Slice";
 import Swal from "sweetalert2";
+import toast from "react-hot-toast";
 
 const getStyles = (mode) => ({
   background: {
@@ -46,12 +47,11 @@ const Login = () => {
 
   const onSubmit = async (data) => {
     setLoading(true);
+    const ToastloadingId = toast.loading("Please wait...");
     try {
       const res = await axios.post(`${baseURL}/api/v1/user/sign-in`, data);
-      Swal.fire({
-        icon: "success",
-        title: "Login Successful",
-        text: res?.data?.message || `Welcome back ${data.Name}`,
+      toast.success(res?.data?.message || `Welcome back ${data.Name}`, {
+        duration: 4000,
       });
 
       localStorage.setItem("id", res.data.data._id);
@@ -65,15 +65,16 @@ const Login = () => {
         navigate("/Userdashboard");
       }
     } catch (error) {
-      Swal.fire({
-        icon: "error",
-        title: "Login Failed",
-        text:
-          error.response?.data?.message ||
+      toast.error(
+        error.response?.data?.message ||
           "Failed to fetch data. Please try again later.",
-      });
+        {
+          duration: 4000,
+        }
+      );
     } finally {
       setLoading(false);
+      toast.dismiss(ToastloadingId);
     }
   };
 

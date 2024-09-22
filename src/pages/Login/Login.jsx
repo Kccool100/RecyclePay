@@ -48,6 +48,7 @@ const Login = () => {
     try {
       const res = await axios.post(`${baseURL}/api/v1/user/sign-in`, data);
       console.log(res.data); // Check the response structure
+      alert(res?.data?.message || `Welcome back${data.Name}`)
 
       localStorage.setItem("id", res.data.data._id);
       dispatch(setUsers(res.data.data));
@@ -65,7 +66,7 @@ const Login = () => {
     } catch (error) {
       console.error("Login error:", error); // Improved logging
       const errorMessage = error.response?.data?.message || 'Failed to fetch data. Please try again later.';
-      alert(errorMessage);
+      alert(errorMessage || "your network is disconnected");
     } finally {
       setLoading(false);
     }

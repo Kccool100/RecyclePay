@@ -30,7 +30,7 @@ const customStyles = {
 const Usermain = () => {
   const dispatch = useDispatch();
   const [data, setData] = useState([]);
-  console.log(data)
+  // console.log(data)
   const [error, setError] = useState(null);
   const navigate = useNavigate();
   const [modalIsOpen, setIsOpen] = useState(false);
@@ -54,10 +54,13 @@ const Usermain = () => {
   const getAllWaste = async () => {
     try {
       const res = await axios.get(`${URL}/api/v1/user/waste-records`, {headers}); // Adjust this URL based on your API
+      console.log(res);
       setData(res?.data?.data); // Make sure this corresponds to the structure of your API response
+      alert(res.message || 'Waste History Retrieved')
     } catch (error) {
       console.error('API Error:', error);
       setError(error.message || 'Something went wrong');
+      alert(error.response?.data?.message || 'Something went wrong')
     }
   };
 
@@ -65,9 +68,9 @@ const Usermain = () => {
     getAllWaste();
   }, []);
 
-  return (
+  return ( 
     <div className='usermain-container'>
-      <img src={logo} alt="Logo" />
+      <img src={logo} alt="Logo" onClick={()=> navigate('/')}/>
       <div className='usermainheaderbox'>
         {/* Display header information dynamically */}
         <div className='headerbox1'>
@@ -105,30 +108,34 @@ const Usermain = () => {
           <h4 style={styles.text}>Transaction History</h4>
         </div>
         <div className='usermainid'>
-          <header style={styles.text}>Weight(Kg)</header>
-          <header style={styles.text}>Contact</header>
+          <header style={styles.text} className='headname'>Weight(Kg)</header>
+          <header style={styles.text} className='headname'>Contact</header>
           <header style={styles.text}>Address</header>
           <header style={styles.text}>Date & Time</header>
         </div>
 
         <div>
          
-          { data?.map((data, index) => (
-            <div className='mainholder' key={index}>
-              <div className='usermainname'>
-                <p style={styles.text}>{data.WasteKG} kg</p>
+          { data.length > 0 ? (
+            data?.map((data, index) => (
+              <div className='mainholder' key={index}>
+                <div className='usermainname'>
+                  <p style={styles.text}>{data.WasteKG} kg</p>
+                </div>
+                <div className='usermainname'>
+                  <p style={styles.text}>{data.phoneNumber}</p>
+                </div>
+                <div className='usermainkg'>
+                  <p style={styles.text}>{data.pickUpAddress}</p>
+                </div>
+                <div className='usermainstatus'>
+                  <p style={styles.text}>{new Date(data.createdAt).toLocaleString()}</p>
+                </div>
               </div>
-              <div className='usermainname'>
-                <p style={styles.text}>{data.phoneNumber}</p>
-              </div>
-              <div className='usermainkg'>
-                <p style={styles.text}>{data.pickUpAddress}</p>
-              </div>
-              <div className='usermainstatus'>
-                <p style={styles.text}>{new Date(data.createdAt).toLocaleString()}</p>
-              </div>
-            </div>
-           ))
+             ))
+          ) :(
+            <p> No History available</p>
+          )
           }
          
         </div>
@@ -145,7 +152,7 @@ const Usermain = () => {
       >
         <h2>Are you sure you want to log out?</h2>
         <div className='modebutton'>
-          <button onClick={() => navigate('/')}>Yes</button>
+          <button onClick={() => navigate('/Login')}>Yes</button>
           <button onClick={closeModal}>No</button>
         </div>
       </Modal>

@@ -36,6 +36,16 @@ const Detailsconfirm = () => {
 
   const baseURL = `https://waste-project.onrender.com`;
 
+  const getAllWaste = async () => {
+    try {
+      const res = await axios.get(`${baseURL}/api/v1/user/get-all-waste`, { headers });
+      console.log(res.data);
+      // You might want to dispatch the data to your Redux store or handle it as needed
+    } catch (error) {
+      console.error('Error fetching waste data:', error);
+    }
+  };
+
   const handleConfirm = async () => {
     setLoading(true);
     try {
@@ -47,13 +57,14 @@ const Detailsconfirm = () => {
 
       const res = await axios.post(`${baseURL}/api/v1/user/create-waste`, data, { headers });
       console.log(res.data);
-      // alert(res.data); // Assuming the API returns a message field
+      alert(res.data.message);
+      await getAllWaste();
 
       // Navigate to a confirmation page or similar
       navigate('/Pickupconfirmed');
     } catch (error) {
-      console.error(error.response.data.message);
-      alert(error.response.data.message);
+      console.error(error);
+      alert(error.message);
     } finally {
       setLoading(false);
     }
@@ -100,8 +111,7 @@ const Detailsconfirm = () => {
             {Loading ? 'Confirming...' : 'Confirm'}
           </button>
           
-            <button onClick={()=>navigate("/Pick")}>Go Back</button>
-          
+          <button onClick={() => navigate("/Pick")}>Go Back</button>
         </div>
       </div>
     </div>

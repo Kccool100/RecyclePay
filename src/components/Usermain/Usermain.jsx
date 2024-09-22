@@ -93,9 +93,6 @@ const Usermain = () => {
       </div>
       <div className='usermainbox'>
         <div className='usermainheader'>
-<<<<<<< HEAD
-          <h4 style={styles.text}>Waste History</h4>
-=======
           <h4 style={styles.text}>Transaction History</h4>
         </div>
         <div className='usermainid'>
@@ -129,7 +126,6 @@ const Usermain = () => {
           )
           }
          
->>>>>>> 3ff58a098a5b28fce0368d45040da8bcc12eec9c
         </div>
         <table className='usermain-table'>
           <thead>

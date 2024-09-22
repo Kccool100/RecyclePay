@@ -10,6 +10,7 @@ import s6 from '../../assets/s6.png'
 import s7 from '../../assets/s7.png'
 import s8 from '../../assets/s8.png'
 import s9 from '../../assets/s9.png'
+import s10 from '../../assets/s10.png'
 import { useContext} from "react"
 import { Theme } from '../Theme/Theme';
 import { ThemeContext } from "../../context/ThemeProvider" 
@@ -51,6 +52,9 @@ const Slider = () => {
         <img  src={s4} alt='s4'/>
       </Carousel.Item>
       <Carousel.Item>
+        <img  src={s10} alt='s10'/>
+      </Carousel.Item>
+      <Carousel.Item>
         <img  src={s5} alt='s5'/>
       </Carousel.Item>
       <Carousel.Item>
@@ -65,6 +69,7 @@ const Slider = () => {
       <Carousel.Item>
         <img  src={s9} alt='s9'/>
       </Carousel.Item>
+     
     </Carousel>
     </div>
     

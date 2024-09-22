@@ -8,9 +8,9 @@ import h3 from "../../assets/h3.png"
 const Hero = () => {
 
   return (
-    <div className='heroContainer'>
+    <div className='heroContainer' >
       <Carousel fade>
-      <Carousel.Item>
+      <Carousel.Item >
         <img  src={h1} alt='h1'/>
       </Carousel.Item>
       <Carousel.Item>

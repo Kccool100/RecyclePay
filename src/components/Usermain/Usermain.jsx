@@ -40,7 +40,10 @@ const Usermain = () => {
   const headers = { Authorization: `Bearer ${Token}` };
   const URL = `https://waste-project.onrender.com`;
   const dispatch = useDispatch();
-  const wasteData = useSelector((state) => state.WasteData);
+  
+  // Initialize wasteData as an array by default
+  const wasteData = useSelector((state) => state.WasteData || []); 
+  
   console.log(wasteData);
 
   // Fetch all waste data
@@ -73,13 +76,17 @@ const Usermain = () => {
   };
 
   const totalWaste = useMemo(() => {
-    return wasteData.reduce((acc, item) => acc + (item.WasteKG || 0), 0);
+    return Array.isArray(wasteData) 
+      ? wasteData.reduce((acc, item) => acc + (item.WasteKG || 0), 0)
+      : 0; // Ensure wasteData is an array before using reduce
   }, [wasteData]);
 
   const totalAcceptedWaste = useMemo(() => {
-    return wasteData
-      .filter((item) => item.status === "Approved")
-      .reduce((acc, item) => acc + (item.WasteKG || 0), 0);
+    return Array.isArray(wasteData)
+      ? wasteData
+          .filter((item) => item.status === "Approved")
+          .reduce((acc, item) => acc + (item.WasteKG || 0), 0)
+      : 0;
   }, [wasteData]);
 
   return (
@@ -114,12 +121,11 @@ const Usermain = () => {
           <header style={styles.text}>Contact</header>
           <header style={styles.text}>Address</header>
           <header style={styles.text}>Date & Time</header>
-          {/* <header style={styles.text}>Status</header> New Status Header */}
         </div>
 
         <table className="usermain-table">
           <tbody>
-            {wasteData.length > 0 ? (
+            {Array.isArray(wasteData) && wasteData.length > 0 ? (
               wasteData.map((item) => (
                 <tr key={item._id}>
                   <td style={styles.text}>{item.WasteKG} kg</td>
@@ -128,10 +134,6 @@ const Usermain = () => {
                   <td style={styles.text}>
                     {new Date(item.createdAt).toLocaleString()}
                   </td>
-                  {/* <td style={getStatusStyle(item.status || "Pending")}> */}{" "}
-                  {/* Dynamic style */}
-                  {/* {item.status || "Pending"} */}
-                  {/* </td> */}
                 </tr>
               ))
             ) : (

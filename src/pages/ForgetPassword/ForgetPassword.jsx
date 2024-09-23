@@ -48,7 +48,7 @@ const ForgetPassword = () => {
       const token = res.data.token; // Assuming token is returned in the response
 
       setTimeout(() => {
-        navigate(`/ResetPassword`);
+        navigate(`/ResetPassword/:token`);
       }, 3000);
 
     } catch (error) {

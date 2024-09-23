@@ -152,3 +152,63 @@
     margin-top: 10px;
     justify-content: center;
 }
+.mainidtextt button{
+    height: 30px;
+    width: 70px;
+    display: flex;
+    justify-content: center;
+    border-radius: 3px;
+    margin-left: 10px;
+    align-items: center;
+    font-size: 13px;
+    background-color: none;
+    border: 1px solid #ff7043;
+    transition: all 350ms;
+    color: #ff7043;
+}
+.mainidtextt button:hover{
+    background-color: #ff7043;
+    color: #fff;
+    transform: scale(1.0);
+    border: none;
+}
+
+.mainidtextt select{
+    height: 30px;
+    width: 80px;
+    display: flex;
+    justify-content: center;
+    border-radius: 3px;
+    align-items: center;
+    font-size: 13px;
+    outline-color: none;
+    background-color: #ff7043;
+    transition: all 350ms;
+    color: #ffff;
+}
+/* .mainidtextt select:hover{
+    background-color: #ff7043;
+    color: #fff;
+    transform: scale(1.0);
+    border: none;
+} */
+
+.mainidtextt option{
+    height: 30px;
+    width: 80px;
+    display: flex;
+    justify-content: center;
+    border-radius: 3px;
+    align-items: center;
+    font-size: 13px;
+    outline-color: none;
+    background-color: #ff7043;
+    transition: all 350ms;
+    color: #ffff;
+}
+/* .mainidtextt option:hover{
+    background-color: #ff7043;
+    color: #fff;
+    transform: scale(1.0);
+    border: none;
+} */

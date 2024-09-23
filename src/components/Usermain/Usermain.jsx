@@ -63,17 +63,17 @@ const Usermain = () => {
   }, []);
 
   // Dynamic style for the status text
-  const getStatusStyle = (status) => {
-    switch (status) {
-      case "Approved":
-        return { color: "green", fontWeight: "bold" };
-      case "Failed":
-        return { color: "red", fontWeight: "bold" };
-      case "Pending":
-      default:
-        return { color: "orangered", fontWeight: "bold" };
-    }
-  };
+  // const getStatusStyle = (status) => {
+  //   switch (status) {
+  //     case "Approved":
+  //       return { color: "green", fontWeight: "bold" };
+  //     case "Failed":
+  //       return { color: "red", fontWeight: "bold" };
+  //     case "Pending":
+  //     default:
+  //       return { color: "orangered", fontWeight: "bold" };
+  //   }
+  // };
 
   const totalWaste = useMemo(() => {
     return Array.isArray(wasteData) 
@@ -121,6 +121,7 @@ const Usermain = () => {
           <header style={styles.text}>Contact</header>
           <header style={styles.text}>Address</header>
           <header style={styles.text}>Date & Time</header>
+          <header style={styles.text}>Status</header>
         </div>
 
         <table className="usermain-table">
@@ -133,6 +134,11 @@ const Usermain = () => {
                   <td style={styles.text}>{item.pickUpAddress}</td>
                   <td style={styles.text}>
                     {new Date(item.createdAt).toLocaleString()}
+                  </td>
+                  <td>
+                    <span style={{color : item.status === "approved" ? "green" : item.status === "failed" ? "red"  :"orangered"}}>
+                    {item.status}
+                    </span>
                   </td>
                 </tr>
               ))
@@ -157,7 +163,7 @@ const Usermain = () => {
         <div className="modalbox">
           <h2>Are you sure you want to log out?</h2>
           <div className="modebutton">
-            <button onClick={() => navigate("/Login")}>Yes</button>
+            <button onClick={() => navigate("/")}>Yes</button>
             <button onClick={() => setIsOpen(false)}>No</button>
           </div>
         </div>

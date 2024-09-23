@@ -158,6 +158,10 @@
   border-radius: 5px;
 }
 
+.ft{
+  display: none;
+}
+
 .modebutton button:first-child {
   background-color: #ff7043;
   color: white;

@@ -30,28 +30,28 @@ function ResetPassword() {
   const navigate = useNavigate();
   const { token } = useParams();
 
-  useEffect(() => {
-    const verifyResetPassword = () => {
-      setLoading(true);
-      axios
-        .post(`${baseURL}/api/v1/user/reset-password/${token}`)
-        .then((res) => {
-          console.log(res);
-          setIsResetPassword(2);
-        })
-        .catch((err) => {
-          console.log("Error response:", err);
-          setIsResetPassword(3);
-        })
-        .finally(() => {
-          setLoading(false);
-        });
-    };
+  // useEffect(() => {
+  //   const verifyResetPassword = () => {
+  //     setLoading(true);
+  //     axios
+  //       .post(`${baseURL}/api/v1/user/reset-password/${token}`)
+  //       .then((res) => {
+  //         console.log(res);
+  //         setIsResetPassword(2);
+  //       })
+  //       .catch((err) => {
+  //         console.log("Error response:", err);
+  //         setIsResetPassword(3);
+  //       })
+  //       .finally(() => {
+  //         setLoading(false);
+  //       });
+  //   };
 
-    if (token) {
-      verifyResetPassword();
-    }
-  }, [token, baseURL, navigate]);
+  //   if (token) {
+  //     verifyResetPassword();
+  //   }
+  // }, [token, baseURL, navigate]);
 
   const handlePasswordReset = (e) => {
     e.preventDefault();
@@ -64,9 +64,8 @@ function ResetPassword() {
     setLoading(true);
 
     axios
-      .post(`${baseURL}/api/v1/user/update-password`, {
+      .post(`${baseURL}/api/v1/user/reset-password/${token}`, {
         password: newPassword,
-        token: token, // send the token for validation
       })
       .then((res) => {
         console.log("Password updated:", res);

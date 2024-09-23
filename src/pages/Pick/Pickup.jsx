@@ -6,6 +6,7 @@ import * as yup from "yup";
 import { Theme } from '../../components/Theme/Theme';
 import { ThemeContext } from "../../context/ThemeProvider"; 
 import { useNavigate } from 'react-router-dom';
+import ClipLoader from "react-spinners/ClipLoader";
 import { useDispatch } from 'react-redux';
 
 const getStyles = (mode) => ({
@@ -94,9 +95,9 @@ const Pickup = () => {
           </label>
    
           <div className='pickbutton'>  
-            {Loading ? (
-              <p>Loading...</p>
-            ) : (
+          {Loading ? (
+        <ClipLoader color={"#ff7043"} loading={Loading} size={35} />
+      ) : (
               <button type="submit" disabled={Loading}>Next</button>
             )}
           </div>

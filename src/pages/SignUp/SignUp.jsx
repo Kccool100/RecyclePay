@@ -8,6 +8,7 @@ import * as yup from "yup";
 import { Theme } from "../../components/Theme/Theme";
 import { ThemeContext } from "../../context/ThemeProvider";
 import axios from "axios";
+import ClipLoader from "react-spinners/ClipLoader";
 import Swal from "sweetalert2";
 import toast from "react-hot-toast";
 
@@ -145,9 +146,9 @@ const SignUp = () => {
           </Link>
         </div>
         <div className="buttonsign">
-          {Loading ? (
-            <p>Loading...</p>
-          ) : (
+        {Loading ? (
+        <ClipLoader color={"#ff7043"} loading={Loading} size={35} />
+      ) : (
             <button type="submit" disabled={Loading}>
               Sign Up
             </button>

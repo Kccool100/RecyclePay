@@ -324,7 +324,6 @@
   }
 }
 
-/* For phones (max-width: 425px) */
 @media (max-width: 426px) {
   .usermainbox {
     width: 90%;

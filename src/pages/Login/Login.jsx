@@ -7,6 +7,7 @@ import * as yup from "yup";
 import { Theme } from "../../components/Theme/Theme";
 import { ThemeContext } from "../../context/ThemeProvider";
 import axios from "axios";
+import ClipLoader from "react-spinners/ClipLoader";
 import { useDispatch } from "react-redux";
 import { setToken, setUsers } from "../../Global/Slice";
 import Swal from "sweetalert2";
@@ -106,14 +107,14 @@ const Login = () => {
         </label>
 
         <div className="buttonin">
-          {loading ? (
-            <p>Loading...</p>
-          ) : (
-            <button type="submit" disabled={loading}>
-              Sign In
-            </button>
-          )}
-        </div>
+      {loading ? (
+        <ClipLoader color={"#ff7043"} loading={loading} size={35} />
+      ) : (
+        <button type="submit" disabled={loading} onClick={handleSubmit}>
+          Sign In
+        </button>
+      )}
+    </div>
 
         <div className="logg">
           <Link to="/forgetpassword" style={{ textDecoration: "none" }}>

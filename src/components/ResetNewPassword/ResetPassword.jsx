@@ -28,13 +28,13 @@ function ResetPassword() {
   const [newPassword, setNewPassword] = useState('');
   const [confirmPassword, setConfirmPassword] = useState('');
   const navigate = useNavigate();
-  const { token } = useParams(); // Get the reset token from the URL params
+  const { token } = useParams();
 
   useEffect(() => {
     const verifyResetPassword = () => {
       setLoading(true);
       axios
-        .get(`${baseURL}/api/v1/user/reset-password/${token}`)
+        .post(`${baseURL}/api/v1/user/reset-password/${token}`)
         .then((res) => {
           console.log(res);
           setIsResetPassword(2);
@@ -72,7 +72,7 @@ function ResetPassword() {
         console.log("Password updated:", res);
         alert('Password reset successful!');
         setTimeout(() => {
-          navigate("/login");
+          navigate("/Login");
         }, 2000);
       })
       .catch((err) => {
@@ -115,7 +115,7 @@ function ResetPassword() {
                   {Loading ? (
         <ClipLoader color={"#ff7043"} loading={Loading} size={35} />
       ) : (
-                      <button type="submit">Continue</button>
+                      <button type="submit">Continue</button> 
                     )}
                   </div>
                 </form>

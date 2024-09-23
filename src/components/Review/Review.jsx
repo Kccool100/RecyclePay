@@ -25,9 +25,10 @@ const Review = () => {
     <div className='ReviewContainer' style={styles.background}>
       <div className="ReviewCon-box" style={styles.background}>
         <h3 style={styles.text}>Leave review</h3>
-        <div className="message" style={styles.text}>
+        {/* <div className="message" style={styles.text}>
             Message
-        </div>
+        </div> */}
+           <input type="email" placeholder='input valid Email address' required="true"/>
         <input type="text" placeholder='Description' />
         <button >Send a Message</button>
       </div>

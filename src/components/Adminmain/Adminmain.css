@@ -7,14 +7,18 @@
     justify-content: center;
 }
 
-.mainbox{
-    height: 85%;
+/* Main container styling */
+.mainbox {
+    height: 90%;
     width: 90%;
     background-color: #FCF9F9;
+    overflow-y: scroll;
     padding: 30px;
+    margin: 0 auto;
 }
 
-.mhead{
+/* Flex layout for header items */
+.mhead {
     width: 100%;
     height: 20%;
     padding: 15px;
@@ -25,134 +29,59 @@
     font-weight: 500;
 }
 
-.mainheader{
+.mainheader {
     height: 20%;
     width: 100%;
-    /* background-color: red; */
     text-indent: 20px;
-   display: flex;
-   justify-content: center;
-   flex-direction: column;
-
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
 }
 
-.mainholder{
-    height: 8%;
+.mainholder {
+    height: auto;
     width: 100%;
-    /* background-color: pink; */
     border-bottom: 1px solid #ff7043;
     display: flex;
-    /* border: 2px solid red; */
+    flex-wrap: wrap;
     padding: 5px;
-    
 }
 
-.mainid{
-    height: 100%;
+.mainid {
+    height: auto;
     width: 100%;
-    /* background-color: green; */
-    /* text-indent: 40px; */
     display: flex;
     align-items: center;
-    /* flex-direction: column; */
     justify-content: space-around;
+    flex-wrap: wrap;
+}
 
-}
-.mainname{
-    height: 100%;
-    width: 20%;
-    /* background-color: rgb(65, 77, 65); */
+.mainidtext, .mainidtextt, .mainidkg, .mainidpend {
     display: flex;
     align-items: center;
-    flex-direction: column;
+    justify-content: center;
+    flex: 1;
+    padding: 10px;
+    min-width: 100px;
 }
-.mainwaste{
-    height: 100%;
-    width: 20%;
-    /* background-color: rgb(151, 226, 151); */
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-}
-.mainkg{
-    height: 100%;
-    width: 20%;
-    /* background-color: green; */
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-}
-.mainstatus{
-    height: 100%;
-    width: 20%;
-    /* background-color: rgb(86, 235, 86); */
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-}
-.mainaction{
-    height: 100%;
-    width: 20%;
-    /* background-color: rgb(129, 169, 129); */
-    display: flex;
-    align-items: center;
-    flex-direction: column;
 
-    
-}
-.mainidkg{
+.mainidkg {
     height: 50px;
-    width: 80px;
-    /* background-color: rgb(90, 75, 75); */
-    display: flex;
-    align-items: center;
-    margin-top: 10px;
-    justify-content: center;
-    position: relative;
-    /* left: -30px; */
 }
-.mainidpend{
-    height: 50px;
-    width:90px;
-    /* background-color: red; */
-    display: flex;
-    align-items: center;
-    margin-top: 20px;
-    justify-content: center;
-    position: relative;
-    /* left: -60px; */
 
-    span{
-        height: 20px;
-        width: 70px;
-        border-radius: 40%;
-        background-color: #E45B56;
-        color: white;
-        font-weight:200;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-}
-.mainidtext{
-    height: 50px;
-    width: 17%;
-    /* background-color: red; */
+.mainidpend span {
+    background-color: #E45B56;
+    color: white;
+    font-weight: 200;
     display: flex;
     align-items: center;
-    margin-top: 10px;
     justify-content: center;
+    padding: 5px;
+    border-radius: 20px;
 }
-.mainidtextt{
-    height: 50px;
-    width: 14%;
-    /* background-color: red; */
-    display: flex;
-    align-items: center;
-    margin-top: 10px;
-    justify-content: center;
-}
-.mainidtextt button{
+
+/* Button styles */
+.mainidtextt button {
     height: 30px;
     width: 70px;
     display: flex;
@@ -161,51 +90,87 @@
     margin-left: 10px;
     align-items: center;
     font-size: 13px;
-    background-color: none;
+    background-color: transparent;
     border: 1px solid #ff7043;
     transition: all 350ms;
     color: #ff7043;
 }
-.mainidtextt button:hover{
+
+.mainidtextt button:hover {
     background-color: #ff7043;
     color: #fff;
     transform: scale(1.0);
     border: none;
 }
 
-.mainidtextt select{
+/* Select styles */
+.mainidtextt select {
     height: 30px;
-    width: 80px;
+    width: 100px;
     display: flex;
     justify-content: center;
     border-radius: 3px;
     align-items: center;
     font-size: 13px;
-    outline-color: none;
     background-color: #ff7043;
     transition: all 350ms;
-    color: #ffff;
+    color: #fff;
+    border: none;
 }
-/* .mainidtextt select:hover{
+
+.mainidtextt option {
     background-color: #ff7043;
     color: #fff;
-    transform: scale(1.0);
-    border: none;
-} */
-
-.mainidtextt option{
-    height: 30px;
-    width: 80px;
-    display: flex;
-    justify-content: center;
-    border-radius: 3px;
-    align-items: center;
-    font-size: 13px;
-    outline-color: none;
-    background-color: #ff7043;
-    transition: all 350ms;
-    color: #ffff;
 }
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .mhead, .mainid {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .mainidtext, .mainidtextt, .mainidkg, .mainidpend {
+        width: 100%;
+        padding: 10px 0;
+    }
+
+    .mhead header {
+        font-size: 18px;
+    }
+
+    .mainidtextt button, .mainidtextt select {
+        width: 100%;
+        margin: 5px 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .mhead header, .mainidtext, .mainidtextt {
+        font-size: 16px;
+    }
+
+    .mainheader h2 {
+        font-size: 20px;
+    }
+
+    .mainbox {
+        width: 100%;
+        padding: 15px;
+    }
+}
+
+@media (max-width: 320px) {
+    .mhead header, .mainidtext, .mainidtextt {
+        font-size: 14px;
+    }
+
+    .mainidtextt button, .mainidtextt select {
+        font-size: 12px;
+        width: 80px;
+    }
+}
+
 /* .mainidtextt option:hover{
     background-color: #ff7043;
     color: #fff;

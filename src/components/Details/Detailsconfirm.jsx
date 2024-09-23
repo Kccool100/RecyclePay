@@ -78,50 +78,61 @@ const Detailsconfirm = () => {
   };
 
   return (
-    <div className='pconfirm'>
-      <div className='pconfirm-box'>
-        <div className='Confirm'>
-          <div className='pconfirmhead'>
-            <h1>Confirm Info</h1>
-          </div>
-          <div className='confirmdetails'>
-            <div className='inp'>
-              <div className='ptext'>
-                <h3>Address:</h3>
-              </div>
-              <div className='infotext'>
-                <h3>{pickUpAddress}</h3>
-              </div>
-            </div>
-            <div className='inp'>
-              <div className='ptext'>
-                <h3>Phone Number:</h3>
-              </div>
-              <div className='infotext'>
-                <h3>{phoneNumber}</h3>
-              </div>
-            </div>
-            <div className='inp'>
-              <div className='ptext'>
-                <h3>Waste Kg:</h3>
-              </div>
-              <div className='infotext'>
-                <h3>{kg} Kg</h3>
-              </div>
-            </div>
-          </div>
-          <div className='reconfirm'>
-            <h2>We Will Be At The Stated Address In The Next 3 Working Days</h2>
-            <h2>After Your Request Has Been Confirmed</h2>
-          </div>
-          <button onClick={handleConfirm} disabled={Loading}>
-            {Loading ? 'Confirming...' : 'Confirm'}
-          </button>
-          
-          <button onClick={() => navigate("/Pick")}>Go Back</button>
-        </div>
+    <div className="mainCon">
+<div className='pconfirm' >
+  <div className='pconfirm-box' style={styles.background}>
+      <div className='pconfirmhead'>
+        <h1>Confirm Info</h1>
       </div>
+
+      <div className='confirmdetails'>
+        <table className='confirm-table'>
+          <tbody>
+            <tr>
+              <td className='ptext'>
+                <h3 style={styles.text}>Address:</h3>
+              </td>
+              <td className='infotext'>
+                <h3 style={styles.text}>{pickUpAddress}</h3>
+              </td>
+            </tr>
+            <tr>
+              <td className='ptext'>
+                <h3 style={styles.text}>Phone Number:</h3>
+              </td>
+              <td className='infotext'>
+                <h3 style={styles.text}>{phoneNumber}</h3>
+              </td>
+            </tr>
+            <tr>
+              <td className='ptext'>
+                <h3 style={styles.text}>Waste Kg:</h3>
+              </td>
+              <td className='infotext'>
+                <h3 style={styles.text}>{kg} Kg</h3>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div className='reconfirm'>
+        <p style={styles.text}>We Will Be At The Stated Address In The Next 3 Working Days</p>
+        <p style={styles.text}>After Your Request Has Been Confirmed</p>
+      </div>
+    <div className="butnn">
+    <button onClick={handleConfirm} disabled={Loading}>
+        {Loading ? 'Confirming...' : 'Confirm'}
+      </button>
+      
+      <button onClick={() => navigate("/Pick")}>Go Back</button>
     </div>
+      
+  </div>
+</div>
+    </div>
+    
+
   );
 };
 

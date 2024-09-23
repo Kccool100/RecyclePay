@@ -1,162 +1,147 @@
-.pconfirm {
+.mainCon {
     height: 100vh;
     width: 100%;
-    background-image: url(../../assets/recycleLogo.png);
     display: flex;
-    align-items: center;
     justify-content: center;
+    background: url("../../assets/bgg.jpg");
+    background-position: center;
     background-repeat: no-repeat;
-    background-size: cover; /* Ensure the background covers the container */
+    background-size: cover;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    align-items: center;
+    opacity: 1; /* Corrected from opacity: 0.5s */
 }
 
-.pconfirm-box {
-    height: 100%;
+.confirm-table {
     width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: rgba(224, 222, 222, 0.65); /* Adjusted for transparency */
-    backdrop-filter: blur(30px);
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: 15px;
+    text-align: left;
 }
 
-.Confirm {
-    height: 95%;
-    width: 80%;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    flex-direction: column;
+.confirm-table td, .confirm-table th {
+    padding: 15px 20px;
+    border: 1px solid #ff7043; /* Adds border to table cells */
 }
 
-.Confirm button {
-    height: 60px;
-    width: 200px;
-    background-color: transparent;
-    border-radius: 10px;
-    border: 1px solid #FF7043;
-    color: #FF7043;
-    font-size: 20px;
-    font-weight: 400;
-    transition: all 0.3s ease-in-out;
-}
-
-.Confirm button:hover {
-    background-color: #FF7043;
-    color: white;
-}
-
-/* Adjusting header */
-.pconfirmhead {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-}
-
-.pconfirmhead h1 {
-    color: #FF7043;
-    font-size: 80px;
+.confirm-table th {
+    background-color: #f4f4f4; /* Adds background color to table headers */
     font-weight: bold;
-    text-align: center;
+    text-align: left;
 }
 
-@media (max-width: 768px) {
-    .pconfirmhead h1 {
-        font-size: 40px;
-    }
-}
-
-@media (max-width: 426px) {
-    .pconfirmhead h1 {
-        font-size: 30px;
-    }
-}
-
-@media (max-width: 375px) {
-    .pconfirmhead h1 {
-        font-size: 25px;
-    }
+.confirm-table td {
+    vertical-align: middle; /* Aligns the content vertically in the middle */
 }
 
 .confirmdetails {
-    height: 50%;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-}
-
-.confirmdetails h3 {
-    font-size: 22px;
-}
-
-@media (max-width: 768px) {
-    .confirmdetails h3 {
-        font-size: 17px;
-    }
-}
-
-@media (max-width: 426px) {
-    .confirmdetails h3 {
-        font-size: 12px;
-    }
-}
-
-.inp {
-    height: 20%;
-    width: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.inp .infotext {
+    margin: 20px 0;
     width: 80%;
-    height: 80%;
-    font-weight: bold;
-    font-size: 18px;
-    text-indent: 40px;
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    color: black;
-    background-color: transparent;
 }
 
-/* Text section */
-.ptext {
-    height: 100%;
-    width: 25%;
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
+.pconfirmhead h1 {
+    color: #ff7043;
 }
 
-/* Confirm section */
-.reconfirm {
+.pconfirm-box {
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
-    flex-direction: column;
+    padding: 50px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    background-color: white;
+    max-width: 1000px;
+    width: 90%; /* Responsive width */
+}
+
+.ptext h3, .infotext h3 {
+    margin: 0;
+}
+
+.butnn {
+    width: 70%;
+    height: auto;
+    display: flex;
+    flex-direction: column; /* Stacking buttons on smaller screens */
+    margin-top: 20px;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.butnn button {
+    height: 50px;
     width: 100%;
-    height: 20%;
+    max-width: 200px;
+    padding: 10px 20px;
+    border: 1px solid #ff7043;
+    color: #ff7043;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: all 400ms;
+    border-radius: 5px;
 }
 
-.reconfirm h2 {
-    font-weight: bold;
-    font-size: 30px;
+.butnn button:hover {
+    background-color: #ff7043;
+    color: #fff;
+    transform: scale(1.0);
+}
+
+.butnn button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+.reconfirm {
     text-align: center;
+    margin-top: 20px;
+    font-size: 18px;
+    color: #333;
 }
 
+/* Media Queries for Responsiveness */
+
+/* Medium Screens (Tablets) */
 @media (max-width: 768px) {
-    .reconfirm h2 {
-        font-size: 20px;
+    .pconfirm-box {
+        padding: 30px;
+        width: 90%;
+    }
+    .confirmdetails {
+        width: 100%;
+    }
+    .confirm-table td, .confirm-table th {
+        padding: 10px 15px;
+    }
+    .butnn {
+        width: 100%;
+        flex-direction: column;
+    }
+    .butnn button {
+        width: 80%;
     }
 }
 
-@media (max-width: 426px) {
-    .reconfirm h2 {
-        font-size: 15px;
+/* Small Screens (Phones) */
+@media (max-width: 480px) {
+    .pconfirm-box {
+        padding: 20px;
+        width: 100%;
+    }
+    .confirmdetails {
+        width: 100%;
+    }
+    .confirm-table td, .confirm-table th {
+        font-size: 12px;
+        padding: 5px 10px;
+    }
+    .butnn button {
+        width: 100%;
+        max-width: none;
+    }
+    .reconfirm {
+        font-size: 16px;
     }
 }

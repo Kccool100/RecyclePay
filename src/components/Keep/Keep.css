@@ -136,7 +136,7 @@
     }
     
     
-    @media (max-width:426px) {
+    @media (max-width:570px) {
         .KeepContainer h3{
             font-size: 20px;
             width: 82%;

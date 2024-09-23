@@ -136,9 +136,9 @@
 }
 
 
-@media (max-width:426px) {
+@media (max-width:570px) {
     .MakeContainer h3{
-        font-size: 22px;
+        font-size: 20px;
       }
       .txts p{
         font-size: 14px;

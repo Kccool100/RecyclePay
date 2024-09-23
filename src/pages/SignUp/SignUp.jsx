@@ -34,6 +34,9 @@ const schema = yup
       .string()
       .required("Please input your Password and must be 6 characters")
       .min(6),
+      // acceptTerms: yup.boolean()
+      // .oneOf([true], 'You must accept the terms and conditions') // Ensure the checkbox is checked
+      // .required('You must accept the terms and conditions'),
   })
   .required();
 
@@ -44,6 +47,7 @@ const SignUp = () => {
   const styles = getStyles(mode);
   const [Loading, setLoading] = useState(false);
   const navigate = useNavigate();
+  // const [tick, setTick] = useState(false)
 
   const {
     register,
@@ -138,12 +142,13 @@ const SignUp = () => {
           <p className="error">{errors.Location?.message}</p>
         </label>
         <div className="radio">
-          <input type="radio" required={true} />
-          <Link to="/Terms" style={{ textDecoration: "none" }}>
+          {/* <input type="radio" {...register("acceptTerms")}/> */}
+          {/* <p className="error">{errors.acceptTerms?.message}</p> */}
+          {/* <Link to="/Terms" style={{ textDecoration: "none" }}>
             <p style={styles.text} className="terms">
               I accept Terms and Conditions
             </p>
-          </Link>
+          </Link> */}
         </div>
         <div className="buttonsign">
         {Loading ? (

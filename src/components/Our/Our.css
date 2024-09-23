@@ -155,7 +155,7 @@ line-height: 145.1%;
     }
     
     
-    @media (max-width:426px) {
+    @media (max-width:570px) {
         .OurContainer h3{
             font-size: 20px;
             width: 82%;

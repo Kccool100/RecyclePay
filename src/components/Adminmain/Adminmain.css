@@ -20,7 +20,7 @@
     padding: 15px;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
     font-size: 20px;
     font-weight: 500;
 }
@@ -37,10 +37,12 @@
 }
 
 .mainholder{
-    height: 80%;
+    height: 8%;
     width: 100%;
     /* background-color: pink; */
+    border-bottom: 1px solid #ff7043;
     display: flex;
+    /* border: 2px solid red; */
     padding: 5px;
     
 }
@@ -53,7 +55,7 @@
     display: flex;
     align-items: center;
     /* flex-direction: column; */
-    justify-content: space-between;
+    justify-content: space-around;
 
 }
 .mainname{
@@ -99,18 +101,18 @@
     
 }
 .mainidkg{
-    height: 40px;
-    width: 60px;
+    height: 50px;
+    width: 80px;
     /* background-color: rgb(90, 75, 75); */
     display: flex;
     align-items: center;
-    margin-top: 20px;
+    margin-top: 10px;
     justify-content: center;
     position: relative;
-    left: -70px;
+    /* left: -30px; */
 }
 .mainidpend{
-    height: 40px;
+    height: 50px;
     width:90px;
     /* background-color: red; */
     display: flex;
@@ -118,22 +120,11 @@
     margin-top: 20px;
     justify-content: center;
     position: relative;
-    left: -60px;
-}
-.mainidtext{
-    height: 40px;
-    width: 30%;
-    /* background-color: red; */
-    display: flex;
-    align-items: center;
-    margin-top: 20px;
-    justify-content: center;
-
-
+    /* left: -60px; */
 
     span{
-        height: 17px;
-        width: 60px;
+        height: 20px;
+        width: 70px;
         border-radius: 40%;
         background-color: #E45B56;
         color: white;
@@ -142,4 +133,22 @@
         align-items: center;
         justify-content: center;
     }
+}
+.mainidtext{
+    height: 50px;
+    width: 17%;
+    /* background-color: red; */
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    justify-content: center;
+}
+.mainidtextt{
+    height: 50px;
+    width: 14%;
+    /* background-color: red; */
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    justify-content: center;
 }

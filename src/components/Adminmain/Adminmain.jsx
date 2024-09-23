@@ -50,11 +50,12 @@ const Adminmain = () => {
         <div className='sidtext'>
                  Total request : {data.reduce((total, request) => total + request.WasteKG, 0) || 0} 
                  Kg
-            </div>
-      <div className='mhead'>
-      <header>Date</header>
+        </div>
+       <div className='mhead'>
+      <header >Date</header>
         <header>WasteKg</header>
-        <header> Address</header>
+        <header style={{marginRight:"50px"}}> Address</header>
+        <header> Contact</header>
         <header>Status</header>
         <header>Action</header>
       </div>
@@ -64,13 +65,13 @@ const Adminmain = () => {
               <div className='mainidtextt'>
               <p>{new Date(data.createdAt).toLocaleString()}</p>
                  </div>
-              <div className='mainidtextt'>{data.userInfo?.Name}</div>
+              {/* <div className='mainidtextt'>{data.userInfo?.Name}</div> */}
               <div className='mainidkg'>{data.WasteKG}Kg</div>
               <div className='mainidtext'>{data.pickUpAddress}</div>
-              <div className='mainidtextt'>{data.phoneNumber}</div>
+              <div className='mainidtextt' style={{marginRight:"20px"}}>{data.phoneNumber}</div>
               <div className='mainidpend'><span>Pending</span></div>
               <div className='mainidtextt'>
-                <select onChange={(e) => handleActionChange(item.id, e.target.value)}>
+                <select onChange={(e) => handleActionChange(item.id, e.target.value)} style={{backgroundColor:"#ff7043", color:"#ffff", height:"35px" , width:"120px", fontSize:"14px", border:"none",outlineColor:"none"}}>
                   <option value="">Select Action</option>
                   <option value="accept">Accept</option>
                   <option value="decline">Decline</option>

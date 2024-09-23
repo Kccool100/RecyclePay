@@ -65,7 +65,7 @@ function ResetPassword() {
 
     axios
       .post(`${baseURL}/api/v1/user/reset-password/${token}`, {
-        password: newPassword,
+        Password: newPassword,
       })
       .then((res) => {
         console.log("Password updated:", res);

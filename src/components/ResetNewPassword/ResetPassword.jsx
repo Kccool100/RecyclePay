@@ -87,11 +87,7 @@ function ResetPassword() {
   return (
     <div className='LoginCon'>
       <div className="LoginForm">
-        <>
-          {isResetPassword === 1 ? (
-            <h1>Verifying Email.....</h1>
-          ) : isResetPassword === 2 ? (
-            <>
+       
               <div className="SigUpForm" style={styles.background}>
                 <h2 style={styles.text}>Reset Your Password</h2>
                 <form onSubmit={handlePasswordReset}>
@@ -124,11 +120,7 @@ function ResetPassword() {
                   </div>
                 </form>
               </div>
-            </>
-          ) : (
-            <h1>Reset Password Failed</h1>
-          )}
-        </>
+          
       </div>
     </div>
   );

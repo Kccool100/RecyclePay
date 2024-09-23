@@ -213,7 +213,7 @@
   .usermain-container img{
     display: flex;
     width: 200px;
-    height: 100px;
+    height: 90px;
     object-fit: contain;
   }
   .modebutton {
@@ -274,8 +274,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 20rem;
-    width: 40%;
+    height: 100px;;
+    width: 45%;
     gap: 10px;
     margin-top: 30px;
   }
@@ -331,7 +331,12 @@
     font-size: 14px;
     padding: 10px;
   }
-
+  .usermain-container img{
+    display: flex;
+    width: 200px;
+    height: 90px;
+    object-fit: contain;
+  }
   .usermainheaderbox {
     margin-top: 20px;
     /* flex-direction: column; */
@@ -346,7 +351,7 @@
     font-size: 14px;
   }
   .headerbox1 {
-    height: 100px;
+    height: 90px;
     width: 35%;
     display: flex;
     align-items: center;
@@ -374,7 +379,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 25rem;
+    height: 100px;
     width: 50%;
     gap: 10px;
   }

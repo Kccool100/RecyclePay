@@ -29,7 +29,7 @@ const ForgetPassword = () => {
   const { mode } = useContext(ThemeContext);
   const styles = getStyles(mode);
   const [Loading, setLoading] = useState(false);
-  const navigate = useNavigate();
+  // const navigate = useNavigate();
   const baseURL = "https://waste-project.onrender.com";
 
   const {
@@ -47,9 +47,9 @@ const ForgetPassword = () => {
       console.log(res);
       const token = res.data.token; // Assuming token is returned in the response
 
-      setTimeout(() => {
-        navigate(`/ResetPassword/:token`);
-      }, 3000);
+      // setTimeout(() => {
+      //   navigate(`/ResetPassword/:token`);
+      // }, 3000);
 
     } catch (error) {
       console.error("Error sending reset password request", error);

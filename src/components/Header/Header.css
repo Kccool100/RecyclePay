@@ -186,7 +186,7 @@
     justify-content: center;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
     align-items: flex-start;
-    height: 280px;
+    min-height: 50vh;
     transition: all 350ms;
     transform: scale(1.0);
     /* margin-top: 430px; */
@@ -259,22 +259,24 @@
   .open {
     display: flex;
     flex-direction: column;
-    min-width: 100px;
+    /* min-width: 400px; */
     justify-content: center;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
     align-items: flex-start;
-    min-height: 250px;
+    min-height: 50vh;
     transition: all 350ms;
     transform: scale(1.0);
     /* margin-top: 310px; */
     /* min-width: 45%; */
+    min-width: 50%;
     background-color: #F5F5F5;
   }
 
   /* Links inside the navigation */
   .NavLink {
-    width: 100%;
+    width: 300px;
     cursor: pointer;
+    height:fit-content ;
   }
 
   /* Further styling for navigation links */
@@ -340,16 +342,16 @@
     justify-content: center;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
     align-items: flex-start;
-    min-height: 250px;
+    min-height: 50vh;
     transition: all 350ms;
     transform: scale(1.0);
     margin-top: 310px;
-    min-width: 45%;
+    min-width: 50%;
     background-color: #F5F5F5;
     /* padding:  1rem; */
 
     button{
-      margin-left: -18px;
+      margin-left: -24px;
     }
    
   }
@@ -373,6 +375,29 @@
     width: 140px;
     font-size: 17px;
     margin-bottom: 20px;
+  }
+}
+
+@media (max-width:490px) {
+  .open{
+    display: flex;
+    flex-direction: column;
+    /* width: 150px; */
+    justify-content: center;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    align-items: flex-start;
+    min-height: 50vh;
+    transition: all 350ms;
+    transform: scale(1.0);
+    margin-top: 310px;
+    min-width: 500px;
+    background-color: #F5F5F5;
+    /* padding:  1rem; */
+
+    button{
+      margin-left: -24px;
+    }
+   
   }
 }
 /* For iPhone X (max-width: 375px) */
@@ -419,7 +444,7 @@
     justify-content: center;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
     align-items: flex-start;
-    /* height: 230px; */
+    min-height: 50vh;
     transition: all 350ms;
     transform: scale(1.0);
     /* margin-top: 300px; */
@@ -459,14 +484,14 @@
     
   }
 
-  .rightNav.open{
+  .open{
     display: flex;
     flex-direction: column;
     /* width: 100px; */
     justify-content: center;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
     align-items: flex-start;
-    /* height: 250px; */
+    min-height: 50vh;
     transition: all 350ms;
     transform: scale(1.0);
     /* margin-top: 300px; */

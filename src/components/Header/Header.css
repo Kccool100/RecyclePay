@@ -299,7 +299,7 @@
 }
 
 
-@media (max-width:425px) {
+@media (max-width:455px) {
   button{
     margin-bottom: 30px;
   }
@@ -336,7 +336,7 @@
   .rightNav.open{
     display: flex;
     flex-direction: column;
-    width: 100px;
+    width: 150px;
     justify-content: center;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
     align-items: flex-start;
@@ -347,6 +347,10 @@
     min-width: 45%;
     background-color: #F5F5F5;
     /* padding:  1rem; */
+
+    button{
+      margin-left: -18px;
+    }
    
   }
   .NavLink{
@@ -372,7 +376,7 @@
   }
 }
 /* For iPhone X (max-width: 375px) */
-@media (max-width: 375px) {
+@media (max-width: 415px) {
   button {
     margin-bottom: 25px;
   }

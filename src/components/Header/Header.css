@@ -110,7 +110,7 @@
     .NavLink{
       display: flex;
         flex-direction: column;
-        height: 600px;
+        /* height: 600px; */
         align-items: flex-start;
     }
     
@@ -164,18 +164,13 @@
     right: 0;
     width: 50%;
   }
-  .NavLink{
-    display: flex;
-      flex-direction: column;
-      height: 600px;
-      align-items: flex-start;
-  }
+ 
   
   .link{
     display: flex;
     flex-direction: column;
     justify-content:center ;
-    gap: 1rem;
+    /* gap: 1rem; */
     align-items: flex-start;
 
   }
@@ -237,20 +232,14 @@
     width: 50%;
   }
 
-  /* Styling for the navigation links */
-  .NavLink {
-    display: flex;
-    flex-direction: column;
-    height: 600px;
-    align-items: flex-start;
-  }
+
   
   /* Link styling adjustments */
   .link {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    gap: 1rem;
+    /* gap: 1rem; */
     font-size: 14px; /* Adjusted for iPhone 12 Pro Max */
     align-items: flex-start;
   }
@@ -276,7 +265,7 @@
   .NavLink {
     width: 300px;
     cursor: pointer;
-    height:fit-content ;
+    /* height:fit-content ; */
   }
 
   /* Further styling for navigation links */
@@ -319,18 +308,13 @@
     right: 0;
     width: 50%;
   }
-  .NavLink{
-    display: flex;
-      flex-direction: column;
-    height: 600px;
-      align-items: flex-start;
-  }
+ 
   
   .link{
     display: flex;
     flex-direction: column;
     justify-content:center ;
-    gap: 1rem;
+    /* gap: 1rem; */
     font-size: 12px;
     align-items: flex-start;
 
@@ -421,12 +405,7 @@
     width: 50%;
   }
 
-  .NavLink {
-    display: flex;
-    flex-direction: column;
-    height: 500px;
-    align-items: flex-start;
-  }
+ 
 
   .link {
     display: flex;

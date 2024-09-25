@@ -2,6 +2,7 @@
     width: 100%;
     height: 80vh;
     display: flex;
+    position: relative;
     justify-content: center;
     align-items: center;
 }
@@ -89,6 +90,94 @@ transition: all 350ms;
     transform: scale(1.0);
 }
 
+.alert-container {
+    width: 90%; /* Set width in percentage to make it flexible */
+    max-width: 700px; /* Max width for larger screens */
+    height: auto; /* Allow the height to adjust automatically */
+    border-radius: 30px;
+    background: rgba(245, 245, 245, 0.80);
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem; /* Reduce gap for smaller screens */
+    padding: 2rem 1rem; /* Padding to ensure better spacing on small screens */
+    position: absolute;
+    align-items: center;
+    flex-direction: column;
+    box-sizing: border-box; /* Prevent overflow due to padding */
+}
+
+.alert-container p {
+    width: 90%; /* Make width responsive */
+    max-width: 700px;
+    color: var(--Hover-effect, #FF7043);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 3rem; /* Use rem for responsive font size */
+    font-weight: 600;
+    line-height: 1.2; /* Adjust line-height for readability */
+    letter-spacing: -0.3px;
+    text-transform: capitalize;
+    text-align: center; /* Center align text */
+}
+
+.alert-container span {
+    width: 90%; /* Make width responsive */
+    max-width: 500px;
+    color: var(--Hover-effect, #FF7043);
+    text-align: center;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 1.2rem; /* Responsive font size */
+    font-weight: 500;
+    line-height: 1.55;
+    letter-spacing: -0.3px;
+    text-transform: capitalize;
+}
+
+.alert-container img {
+    width: 50%; /* Make image responsive */
+    max-width: 220px; /* Max width for larger screens */
+    height: auto; /* Keep aspect ratio */
+    flex-shrink: 0;
+    object-fit: cover;
+}
+
+/* Media query for smaller devices */
+@media (max-width: 768px) {
+    .alert-container {
+        width: 90%;
+        padding: 1.5rem 0.5rem; /* Reduce padding for smaller screens */
+    }
+
+    .alert-container p {
+        font-size: 1.5rem; /* Smaller font size for mobile */
+    }
+
+    .alert-container span {
+        font-size: 0.875rem; /* Adjust span font size for mobile */
+    }
+
+    .alert-container img {
+        width: 40%; /* Smaller image size on mobile */
+    }
+}
+
+@media (max-width: 480px) {
+    .alert-container {
+        width: 95%; /* Full width for smaller screens */
+        padding: 1rem 0.5rem;
+    }
+
+    .alert-container p {
+        font-size: 1.25rem; /* Further reduce font size */
+    }
+
+    .alert-container span {
+        font-size: 0.75rem; /* Smaller text size for very small screens */
+    }
+
+    .alert-container img {
+        width: 30%; /* Smaller image on very small screens */
+    }
+}
 
 @media (max-width:1024px) {
     .ReviewContainer{
@@ -147,10 +236,6 @@ transition: all 350ms;
 .ReviewCon-box input{
     height: 100px;
 }
-
-
-}
-@media (max-width:320px) {
 
 
 }

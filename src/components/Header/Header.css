@@ -156,6 +156,7 @@
 @media (max-width:768px) {
   .logoContainer{
     width: 250px;
+    /* position: relative; */
   }
   .rightNav {
     display: none;
@@ -188,10 +189,10 @@
     height: 280px;
     transition: all 350ms;
     transform: scale(1.0);
-    margin-top: 430px;
+    /* margin-top: 430px; */
     min-width: 40%;
     background-color: #F5F5F5;
-    padding:  1rem;
+    /* padding:  1rem; */
     font-size: 12px;
     
 
@@ -262,11 +263,11 @@
     justify-content: center;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
     align-items: flex-start;
-    height: 250px;
+    /* height: 250px; */
     transition: all 350ms;
     transform: scale(1.0);
-    margin-top: 310px;
-    min-width: 45%;
+    /* margin-top: 310px; */
+    /* min-width: 45%; */
     background-color: #F5F5F5;
   }
 
@@ -339,7 +340,7 @@
     justify-content: center;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
     align-items: flex-start;
-    height: 250px;
+    /* height: 250px; */
     transition: all 350ms;
     transform: scale(1.0);
     margin-top: 310px;
@@ -414,10 +415,10 @@
     justify-content: center;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
     align-items: flex-start;
-    height: 230px;
+    /* height: 230px; */
     transition: all 350ms;
     transform: scale(1.0);
-    margin-top: 300px;
+    /* margin-top: 300px; */
     min-width: 50%;
     background-color: #F5F5F5;
   }
@@ -461,10 +462,10 @@
     justify-content: center;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
     align-items: flex-start;
-    height: 250px;
+    /* height: 250px; */
     transition: all 350ms;
     transform: scale(1.0);
-    margin-top: 300px;
+    /* margin-top: 300px; */
     min-width: 50%;
     /* font-size: 5px; */
     background-color: #F5F5F5;

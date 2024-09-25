@@ -6,6 +6,7 @@ import { ThemeContext } from "../../context/ThemeProvider";
 import ClipLoader from "react-spinners/ClipLoader";
 import { useNavigate, useParams } from 'react-router-dom';
 import axios from 'axios';
+import toast from "react-hot-toast";
 
 const getStyles = (mode) => ({
   background: {
@@ -69,14 +70,28 @@ function ResetPassword() {
       })
       .then((res) => {
         console.log("Password updated:", res);
-        alert('Password reset successful!');
+        // alert('Password reset successful!');
+        toast.success(
+         " Password reset successful!",
+         {
+          duration :4000,
+         }
+        );
         setTimeout(() => {
           navigate("/Login");
         }, 2000);
       })
       .catch((err) => {
         console.error("Password reset failed:", err);
-        alert('Password reset failed!');
+        // alert('Password reset failed!');
+        toast.error(
+          "Password reset failed:", err ||
+          " Password reset failed",
+          {
+           duration :4000,
+          }
+         );
+
       })
       .finally(() => {
         setLoading(false);

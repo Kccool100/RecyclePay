@@ -6,6 +6,7 @@ import { Theme } from '../Theme/Theme';
 import { useDispatch, useSelector } from 'react-redux';
 import axios from 'axios';
 import { setUpdateWaste } from '../../Global/Slice';
+import toast from 'react-hot-toast';
 
 const getStyles = (mode) => ({
   background: {
@@ -64,14 +65,28 @@ const Detailsconfirm = () => {
       
       dispatch(setUpdateWaste(res.data.data))
       console.log(res.data);
-      alert(res.data.message);
+      // alert(res.data.message);
+      toast.success(
+        res.data.message || 
+        "Waste created successfully",
+        {
+          duration :4000,
+        }
+      );
       await getAllWaste();
 
       // Navigate to a confirmation page or similar
       navigate('/Pickupconfirmed');
     } catch (error) {
       console.error(error);
-      alert(error.message);
+      // alert(error.message);
+      toast.error(
+        error.message ||
+        "Network connection interrupted",
+        {
+          duration :4000,
+        }
+      );
     } finally {
       setLoading(false);
     }

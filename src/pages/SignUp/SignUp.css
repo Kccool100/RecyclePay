@@ -68,7 +68,7 @@
     background: transparent;
     border: 1px solid #FF7043 !important;
     color: #FF7043;
-    font-size: 29px;
+    font-size: 23px;
     border-radius: 16px !important;
     transition: all 350ms;
     /* font-size: 1rem; */
@@ -81,7 +81,7 @@
     color: white;
     cursor: pointer;
     border: 1px solid #FF7043;
-    /* transform: scale(1.0); */
+    transform: scale(1.0);
   }
   }
   
@@ -125,6 +125,7 @@
     width: 100%;
     padding: 10px;
     display: flex;
+    margin-top: 15px;
     gap: 1rem;
   }
 
@@ -160,7 +161,7 @@
     }
   
     .SigUpForm button {
-      font-size: 0.9rem;
+      font-size: 1rem;
       padding: 8px;
     }
     .radio p{
@@ -190,7 +191,7 @@
     }
   
     .SigUpForm button {
-      font-size: 0.8rem;
+      font-size: 1rem;
       padding: 6px;
     }
 
@@ -213,7 +214,10 @@
       top: -10px;
     }
    }
-
+   .SigUpForm button {
+    font-size: 1rem;
+    padding: 6px;
+  }
     h7{
       font-size: 15px !important;
     }
